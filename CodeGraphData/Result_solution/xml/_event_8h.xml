@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_event_8h" kind="file">
+    <compoundname>Event.h</compoundname>
+    <includes local="no">list</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mutex</includes>
+    <includedby refid="_window_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Window.h</includedby>
+    <includedby refid="_renderer_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h</includedby>
+    <incdepgraph>
+      <node id="129">
+        <label>list</label>
+      </node>
+      <node id="128">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Event.h</label>
+        <link refid="Event.h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>mutex</label>
+      </node>
+      <node id="130">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="137">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h</label>
+        <link refid="_renderer_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp</label>
+        <link refid="_renderer_8cpp"/>
+      </node>
+      <node id="135">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</label>
+        <link refid="_application_8cpp"/>
+      </node>
+      <node id="133">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp</label>
+        <link refid="_entry_point_8cpp"/>
+      </node>
+      <node id="139">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="141">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp</label>
+        <link refid="_window_8cpp"/>
+      </node>
+      <node id="132">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Event.h</label>
+        <link refid="Event.h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_event" prot="public">Event</innerclass>
+    <innerclass refid="struct_event_1_1_delegate" prot="private">Event::Delegate</innerclass>
+    <innerclass refid="struct_event_1_1_class_delegate" prot="private">Event::ClassDelegate</innerclass>
+    <innerclass refid="struct_event_1_1_static_delegate" prot="private">Event::StaticDelegate</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...TArgs&gt;</highlight></codeline>
+<codeline lineno="9" refid="class_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_event" kindref="compound">Event</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="class_event_1a2abf13b5be49315e9e362af02029f058" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="class_event_1a2abf13b5be49315e9e362af02029f058" kindref="member">Type</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_event_1a2abf13b5be49315e9e362af02029f058a9bd81329febf6efe22788e03ddeaf0af" kindref="member">Class</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_event_1a2abf13b5be49315e9e362af02029f058a84a8921b25f505d0d2077aeb5db4bc16" kindref="member">Static</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_event_1_1_delegate" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_event_1_1_delegate" kindref="compound">Delegate</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="struct_event_1_1_delegate_1af7cde847142d45f1394783cd1c373ff1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_event_1a2abf13b5be49315e9e362af02029f058" kindref="member">Type</ref><sp/><ref refid="struct_event_1_1_delegate_1af7cde847142d45f1394783cd1c373ff1" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_event_1_1_delegate_1af8ae2c15318a71e99a84efcf8af7492c" kindref="member">Process</ref>(TArgs<sp/>...<sp/>args)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TClass,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TMethod&gt;</highlight></codeline>
+<codeline lineno="24" refid="struct_event_1_1_class_delegate" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_event_1_1_class_delegate" kindref="compound">ClassDelegate</ref><sp/>:<sp/><ref refid="struct_event_1_1_delegate" kindref="compound">Delegate</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="struct_event_1_1_class_delegate_1a32204562ffac68885a3f793873496957" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TClass*<sp/><ref refid="struct_event_1_1_class_delegate_1a32204562ffac68885a3f793873496957" kindref="member">object</ref>;</highlight></codeline>
+<codeline lineno="27" refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TMethod<sp/><ref refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" kindref="member">method</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_event_1_1_class_delegate_1a566c8823b6d216809870b4e6e1c65848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_event_1_1_class_delegate_1a566c8823b6d216809870b4e6e1c65848" kindref="member">ClassDelegate</ref>(TClass*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/>TMethod<sp/><ref refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" kindref="member">method</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>object{<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>},<sp/><ref refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" kindref="member">method</ref>{<sp/><ref refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" kindref="member">method</ref><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="struct_event_1_1_class_delegate_1ab099a373ed0a1c2c5da88fbfe14b215a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_event_1_1_class_delegate_1ab099a373ed0a1c2c5da88fbfe14b215a" kindref="member">Process</ref>(TArgs<sp/>...<sp/>args)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">-&gt;*<ref refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" kindref="member">method</ref>)(args...);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TFunc&gt;</highlight></codeline>
+<codeline lineno="41" refid="struct_event_1_1_static_delegate" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_event_1_1_static_delegate" kindref="compound">StaticDelegate</ref><sp/>:<sp/><ref refid="struct_event_1_1_delegate" kindref="compound">Delegate</ref></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43" refid="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TFunc<sp/><ref refid="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" kindref="member">func</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="struct_event_1_1_static_delegate_1ae3164aabd02193cc7b78659c2cf404d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_event_1_1_static_delegate_1ae3164aabd02193cc7b78659c2cf404d1" kindref="member">StaticDelegate</ref>(TFunc<sp/><ref refid="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" kindref="member">func</ref>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>func{<sp/>func<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="struct_event_1_1_static_delegate_1a81c1b8d44a43aa2afcc5750c5abb9b10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_event_1_1_static_delegate_1a81c1b8d44a43aa2afcc5750c5abb9b10" kindref="member">Process</ref>(TArgs<sp/>...<sp/>args)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="51"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" kindref="member">func</ref>(args...);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_event_1a1308756c856608e53f278477f533b11f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;std::shared_ptr&lt;Delegate&gt;&gt;<sp/><ref refid="class_event_1a1308756c856608e53f278477f533b11f" kindref="member">delegates</ref>;</highlight></codeline>
+<codeline lineno="57" refid="class_event_1af032add04cd263310b8f4fdc7917e905" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/><ref refid="class_event_1af032add04cd263310b8f4fdc7917e905" kindref="member">mutex</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TClass,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TMethod&gt;</highlight></codeline>
+<codeline lineno="61" refid="class_event_1afa2b3ae4c8069e46995d3ff3e2cd7f95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1afa2b3ae4c8069e46995d3ff3e2cd7f95" kindref="member">Add</ref>(TClass*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/>TMethod<sp/>method)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::exception(</highlight><highlight class="stringliteral">&quot;Параметр  &quot;object\&quot;<sp/>пустой.&quot;);
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!method)
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>throw<sp/>std::exception(&quot;Параметр \&quot;method\&quot;<sp/>пустой.&quot;);
+
+<sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>item<sp/>=<sp/>std::make_shared&lt;ClassDelegate&lt;TClass,<sp/>TMethod&gt;&gt;(object,<sp/>method);
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.push_back(item);
+<sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TFunc&gt;
+<sp/><sp/>void<sp/>Add(TFunc<sp/>func)
+<sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!func)
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>throw<sp/>std::exception(&quot;Параметр \&quot;func\&quot;<sp/>пустой.&quot;);
+<sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.push_back(std::make_shared&lt;StaticDelegate&lt;TFunc&gt;&gt;(func));
+<sp/><sp/><sp/><sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TClass,<sp/>typename<sp/>TMethod&gt;
+<sp/><sp/><sp/>void<sp/>Remove(TClass*<sp/>object,<sp/>TMethod<sp/>method)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.remove_if([&amp;](auto<sp/>del)
+<sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>del-&gt;object<sp/>==<sp/>object<sp/>&amp;&amp;<sp/>del-&gt;method<sp/>==<sp/>method;
+<sp/><sp/><sp/><sp/><sp/>});
+<sp/><sp/><sp/><sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TFunc&gt;
+<sp/><sp/>void<sp/>Remove(TFunc<sp/>func)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.remove_if([&amp;](auto<sp/>del)
+<sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>del-&gt;func<sp/>==<sp/>func;
+<sp/><sp/><sp/><sp/><sp/><sp/>});
+<sp/><sp/><sp/><sp/>}
+
+<sp/>void<sp/>operator()(TArgs<sp/>...<sp/>args)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(auto&amp;&amp;<sp/>del<sp/>:<sp/>delegates)
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del-&gt;Process(args...);
+<sp/><sp/><sp/><sp/><sp/>}
+<sp/><sp/>}
+};
+\&quot;object\&quot;<sp/>пустой.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!method)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::exception(</highlight><highlight class="stringliteral">&quot;Параметр  &quot;method\&quot;<sp/>пустой.&quot;);
+
+<sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>item<sp/>=<sp/>std::make_shared&lt;ClassDelegate&lt;TClass,<sp/>TMethod&gt;&gt;(object,<sp/>method);
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.push_back(item);
+<sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TFunc&gt;
+<sp/><sp/>void<sp/>Add(TFunc<sp/>func)
+<sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!func)
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>throw<sp/>std::exception(&quot;Параметр \&quot;func\&quot;<sp/>пустой.&quot;);
+<sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.push_back(std::make_shared&lt;StaticDelegate&lt;TFunc&gt;&gt;(func));
+<sp/><sp/><sp/><sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TClass,<sp/>typename<sp/>TMethod&gt;
+<sp/><sp/><sp/>void<sp/>Remove(TClass*<sp/>object,<sp/>TMethod<sp/>method)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.remove_if([&amp;](auto<sp/>del)
+<sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>del-&gt;object<sp/>==<sp/>object<sp/>&amp;&amp;<sp/>del-&gt;method<sp/>==<sp/>method;
+<sp/><sp/><sp/><sp/><sp/>});
+<sp/><sp/><sp/><sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TFunc&gt;
+<sp/><sp/>void<sp/>Remove(TFunc<sp/>func)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.remove_if([&amp;](auto<sp/>del)
+<sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>del-&gt;func<sp/>==<sp/>func;
+<sp/><sp/><sp/><sp/><sp/><sp/>});
+<sp/><sp/><sp/><sp/>}
+
+<sp/>void<sp/>operator()(TArgs<sp/>...<sp/>args)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(auto&amp;&amp;<sp/>del<sp/>:<sp/>delegates)
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del-&gt;Process(args...);
+<sp/><sp/><sp/><sp/><sp/>}
+<sp/><sp/>}
+};
+\&quot;method\&quot;<sp/>пустой.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>item<sp/>=<sp/>std::make_shared&lt;ClassDelegate&lt;TClass,<sp/>TMethod&gt;&gt;(object,<sp/>method);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/><ref refid="class_event_1af032add04cd263310b8f4fdc7917e905" kindref="member">mutex</ref><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_event_1a1308756c856608e53f278477f533b11f" kindref="member">delegates</ref>.push_back(item);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TFunc&gt;</highlight></codeline>
+<codeline lineno="74" refid="class_event_1a46b924f493c3e3c9623af5cb18eab45e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a46b924f493c3e3c9623af5cb18eab45e" kindref="member">Add</ref>(TFunc<sp/>func)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!func)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::exception(</highlight><highlight class="stringliteral">&quot;Параметр  &quot;func\&quot;<sp/>пустой.&quot;);
+<sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.push_back(std::make_shared&lt;StaticDelegate&lt;TFunc&gt;&gt;(func));
+<sp/><sp/><sp/><sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TClass,<sp/>typename<sp/>TMethod&gt;
+<sp/><sp/><sp/>void<sp/>Remove(TClass*<sp/>object,<sp/>TMethod<sp/>method)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.remove_if([&amp;](auto<sp/>del)
+<sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>del-&gt;object<sp/>==<sp/>object<sp/>&amp;&amp;<sp/>del-&gt;method<sp/>==<sp/>method;
+<sp/><sp/><sp/><sp/><sp/>});
+<sp/><sp/><sp/><sp/>}
+
+<sp/>template<sp/>&lt;typename<sp/>TFunc&gt;
+<sp/><sp/>void<sp/>Remove(TFunc<sp/>func)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegates.remove_if([&amp;](auto<sp/>del)
+<sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>del-&gt;func<sp/>==<sp/>func;
+<sp/><sp/><sp/><sp/><sp/><sp/>});
+<sp/><sp/><sp/><sp/>}
+
+<sp/>void<sp/>operator()(TArgs<sp/>...<sp/>args)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/>mutex<sp/>};
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(auto&amp;&amp;<sp/>del<sp/>:<sp/>delegates)
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del-&gt;Process(args...);
+<sp/><sp/><sp/><sp/><sp/>}
+<sp/><sp/>}
+};
+\&quot;func\&quot;<sp/>пустой.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/><ref refid="class_event_1af032add04cd263310b8f4fdc7917e905" kindref="member">mutex</ref><sp/>};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_event_1a1308756c856608e53f278477f533b11f" kindref="member">delegates</ref>.push_back(std::make_shared&lt;StaticDelegate&lt;TFunc&gt;&gt;(func));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TClass,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TMethod&gt;</highlight></codeline>
+<codeline lineno="83" refid="class_event_1a300e57cfd82b58bf5bc12ace80332609" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a300e57cfd82b58bf5bc12ace80332609" kindref="member">Remove</ref>(TClass*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/>TMethod<sp/>method)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/><ref refid="class_event_1af032add04cd263310b8f4fdc7917e905" kindref="member">mutex</ref><sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_event_1a1308756c856608e53f278477f533b11f" kindref="member">delegates</ref>.remove_if([&amp;](</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>del)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>del-&gt;object<sp/>==<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>del-&gt;method<sp/>==<sp/>method;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TFunc&gt;</highlight></codeline>
+<codeline lineno="93" refid="class_event_1a8ebd42a3e8dc3460b396e85bf167fe4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a8ebd42a3e8dc3460b396e85bf167fe4a" kindref="member">Remove</ref>(TFunc<sp/>func)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/><ref refid="class_event_1af032add04cd263310b8f4fdc7917e905" kindref="member">mutex</ref><sp/>};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_event_1a1308756c856608e53f278477f533b11f" kindref="member">delegates</ref>.remove_if([&amp;](</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>del)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>del-&gt;func<sp/>==<sp/>func;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_event_1ad364177983ccded67925beacea26757a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1ad364177983ccded67925beacea26757a" kindref="member">operator()</ref>(TArgs<sp/>...<sp/>args)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>locker{<sp/><ref refid="class_event_1af032add04cd263310b8f4fdc7917e905" kindref="member">mutex</ref><sp/>};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;&amp;<sp/>del<sp/>:<sp/><ref refid="class_event_1a1308756c856608e53f278477f533b11f" kindref="member">delegates</ref>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del-&gt;Process(args...);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h"/>
+  </compounddef>
+</doxygen>

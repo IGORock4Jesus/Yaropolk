@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_1b10e5310928695b6a7aa49cba26d7f4" kind="dir">
+    <compoundname>C:/Users/Admin/source/repos/Yaropolk/GameTests</compoundname>
+    <innerfile refid="_ecs_tests_8cpp">EcsTests.cpp</innerfile>
+    <innerfile refid="_entity_manager_tests_8cpp">EntityManagerTests.cpp</innerfile>
+    <innerfile refid="stdafx_8cpp">stdafx.cpp</innerfile>
+    <innerfile refid="stdafx_8h">stdafx.h</innerfile>
+    <innerfile refid="_system_manager_tests_8cpp">SystemManagerTests.cpp</innerfile>
+    <innerfile refid="ests_2targetver_8h">targetver.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/GameTests/"/>
+  </compounddef>
+</doxygen>

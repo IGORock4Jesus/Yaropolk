@@ -1,9 +1,9 @@
-#include "Application.h"
+#include "Game.h"
 
 
 
 int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE, LPSTR, int) {
 
-	Application app{ hinstance };
+	Game app{ hinstance };
 	return app.Run();
 }

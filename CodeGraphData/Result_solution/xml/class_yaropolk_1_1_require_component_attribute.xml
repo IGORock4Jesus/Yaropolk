@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_require_component_attribute" kind="class" prot="package">
+    <compoundname>Yaropolk::RequireComponentAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="80">
+        <label>Attribute</label>
+      </node>
+      <node id="79">
+        <label>Yaropolk.RequireComponentAttribute</label>
+        <link refid="class_yaropolk_1_1_require_component_attribute"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="82">
+        <label>Attribute</label>
+      </node>
+      <node id="81">
+        <label>Yaropolk.RequireComponentAttribute</label>
+        <link refid="class_yaropolk_1_1_require_component_attribute"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/RequireComponentAttribute.cs" line="6" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/RequireComponentAttribute.cs" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

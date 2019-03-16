@@ -9,13 +9,21 @@
     <ClInclude Include="Event.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />
-    <ClInclude Include="BoxMesh.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityManager.h" />
     <ClInclude Include="Helpers.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="SystemManager.h" />
+    <ClInclude Include="IRenderable.h" />
+    <ClInclude Include="PrimitiveManager.h" />
+    <ClInclude Include="Primitive.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="ComponentManager.h" />
+    <ClInclude Include="ECS.h" />
+    <ClInclude Include="LightManager.h" />
+    <ClInclude Include="RenderSystem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp" />
@@ -24,6 +32,12 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="BoxMesh.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="PrimitiveManager.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Primitive.cpp" />
+    <ClCompile Include="ECS.cpp" />
+    <ClCompile Include="RenderSystem.cpp" />
   </ItemGroup>
 </Project>

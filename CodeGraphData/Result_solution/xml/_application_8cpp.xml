@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_application_8cpp" kind="file">
+    <compoundname>Application.cpp</compoundname>
+    <includes refid="_application_8h" local="yes">Application.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="_helpers_8h" local="yes">Helpers.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>list</label>
+      </node>
+      <node id="8">
+        <label>Renderer.h</label>
+        <link refid="_renderer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>d3d9.h</label>
+      </node>
+      <node id="4">
+        <label>Windows.h</label>
+      </node>
+      <node id="0">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</label>
+        <link refid="Application.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>System.h</label>
+        <link refid="_system_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>exception</label>
+      </node>
+      <node id="11">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Helpers.h</label>
+        <link refid="_helpers_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>bitset</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+      <node id="13">
+        <label>array</label>
+      </node>
+      <node id="5">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mutex</label>
+      </node>
+      <node id="14">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>SystemManager.h</label>
+        <link refid="_system_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_application_8cpp_1a22f0f0a8d30a1e1036435f6d6466f467" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void test</definition>
+        <argsstring>(const SIZE &amp;size)</argsstring>
+        <name>test</name>
+        <param>
+          <type>const SIZE &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp" bodystart="11" bodyend="13"/>
+        <references refid="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" compoundref="_helpers_8h" startline="7" endline="9">debug</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_application_8h" kindref="compound">Application.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_helpers_8h" kindref="compound">Helpers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Systems</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="comment">//#include<sp/>c++<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_application_8cpp_1a22f0f0a8d30a1e1036435f6d6466f467" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_application_8cpp_1a22f0f0a8d30a1e1036435f6d6466f467" kindref="member">test</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SIZE&amp;<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" kindref="member">debug</ref>(</highlight><highlight class="stringliteral">&quot;Size<sp/>{&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(size.cx)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(size.cy)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_application_1ac6bf1d332f0c1e4b2262325b52bb4db9" refkind="member"><highlight class="normal"><ref refid="class_application_1ac6bf1d332f0c1e4b2262325b52bb4db9" kindref="member">Application::Application</ref>(HINSTANCE<sp/>hinstance)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>hinstance{<sp/>hinstance<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>window<sp/>=<sp/>std::make_shared&lt;Window&gt;(hinstance);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;SizeChanged.Add(<ref refid="_application_8cpp_1a22f0f0a8d30a1e1036435f6d6466f467" kindref="member">test</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>renderer<sp/>=<sp/>std::make_shared&lt;Renderer&gt;(window);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>scene<sp/>=<sp/>std::make_shared&lt;Scene&gt;(renderer);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_application_1a748bca84fefb9c12661cfaa2f623748d" refkind="member"><highlight class="normal"><ref refid="class_application_1a748bca84fefb9c12661cfaa2f623748d" kindref="member">Application::~Application</ref>()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" kindref="member">renderer</ref>.reset();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" kindref="member">window</ref>.reset();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" kindref="member">Application::Run</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>DWORD<sp/>oldTime<sp/>=<sp/>timeGetTime();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" kindref="member">window</ref>-&gt;Update())<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>newTime<sp/>=<sp/>timeGetTime();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>time<sp/>=<sp/>(newTime<sp/>-<sp/>oldTime)*0.001f;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oldTime<sp/>=<sp/>newTime;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_application_1a367176d499386eeb4b126edcb1ab163e" kindref="member">scene</ref>-&gt;Update(time);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" kindref="member">renderer</ref>-&gt;Rendering();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp"/>
+  </compounddef>
+</doxygen>

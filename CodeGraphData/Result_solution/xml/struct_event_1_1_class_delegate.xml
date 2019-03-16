@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_event_1_1_class_delegate" kind="struct" prot="private">
+    <compoundname>Event::ClassDelegate</compoundname>
+    <basecompoundref refid="struct_event_1_1_delegate" prot="public" virt="non-virtual">Event&lt; TArgs &gt;::Delegate</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename TClass</type>
+      </param>
+      <param>
+        <type>typename TMethod</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_event_1_1_class_delegate_1a32204562ffac68885a3f793873496957" prot="public" static="no" mutable="no">
+        <type>TClass *</type>
+        <definition>TClass* Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="26" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" prot="public" static="no" mutable="no">
+        <type>TMethod</type>
+        <definition>TMethod Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;::method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="27" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="struct_event_1_1_class_delegate_1ab099a373ed0a1c2c5da88fbfe14b215a" compoundref="_event_8h" startline="34" endline="37">Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;::Process</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_event_1_1_class_delegate_1a566c8823b6d216809870b4e6e1c65848" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;::ClassDelegate</definition>
+        <argsstring>(TClass *object, TMethod method)</argsstring>
+        <name>ClassDelegate</name>
+        <param>
+          <type>TClass *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>TMethod</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="29" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_event_1_1_class_delegate_1ab099a373ed0a1c2c5da88fbfe14b215a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;::Process</definition>
+        <argsstring>(TArgs...args) override</argsstring>
+        <name>Process</name>
+        <reimplements refid="struct_event_1_1_delegate_1af8ae2c15318a71e99a84efcf8af7492c">Process</reimplements>
+        <param>
+          <type>TArgs...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="34" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="34" bodyend="37"/>
+        <references refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" compoundref="_event_8h" startline="27">Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;::method</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;</label>
+        <link refid="struct_event_1_1_class_delegate"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Event&lt; TArgs &gt;::Delegate</label>
+        <link refid="struct_event_1_1_delegate"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;</label>
+        <link refid="struct_event_1_1_class_delegate"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Event&lt; TArgs &gt;::Delegate</label>
+        <link refid="struct_event_1_1_delegate"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="25" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="24" bodyend="38"/>
+    <listofallmembers>
+      <member refid="struct_event_1_1_class_delegate_1a566c8823b6d216809870b4e6e1c65848" prot="public" virt="non-virtual"><scope>Event::ClassDelegate</scope><name>ClassDelegate</name></member>
+      <member refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" prot="public" virt="non-virtual"><scope>Event::ClassDelegate</scope><name>method</name></member>
+      <member refid="struct_event_1_1_class_delegate_1a32204562ffac68885a3f793873496957" prot="public" virt="non-virtual"><scope>Event::ClassDelegate</scope><name>object</name></member>
+      <member refid="struct_event_1_1_class_delegate_1ab099a373ed0a1c2c5da88fbfe14b215a" prot="public" virt="virtual"><scope>Event::ClassDelegate</scope><name>Process</name></member>
+      <member refid="struct_event_1_1_delegate_1af7cde847142d45f1394783cd1c373ff1" prot="public" virt="non-virtual"><scope>Event::ClassDelegate</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

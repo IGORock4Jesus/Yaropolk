@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_program" kind="class" prot="public">
+    <compoundname>Yaropolk::Program</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_program_1a8ceebb445a51f9d9155dd709a195d74e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Yaropolk.Program.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <briefdescription>
+<para>Главная точка входа для приложения. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Program.cs" line="15" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Program.cs" bodystart="15" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Program.cs" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Program.cs" bodystart="9" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_program_1a8ceebb445a51f9d9155dd709a195d74e" prot="private" virt="non-virtual"><scope>Yaropolk::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

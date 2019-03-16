@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_entity_manager" kind="class" prot="public" final="yes">
+    <compoundname>EntityManager</compoundname>
+    <includes refid="_entity_manager_8h" local="no">EntityManager.h</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entity_manager_1abdf45892655ab19e871249ce5249724b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_entity" kindref="compound">Entity</ref></type>
+        <definition>Entity EntityManager&lt; N &gt;::entities[N]</definition>
+        <argsstring>[N]</argsstring>
+        <name>entities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" line="8" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" compoundref="_entity_manager_8h" startline="19" endline="31">EntityManager&lt; N &gt;::Create</referencedby>
+        <referencedby refid="class_entity_manager_1ac260a0dc8d1d8e47bdf98cbc423d077f" compoundref="_entity_manager_8h" startline="12" endline="18">EntityManager&lt; N &gt;::EntityManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" prot="private" static="no" mutable="no">
+        <type>std::bitset&lt; N &gt;</type>
+        <definition>std::bitset&lt;N&gt; EntityManager&lt; N &gt;::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" line="9" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" compoundref="_entity_manager_8h" startline="19" endline="31">EntityManager&lt; N &gt;::Create</referencedby>
+        <referencedby refid="class_entity_manager_1a731eae0581ef68bad2af6f154e5be1a1" compoundref="_entity_manager_8h" startline="32" endline="34">EntityManager&lt; N &gt;::Kill</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entity_manager_1ac260a0dc8d1d8e47bdf98cbc423d077f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EntityManager&lt; N &gt;::EntityManager</definition>
+        <argsstring>()</argsstring>
+        <name>EntityManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" bodystart="12" bodyend="18"/>
+        <references refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" compoundref="_entity_manager_8h" startline="8">EntityManager&lt; N &gt;::entities</references>
+        <references refid="class_entity_1a087828d77ebc950ee1e822c34e264740" compoundref="_entity_8h" startline="27" endline="27">Entity::SetId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_entity" kindref="compound">Entity</ref> &amp;</type>
+        <definition>Entity&amp; EntityManager&lt; N &gt;::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" line="19" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" bodystart="19" bodyend="31"/>
+        <references refid="class_entity_1afb63a7e5efbd67598dc1596ca40485a3" compoundref="_entity_8h" startline="34" endline="36">Entity::Clear</references>
+        <references refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" compoundref="_entity_manager_8h" startline="8">EntityManager&lt; N &gt;::entities</references>
+        <references refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" compoundref="_entity_manager_8h" startline="9">EntityManager&lt; N &gt;::key</references>
+        <referencedby refid="namespace_game_tests_1ad9dd3234cbaabeb45cc572a9bcb7e2e9" compoundref="_entity_manager_tests_8cpp" startline="10" endline="41">GameTests::TEST_CLASS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_manager_1a731eae0581ef68bad2af6f154e5be1a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityManager&lt; N &gt;::Kill</definition>
+        <argsstring>(Entity &amp;entity)</argsstring>
+        <name>Kill</name>
+        <param>
+          <type><ref refid="class_entity" kindref="compound">Entity</ref> &amp;</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" line="32" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" bodystart="32" bodyend="34"/>
+        <references refid="class_entity_1a23e9f8d8a5ea4e38fa3708e06ad63eb2" compoundref="_entity_8h" startline="28" endline="28">Entity::GetId</references>
+        <references refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" compoundref="_entity_manager_8h" startline="9">EntityManager&lt; N &gt;::key</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="47">
+        <label>std::bitset&lt; N &gt;</label>
+      </node>
+      <node id="46">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="43">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+        <childnode refid="44" relation="usage">
+          <edgelabel>components</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>EntityManager&lt; N &gt;</label>
+        <link refid="class_entity_manager"/>
+        <childnode refid="43" relation="usage">
+          <edgelabel>entities</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>std::list&lt; std::shared_ptr&lt; Component &gt; &gt;</label>
+      </node>
+      <node id="45">
+        <label>std::string</label>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" line="7" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h" bodystart="7" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" prot="public" virt="non-virtual"><scope>EntityManager</scope><name>Create</name></member>
+      <member refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" prot="private" virt="non-virtual"><scope>EntityManager</scope><name>entities</name></member>
+      <member refid="class_entity_manager_1ac260a0dc8d1d8e47bdf98cbc423d077f" prot="public" virt="non-virtual"><scope>EntityManager</scope><name>EntityManager</name></member>
+      <member refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" prot="private" virt="non-virtual"><scope>EntityManager</scope><name>key</name></member>
+      <member refid="class_entity_manager_1a731eae0581ef68bad2af6f154e5be1a1" prot="public" virt="non-virtual"><scope>EntityManager</scope><name>Kill</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

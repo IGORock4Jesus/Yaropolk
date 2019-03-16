@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_renderer" kind="class" prot="public">
+    <compoundname>Renderer</compoundname>
+    <includes refid="_renderer_8h" local="no">Renderer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" prot="private" static="no" mutable="no">
+        <type>LPDIRECT3D9</type>
+        <definition>LPDIRECT3D9 Renderer::direct</definition>
+        <argsstring></argsstring>
+        <name>direct</name>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" compoundref="_renderer_8cpp" startline="52" endline="59">~Renderer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_renderer_1ab3370d466852648654bd04961cc24151" prot="private" static="no" mutable="no">
+        <type>LPDIRECT3DDEVICE9</type>
+        <definition>LPDIRECT3DDEVICE9 Renderer::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_renderer_1aef80820578ba26114aaa873f92b1239d" compoundref="_renderer_8h" startline="27" endline="27">GetDevice</referencedby>
+        <referencedby refid="class_renderer_1a392a108111eb53af1369b2e4352e70f8" compoundref="_renderer_8cpp" startline="61" endline="70">Rendering</referencedby>
+        <referencedby refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" compoundref="_renderer_8cpp" startline="43" endline="50">Window_SizeChanged</referencedby>
+        <referencedby refid="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" compoundref="_renderer_8cpp" startline="52" endline="59">~Renderer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_renderer_1aee8ecc5bbc05c9296cbba4631230cd42" prot="private" static="no" mutable="no">
+        <type>D3DPRESENT_PARAMETERS</type>
+        <definition>D3DPRESENT_PARAMETERS Renderer::pp</definition>
+        <argsstring></argsstring>
+        <name>pp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="14" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_renderer_1a0c640b0ab6dd790e36b878b4c38a4da5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_event" kindref="compound">Event</ref>&lt; LPDIRECT3DDEVICE9 &gt;</type>
+        <definition>Event&lt;LPDIRECT3DDEVICE9&gt; Renderer::Drawing</definition>
+        <argsstring></argsstring>
+        <name>Drawing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="22" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_renderer_1a392a108111eb53af1369b2e4352e70f8" compoundref="_renderer_8cpp" startline="61" endline="70">Rendering</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Renderer::Window_SizeChanged</definition>
+        <argsstring>(const SIZE &amp;size)</argsstring>
+        <name>Window_SizeChanged</name>
+        <param>
+          <type>const SIZE &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="19" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp" bodystart="43" bodyend="50"/>
+        <references refid="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" compoundref="_helpers_8h" startline="7" endline="9">debug</references>
+        <references refid="class_renderer_1ab3370d466852648654bd04961cc24151" compoundref="_renderer_8h" startline="13">device</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_renderer_1a58aa858f0e14b029b3d99fc39c8c7e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Renderer::Renderer</definition>
+        <argsstring>(std::shared_ptr&lt; Window &gt; window)</argsstring>
+        <name>Renderer</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_window" kindref="compound">Window</ref> &gt;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="24" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp" bodystart="9" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Renderer::~Renderer</definition>
+        <argsstring>()</argsstring>
+        <name>~Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="25" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp" bodystart="52" bodyend="59"/>
+        <references refid="class_renderer_1ab3370d466852648654bd04961cc24151" compoundref="_renderer_8h" startline="13">device</references>
+        <references refid="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" compoundref="_renderer_8h" startline="12">direct</references>
+      </memberdef>
+      <memberdef kind="function" id="class_renderer_1aef80820578ba26114aaa873f92b1239d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>LPDIRECT3DDEVICE9</type>
+        <definition>LPDIRECT3DDEVICE9 Renderer::GetDevice</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="27" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" bodystart="27" bodyend="27"/>
+        <references refid="class_renderer_1ab3370d466852648654bd04961cc24151" compoundref="_renderer_8h" startline="13">device</references>
+      </memberdef>
+      <memberdef kind="function" id="class_renderer_1a392a108111eb53af1369b2e4352e70f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Renderer::Rendering</definition>
+        <argsstring>()</argsstring>
+        <name>Rendering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="29" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp" bodystart="61" bodyend="70"/>
+        <references refid="class_renderer_1ab3370d466852648654bd04961cc24151" compoundref="_renderer_8h" startline="13">device</references>
+        <references refid="class_renderer_1a0c640b0ab6dd790e36b878b4c38a4da5" compoundref="_renderer_8h" startline="22">Drawing</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="72">
+        <label>Renderer</label>
+        <link refid="class_renderer"/>
+        <childnode refid="73" relation="usage">
+          <edgelabel>Drawing</edgelabel>
+        </childnode>
+      </node>
+      <node id="74">
+        <label>std::list&lt; std::shared_ptr&lt; Event::Delegate &gt; &gt;</label>
+      </node>
+      <node id="73">
+        <label>Event&lt; LPDIRECT3DDEVICE9 &gt;</label>
+        <link refid="class_event"/>
+        <childnode refid="74" relation="usage">
+          <edgelabel>delegates</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h" bodystart="10" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_renderer_1ab3370d466852648654bd04961cc24151" prot="private" virt="non-virtual"><scope>Renderer</scope><name>device</name></member>
+      <member refid="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" prot="private" virt="non-virtual"><scope>Renderer</scope><name>direct</name></member>
+      <member refid="class_renderer_1a0c640b0ab6dd790e36b878b4c38a4da5" prot="public" virt="non-virtual"><scope>Renderer</scope><name>Drawing</name></member>
+      <member refid="class_renderer_1aef80820578ba26114aaa873f92b1239d" prot="public" virt="non-virtual"><scope>Renderer</scope><name>GetDevice</name></member>
+      <member refid="class_renderer_1aee8ecc5bbc05c9296cbba4631230cd42" prot="private" virt="non-virtual"><scope>Renderer</scope><name>pp</name></member>
+      <member refid="class_renderer_1a58aa858f0e14b029b3d99fc39c8c7e9f" prot="public" virt="non-virtual"><scope>Renderer</scope><name>Renderer</name></member>
+      <member refid="class_renderer_1a392a108111eb53af1369b2e4352e70f8" prot="public" virt="non-virtual"><scope>Renderer</scope><name>Rendering</name></member>
+      <member refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" prot="private" virt="non-virtual"><scope>Renderer</scope><name>Window_SizeChanged</name></member>
+      <member refid="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" prot="public" virt="non-virtual"><scope>Renderer</scope><name>~Renderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

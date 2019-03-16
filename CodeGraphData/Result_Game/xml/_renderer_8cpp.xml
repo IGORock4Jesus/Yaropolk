@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_renderer_8cpp" kind="file">
+    <compoundname>Renderer.cpp</compoundname>
+    <includes refid="_renderer_8h" local="yes">Renderer.h</includes>
+    <includes local="no">chrono</includes>
+    <includes refid="_helpers_8h" local="yes">Helpers.h</includes>
+    <incdepgraph>
+      <node id="174">
+        <label>list</label>
+      </node>
+      <node id="170">
+        <label>Renderer.h</label>
+        <link refid="_renderer_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>d3d9.h</label>
+      </node>
+      <node id="169">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp</label>
+        <link refid="Renderer.cpp"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>Windows.h</label>
+      </node>
+      <node id="180">
+        <label>string</label>
+      </node>
+      <node id="176">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>Helpers.h</label>
+        <link refid="_helpers_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>mutex</label>
+      </node>
+      <node id="178">
+        <label>chrono</label>
+      </node>
+      <node id="172">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd_1_1chrono__literals">std::chrono_literals</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_renderer_8h" kindref="compound">Renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_helpers_8h" kindref="compound">Helpers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_renderer_1a58aa858f0e14b029b3d99fc39c8c7e9f" refkind="member"><highlight class="normal"><ref refid="class_renderer_1a58aa858f0e14b029b3d99fc39c8c7e9f" kindref="member">Renderer::Renderer</ref>(std::shared_ptr&lt;Window&gt;<sp/>window)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>pp{<sp/>(UINT)window-&gt;GetClientSize().cx,<sp/>(UINT)window-&gt;GetClientSize().cy,<sp/>D3DFMT_X8R8G8B8,<sp/>1,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3DMULTISAMPLE_TYPE::D3DMULTISAMPLE_NONE,<sp/>0,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3DSWAPEFFECT_DISCARD,<sp/>window-&gt;GetHandle(),<sp/>TRUE,<sp/>TRUE,<sp/>D3DFMT_D24S8,<sp/>0,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>0<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>direct<sp/>=<sp/>Direct3DCreate9(D3D_SDK_VERSION);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>direct-&gt;CreateDevice(0,<sp/>D3DDEVTYPE_HAL,<sp/>window-&gt;GetHandle(),<sp/>D3DCREATE_HARDWARE_VERTEXPROCESSING<sp/>|<sp/>D3DCREATE_MULTITHREADED,<sp/>&amp;pp,<sp/>&amp;device);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>device-&gt;SetRenderState(D3DRS_LIGHTING,<sp/>FALSE);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;SizeChanged.Add(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" kindref="member">Renderer::Window_SizeChanged</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*enabled<sp/>=<sp/>true;</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>thread<sp/>=<sp/>std::thread(&amp;Renderer::StartRendering,<sp/>this);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>Renderer::StartRendering()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>while<sp/>(enabled)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>device-&gt;Clear(0,<sp/>nullptr,<sp/>D3DCLEAR_STENCIL<sp/>|<sp/>D3DCLEAR_ZBUFFER<sp/>|<sp/>D3DCLEAR_TARGET,<sp/>0xff222222,<sp/>1.0f,<sp/>0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>device-&gt;BeginScene();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Drawing(device);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>device-&gt;EndScene();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>device-&gt;Present(nullptr,<sp/>nullptr,<sp/>nullptr,<sp/>nullptr);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(1ms);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" kindref="member">Renderer::Window_SizeChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SIZE<sp/>&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>pp.BackBufferHeight<sp/>=<sp/>size.cy;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>pp.BackBufferWidth<sp/>=<sp/>size.cx;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>-&gt;Reset(&amp;pp);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" kindref="member">debug</ref>(</highlight><highlight class="stringliteral">&quot;Reset<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::string(result<sp/>==<sp/>S_OK<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;S_OK&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;E_FAIL&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" refkind="member"><highlight class="normal"><ref refid="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" kindref="member">Renderer::~Renderer</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*enabled<sp/>=<sp/>false;</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(thread.joinable())</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread.join();*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>)<sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>-&gt;Release();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" kindref="member">direct</ref>)<sp/><ref refid="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" kindref="member">direct</ref>-&gt;Release();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_renderer_1a392a108111eb53af1369b2e4352e70f8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_renderer_1a392a108111eb53af1369b2e4352e70f8" kindref="member">Renderer::Rendering</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>-&gt;Clear(0,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>D3DCLEAR_STENCIL<sp/>|<sp/>D3DCLEAR_ZBUFFER<sp/>|<sp/>D3DCLEAR_TARGET,<sp/>0xff222222,<sp/>1.0f,<sp/>0);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>-&gt;BeginScene();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_renderer_1a0c640b0ab6dd790e36b878b4c38a4da5" kindref="member">Drawing</ref>(<ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>-&gt;EndScene();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>-&gt;Present(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp"/>
+  </compounddef>
+</doxygen>

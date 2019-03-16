@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_entity" kind="class" prot="public" final="yes">
+    <compoundname>Entity</compoundname>
+    <includes refid="_entity_8h" local="no">Entity.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entity_1a91f8301ced2daaaed904292bd34460dd" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::shared_ptr&lt; <ref refid="struct_component" kindref="compound">Component</ref> &gt; &gt;</type>
+        <definition>std::list&lt;std::shared_ptr&lt;Component&gt; &gt; Entity::components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="16" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_entity_1afb63a7e5efbd67598dc1596ca40485a3" compoundref="_entity_8h" startline="34" endline="36">Clear</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a931b21fbdebb1a5963b4bcab5df128f5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Entity::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="17" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_entity_1ae1392290524bea9e2964e5539bf50d0f" compoundref="_entity_8h" startline="25" endline="25">GetName</referencedby>
+        <referencedby refid="class_entity_1a33013327cabcdf926b788f055d1f9962" compoundref="_entity_8h" startline="26" endline="26">SetName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1acb52e3e254e5a92aebb3c3ac35b14608" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Entity::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="18" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_entity_1a23e9f8d8a5ea4e38fa3708e06ad63eb2" compoundref="_entity_8h" startline="28" endline="28">GetId</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entity_1a588098978eea6a3486b7361605ff3f0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Entity::~Entity</definition>
+        <argsstring>()</argsstring>
+        <name>~Entity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="21" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1ae1392290524bea9e2964e5539bf50d0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string Entity::GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="25" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="25" bodyend="25"/>
+        <references refid="class_entity_1a931b21fbdebb1a5963b4bcab5df128f5" compoundref="_entity_8h" startline="17">name</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a33013327cabcdf926b788f055d1f9962" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Entity::SetName</definition>
+        <argsstring>(const std::string &amp;newName)</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="26" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="26" bodyend="26"/>
+        <references refid="class_entity_1a931b21fbdebb1a5963b4bcab5df128f5" compoundref="_entity_8h" startline="17">name</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a087828d77ebc950ee1e822c34e264740" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Entity::SetId</definition>
+        <argsstring>(size_t newId)</argsstring>
+        <name>SetId</name>
+        <param>
+          <type>size_t</type>
+          <declname>newId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="27" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="27" bodyend="27"/>
+        <referencedby refid="class_entity_manager_1ac260a0dc8d1d8e47bdf98cbc423d077f" compoundref="_entity_manager_8h" startline="12" endline="18">EntityManager&lt; N &gt;::EntityManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a23e9f8d8a5ea4e38fa3708e06ad63eb2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Entity::GetId</definition>
+        <argsstring>() const </argsstring>
+        <name>GetId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="28" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="28" bodyend="28"/>
+        <references refid="class_entity_1acb52e3e254e5a92aebb3c3ac35b14608" compoundref="_entity_8h" startline="18">id</references>
+        <referencedby refid="class_entity_manager_1a731eae0581ef68bad2af6f154e5be1a1" compoundref="_entity_manager_8h" startline="32" endline="34">EntityManager&lt; N &gt;::Kill</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a601971a04d7e0565d33c529469b45529" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Entity::Update</definition>
+        <argsstring>(float time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="30" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1afb70264d812c74cfea6c493887225dc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Entity::Render</definition>
+        <argsstring>(LPDIRECT3DDEVICE9 device)</argsstring>
+        <name>Render</name>
+        <param>
+          <type>LPDIRECT3DDEVICE9</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="31" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1afb63a7e5efbd67598dc1596ca40485a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Entity::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="34" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="34" bodyend="36"/>
+        <references refid="class_entity_1a91f8301ced2daaaed904292bd34460dd" compoundref="_entity_8h" startline="16">components</references>
+        <referencedby refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" compoundref="_entity_manager_8h" startline="19" endline="31">EntityManager&lt; N &gt;::Create</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a2ec2e6d3925c24709419a2ac3531fec9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Entity::Add</definition>
+        <argsstring>(T &amp;t)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="38" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Entity.h" bodystart="12" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_entity_1a2ec2e6d3925c24709419a2ac3531fec9" prot="public" virt="non-virtual"><scope>Entity</scope><name>Add</name></member>
+      <member refid="class_entity_1afb63a7e5efbd67598dc1596ca40485a3" prot="public" virt="non-virtual"><scope>Entity</scope><name>Clear</name></member>
+      <member refid="class_entity_1a91f8301ced2daaaed904292bd34460dd" prot="private" virt="non-virtual"><scope>Entity</scope><name>components</name></member>
+      <member refid="class_entity_1a23e9f8d8a5ea4e38fa3708e06ad63eb2" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetId</name></member>
+      <member refid="class_entity_1ae1392290524bea9e2964e5539bf50d0f" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetName</name></member>
+      <member refid="class_entity_1acb52e3e254e5a92aebb3c3ac35b14608" prot="private" virt="non-virtual"><scope>Entity</scope><name>id</name></member>
+      <member refid="class_entity_1a931b21fbdebb1a5963b4bcab5df128f5" prot="private" virt="non-virtual"><scope>Entity</scope><name>name</name></member>
+      <member refid="class_entity_1afb70264d812c74cfea6c493887225dc5" prot="public" virt="virtual"><scope>Entity</scope><name>Render</name></member>
+      <member refid="class_entity_1a087828d77ebc950ee1e822c34e264740" prot="public" virt="non-virtual"><scope>Entity</scope><name>SetId</name></member>
+      <member refid="class_entity_1a33013327cabcdf926b788f055d1f9962" prot="public" virt="non-virtual"><scope>Entity</scope><name>SetName</name></member>
+      <member refid="class_entity_1a601971a04d7e0565d33c529469b45529" prot="public" virt="virtual"><scope>Entity</scope><name>Update</name></member>
+      <member refid="class_entity_1a588098978eea6a3486b7361605ff3f0f" prot="public" virt="virtual"><scope>Entity</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

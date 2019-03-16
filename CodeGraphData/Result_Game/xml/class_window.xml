@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_window" kind="class" prot="public">
+    <compoundname>Window</compoundname>
+    <includes refid="_window_8h" local="no">Window.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" prot="private" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND Window::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="9" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_window_1a41fc57b5a30702c44bfa9a2651d58a68" compoundref="_window_8h" startline="21" endline="25">GetClientSize</referencedby>
+        <referencedby refid="class_window_1a1c8e6d6cf07921ebcc220d0db8db0151" compoundref="_window_8h" startline="20" endline="20">GetHandle</referencedby>
+        <referencedby refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" compoundref="_window_8cpp" startline="32" endline="45">Window</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_window_1ae0309d305aec1685c90593c0c436bd60" prot="private" static="no" mutable="no">
+        <type>LPCSTR</type>
+        <definition>LPCSTR Window::windowClass</definition>
+        <argsstring></argsstring>
+        <name>windowClass</name>
+        <initializer>= &quot;YAROPOLK WINDOW&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" compoundref="_window_8cpp" startline="32" endline="45">Window</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_window_1ae55bb664a06a5650f58e5f32cdebaa9d" prot="public" static="no" mutable="no">
+        <type><ref refid="class_event" kindref="compound">Event</ref>&lt; const SIZE &amp; &gt;</type>
+        <definition>Event&lt;const SIZE&amp;&gt; Window::SizeChanged</definition>
+        <argsstring></argsstring>
+        <name>SizeChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="15" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_window_1a687ab67895229a57f4e6cd960b6a9980" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>LRESULT Window::WndProc</definition>
+        <argsstring>(HWND h, UINT m, WPARAM w, LPARAM l)</argsstring>
+        <name>WndProc</name>
+        <param>
+          <type>HWND</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp" bodystart="4" bodyend="30"/>
+        <referencedby refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" compoundref="_window_8cpp" startline="32" endline="45">Window</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_window_1a80845916e0cddaad5bb39af1f943a6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Window::Window</definition>
+        <argsstring>(HINSTANCE hinstance)</argsstring>
+        <name>Window</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hinstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="17" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp" bodystart="32" bodyend="45"/>
+        <references refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" compoundref="_window_8h" startline="9">handle</references>
+        <references refid="class_window_1ae0309d305aec1685c90593c0c436bd60" compoundref="_window_8h" startline="10">windowClass</references>
+        <references refid="class_window_1a687ab67895229a57f4e6cd960b6a9980" compoundref="_window_8cpp" startline="4" endline="30">WndProc</references>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a245d821e6016fa1f6970ccbbedd635f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="18" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a1c8e6d6cf07921ebcc220d0db8db0151" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND Window::GetHandle</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="20" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" bodystart="20" bodyend="20"/>
+        <references refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" compoundref="_window_8h" startline="9">handle</references>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a41fc57b5a30702c44bfa9a2651d58a68" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>SIZE</type>
+        <definition>SIZE Window::GetClientSize</definition>
+        <argsstring>() const </argsstring>
+        <name>GetClientSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="21" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" bodystart="21" bodyend="25"/>
+        <references refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" compoundref="_window_8h" startline="9">handle</references>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a58915fca89baca53cb010a499b7b5845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Window::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="27" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp" bodystart="51" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="52">
+        <label>Window</label>
+        <link refid="class_window"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>SizeChanged</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Event&lt; const SIZE &amp; &gt;</label>
+        <link refid="class_event"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" line="8" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_window_1a41fc57b5a30702c44bfa9a2651d58a68" prot="public" virt="non-virtual"><scope>Window</scope><name>GetClientSize</name></member>
+      <member refid="class_window_1a1c8e6d6cf07921ebcc220d0db8db0151" prot="public" virt="non-virtual"><scope>Window</scope><name>GetHandle</name></member>
+      <member refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" prot="private" virt="non-virtual"><scope>Window</scope><name>handle</name></member>
+      <member refid="class_window_1ae55bb664a06a5650f58e5f32cdebaa9d" prot="public" virt="non-virtual"><scope>Window</scope><name>SizeChanged</name></member>
+      <member refid="class_window_1a58915fca89baca53cb010a499b7b5845" prot="public" virt="non-virtual"><scope>Window</scope><name>Update</name></member>
+      <member refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" prot="public" virt="non-virtual"><scope>Window</scope><name>Window</name></member>
+      <member refid="class_window_1ae0309d305aec1685c90593c0c436bd60" prot="private" virt="non-virtual"><scope>Window</scope><name>windowClass</name></member>
+      <member refid="class_window_1a687ab67895229a57f4e6cd960b6a9980" prot="private" virt="non-virtual"><scope>Window</scope><name>WndProc</name></member>
+      <member refid="class_window_1a245d821e6016fa1f6970ccbbedd635f6" prot="public" virt="non-virtual"><scope>Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

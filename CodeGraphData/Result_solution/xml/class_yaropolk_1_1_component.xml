@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_component" kind="class" prot="package">
+    <compoundname>Yaropolk::Component</compoundname>
+    <derivedcompoundref refid="class_yaropolk_1_1_terrain" prot="public" virt="non-virtual">Yaropolk.Terrain</derivedcompoundref>
+    <derivedcompoundref refid="class_yaropolk_1_1_terrain_mesh" prot="public" virt="non-virtual">Yaropolk.TerrainMesh</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_yaropolk_1_1_component_1a666bfc61146704d9d37409d72e73626e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_yaropolk_1_1_game_object" kindref="compound">GameObject</ref></type>
+        <definition>GameObject Yaropolk.Component.GameObject</definition>
+        <argsstring></argsstring>
+        <name>GameObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" line="5" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_component_1afd3bd050ebc55898cbbdc81f1243377a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yaropolk.Component.Initialize</definition>
+        <argsstring>(GameObject gameObject)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type><ref refid="class_yaropolk_1_1_game_object" kindref="compound">GameObject</ref></type>
+          <declname>gameObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" line="7" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" bodystart="7" bodyend="11"/>
+        <references refid="class_yaropolk_1_1_component_1a70ae8747300acdfddf170b62e9803475" compoundref="_component_8cs" startline="13" endline="13">Yaropolk.Component.OnInitialize</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_component_1a70ae8747300acdfddf170b62e9803475" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Yaropolk.Component.OnInitialize</definition>
+        <argsstring>()</argsstring>
+        <name>OnInitialize</name>
+        <reimplementedby refid="class_yaropolk_1_1_terrain_mesh_1aea071dc5c57edc40dd1fda30e1188512">OnInitialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" bodystart="13" bodyend="13"/>
+        <referencedby refid="class_yaropolk_1_1_component_1afd3bd050ebc55898cbbdc81f1243377a" compoundref="_component_8cs" startline="7" endline="11">Yaropolk.Component.Initialize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>Yaropolk.Terrain</label>
+        <link refid="class_yaropolk_1_1_terrain"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Yaropolk.TerrainMesh</label>
+        <link refid="class_yaropolk_1_1_terrain_mesh"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Yaropolk.Component</label>
+        <link refid="class_yaropolk_1_1_component"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" line="4" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" bodystart="3" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_component_1a666bfc61146704d9d37409d72e73626e" prot="public" virt="non-virtual"><scope>Yaropolk::Component</scope><name>GameObject</name></member>
+      <member refid="class_yaropolk_1_1_component_1afd3bd050ebc55898cbbdc81f1243377a" prot="package" virt="non-virtual"><scope>Yaropolk::Component</scope><name>Initialize</name></member>
+      <member refid="class_yaropolk_1_1_component_1a70ae8747300acdfddf170b62e9803475" prot="protected" virt="virtual"><scope>Yaropolk::Component</scope><name>OnInitialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_scene" kind="class" prot="public">
+    <compoundname>Scene</compoundname>
+    <includes refid="_scene_8h" local="no">Scene.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_scene_1ac286689d69fe6b2c724b14b13b457c72" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::shared_ptr&lt; <ref refid="class_entity" kindref="compound">Entity</ref> &gt; &gt;</type>
+        <definition>std::list&lt;std::shared_ptr&lt;Entity&gt; &gt; Scene::objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_scene_1a41552804b8adda18a470ba592abdcb93" compoundref="_scene_8cpp" startline="19" endline="24">Render</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scene_1a41552804b8adda18a470ba592abdcb93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scene::Render</definition>
+        <argsstring>(LPDIRECT3DDEVICE9 device)</argsstring>
+        <name>Render</name>
+        <param>
+          <type>LPDIRECT3DDEVICE9</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" line="14" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.cpp" bodystart="19" bodyend="24"/>
+        <references refid="class_scene_1ac286689d69fe6b2c724b14b13b457c72" compoundref="_scene_8h" startline="12">objects</references>
+        <referencedby refid="class_scene_1a849da354bf908be1c981f72c706eb812" compoundref="_scene_8cpp" startline="5" endline="8">Scene</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scene_1a849da354bf908be1c981f72c706eb812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Scene::Scene</definition>
+        <argsstring>(std::shared_ptr&lt; Renderer &gt; renderer)</argsstring>
+        <name>Scene</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_renderer" kindref="compound">Renderer</ref> &gt;</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" line="16" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.cpp" bodystart="5" bodyend="8"/>
+        <references refid="class_scene_1a41552804b8adda18a470ba592abdcb93" compoundref="_scene_8cpp" startline="19" endline="24">Render</references>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_1a3b8cec2e32546713915f8c6303c951f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Scene::~Scene</definition>
+        <argsstring>()</argsstring>
+        <name>~Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" line="17" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_1a343137f60488d3034225942fa610692d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scene::Update</definition>
+        <argsstring>(float time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" line="19" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="86">
+        <label>Scene</label>
+        <link refid="class_scene"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>objects</edgelabel>
+        </childnode>
+      </node>
+      <node id="87">
+        <label>std::list&lt; std::shared_ptr&lt; Entity &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_scene_1ac286689d69fe6b2c724b14b13b457c72" prot="private" virt="non-virtual"><scope>Scene</scope><name>objects</name></member>
+      <member refid="class_scene_1a41552804b8adda18a470ba592abdcb93" prot="private" virt="non-virtual"><scope>Scene</scope><name>Render</name></member>
+      <member refid="class_scene_1a849da354bf908be1c981f72c706eb812" prot="public" virt="non-virtual"><scope>Scene</scope><name>Scene</name></member>
+      <member refid="class_scene_1a343137f60488d3034225942fa610692d" prot="public" virt="non-virtual"><scope>Scene</scope><name>Update</name></member>
+      <member refid="class_scene_1a3b8cec2e32546713915f8c6303c951f1" prot="public" virt="non-virtual"><scope>Scene</scope><name>~Scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

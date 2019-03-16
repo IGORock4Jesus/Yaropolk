@@ -2,7 +2,7 @@
 
 #include "Component.h"
 
-class Citadel : public BaseComponent<Citadel>
+class Citadel : public Component
 {
 public:
 	Citadel();

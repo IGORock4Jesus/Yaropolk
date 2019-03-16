@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_microsoft_1_1_visual_studio_1_1_cpp_unit_test_framework" kind="namespace">
+    <compoundname>Microsoft::VisualStudio::CppUnitTestFramework</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/GameTests/EcsTests.cpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

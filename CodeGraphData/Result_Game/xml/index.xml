@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_application" kind="class"><name>Application</name>
+    <member refid="class_application_1a5c32c7a5ff830265658c9d375a1349b7" kind="variable"><name>hinstance</name></member>
+    <member refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" kind="variable"><name>window</name></member>
+    <member refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" kind="variable"><name>renderer</name></member>
+    <member refid="class_application_1a367176d499386eeb4b126edcb1ab163e" kind="variable"><name>scene</name></member>
+    <member refid="class_application_1a3726b7d01bd468f74cb3471200fb3631" kind="variable"><name>systemManager</name></member>
+    <member refid="class_application_1ac6bf1d332f0c1e4b2262325b52bb4db9" kind="function"><name>Application</name></member>
+    <member refid="class_application_1a748bca84fefb9c12661cfaa2f623748d" kind="function"><name>~Application</name></member>
+    <member refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="class_box_mesh" kind="class"><name>BoxMesh</name>
+    <member refid="class_box_mesh_1a81a144c4c85b1bed622e029c444c83f1" kind="variable"><name>size</name></member>
+    <member refid="class_box_mesh_1a6626c75dd43a617a05eeb9b66ac02a21" kind="function"><name>BoxMesh</name></member>
+    <member refid="class_box_mesh_1adcdbf8e806d2ddb6e2eeb7aa2240f46d" kind="function"><name>~BoxMesh</name></member>
+  </compound>
+  <compound refid="class_citadel" kind="class"><name>Citadel</name>
+    <member refid="class_citadel_1a0358f042041b96c813ce77949d7485fb" kind="function"><name>Citadel</name></member>
+    <member refid="class_citadel_1a4e199d24a6286f984ff2d200ac790d1f" kind="function"><name>~Citadel</name></member>
+  </compound>
+  <compound refid="struct_event_1_1_class_delegate" kind="struct"><name>Event::ClassDelegate</name>
+    <member refid="struct_event_1_1_class_delegate_1a32204562ffac68885a3f793873496957" kind="variable"><name>object</name></member>
+    <member refid="struct_event_1_1_class_delegate_1a17bf012367bc46de1f21860606a7f93d" kind="variable"><name>method</name></member>
+    <member refid="struct_event_1_1_class_delegate_1a566c8823b6d216809870b4e6e1c65848" kind="function"><name>ClassDelegate</name></member>
+    <member refid="struct_event_1_1_class_delegate_1ab099a373ed0a1c2c5da88fbfe14b215a" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="struct_component" kind="struct"><name>Component</name>
+    <member refid="struct_component_1a3ff413493cfa8df9cd576811bc00c70f" kind="variable"><name>object</name></member>
+  </compound>
+  <compound refid="struct_event_1_1_delegate" kind="struct"><name>Event::Delegate</name>
+    <member refid="struct_event_1_1_delegate_1af7cde847142d45f1394783cd1c373ff1" kind="variable"><name>type</name></member>
+    <member refid="struct_event_1_1_delegate_1af8ae2c15318a71e99a84efcf8af7492c" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_entity" kind="class"><name>Entity</name>
+    <member refid="class_entity_1a91f8301ced2daaaed904292bd34460dd" kind="variable"><name>components</name></member>
+    <member refid="class_entity_1a931b21fbdebb1a5963b4bcab5df128f5" kind="variable"><name>name</name></member>
+    <member refid="class_entity_1acb52e3e254e5a92aebb3c3ac35b14608" kind="variable"><name>id</name></member>
+    <member refid="class_entity_1a588098978eea6a3486b7361605ff3f0f" kind="function"><name>~Entity</name></member>
+    <member refid="class_entity_1ae1392290524bea9e2964e5539bf50d0f" kind="function"><name>GetName</name></member>
+    <member refid="class_entity_1a33013327cabcdf926b788f055d1f9962" kind="function"><name>SetName</name></member>
+    <member refid="class_entity_1a087828d77ebc950ee1e822c34e264740" kind="function"><name>SetId</name></member>
+    <member refid="class_entity_1a23e9f8d8a5ea4e38fa3708e06ad63eb2" kind="function"><name>GetId</name></member>
+    <member refid="class_entity_1a601971a04d7e0565d33c529469b45529" kind="function"><name>Update</name></member>
+    <member refid="class_entity_1afb70264d812c74cfea6c493887225dc5" kind="function"><name>Render</name></member>
+    <member refid="class_entity_1afb63a7e5efbd67598dc1596ca40485a3" kind="function"><name>Clear</name></member>
+    <member refid="class_entity_1a2ec2e6d3925c24709419a2ac3531fec9" kind="function"><name>Add</name></member>
+  </compound>
+  <compound refid="class_entity_manager" kind="class"><name>EntityManager</name>
+    <member refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" kind="variable"><name>entities</name></member>
+    <member refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" kind="variable"><name>key</name></member>
+    <member refid="class_entity_manager_1ac260a0dc8d1d8e47bdf98cbc423d077f" kind="function"><name>EntityManager</name></member>
+    <member refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" kind="function"><name>Create</name></member>
+    <member refid="class_entity_manager_1a731eae0581ef68bad2af6f154e5be1a1" kind="function"><name>Kill</name></member>
+  </compound>
+  <compound refid="class_event" kind="class"><name>Event</name>
+    <member refid="class_event_1a2abf13b5be49315e9e362af02029f058" kind="enum"><name>Type</name></member>
+    <member refid="class_event_1a2abf13b5be49315e9e362af02029f058a9bd81329febf6efe22788e03ddeaf0af" kind="enumvalue"><name>Class</name></member>
+    <member refid="class_event_1a2abf13b5be49315e9e362af02029f058a84a8921b25f505d0d2077aeb5db4bc16" kind="enumvalue"><name>Static</name></member>
+    <member refid="class_event_1a1308756c856608e53f278477f533b11f" kind="variable"><name>delegates</name></member>
+    <member refid="class_event_1af032add04cd263310b8f4fdc7917e905" kind="variable"><name>mutex</name></member>
+    <member refid="class_event_1afa2b3ae4c8069e46995d3ff3e2cd7f95" kind="function"><name>Add</name></member>
+    <member refid="class_event_1a46b924f493c3e3c9623af5cb18eab45e" kind="function"><name>Add</name></member>
+    <member refid="class_event_1a300e57cfd82b58bf5bc12ace80332609" kind="function"><name>Remove</name></member>
+    <member refid="class_event_1a8ebd42a3e8dc3460b396e85bf167fe4a" kind="function"><name>Remove</name></member>
+    <member refid="class_event_1ad364177983ccded67925beacea26757a" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structnot__found" kind="struct"><name>not_found</name>
+    <member refid="structnot__found_1a8d8f0331dd122caead1f1e4066253f62" kind="function"><name>not_found</name></member>
+  </compound>
+  <compound refid="class_renderer" kind="class"><name>Renderer</name>
+    <member refid="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" kind="variable"><name>direct</name></member>
+    <member refid="class_renderer_1ab3370d466852648654bd04961cc24151" kind="variable"><name>device</name></member>
+    <member refid="class_renderer_1aee8ecc5bbc05c9296cbba4631230cd42" kind="variable"><name>pp</name></member>
+    <member refid="class_renderer_1a0c640b0ab6dd790e36b878b4c38a4da5" kind="variable"><name>Drawing</name></member>
+    <member refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" kind="function"><name>Window_SizeChanged</name></member>
+    <member refid="class_renderer_1a58aa858f0e14b029b3d99fc39c8c7e9f" kind="function"><name>Renderer</name></member>
+    <member refid="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" kind="function"><name>~Renderer</name></member>
+    <member refid="class_renderer_1aef80820578ba26114aaa873f92b1239d" kind="function"><name>GetDevice</name></member>
+    <member refid="class_renderer_1a392a108111eb53af1369b2e4352e70f8" kind="function"><name>Rendering</name></member>
+  </compound>
+  <compound refid="class_scene" kind="class"><name>Scene</name>
+    <member refid="class_scene_1ac286689d69fe6b2c724b14b13b457c72" kind="variable"><name>objects</name></member>
+    <member refid="class_scene_1a41552804b8adda18a470ba592abdcb93" kind="function"><name>Render</name></member>
+    <member refid="class_scene_1a849da354bf908be1c981f72c706eb812" kind="function"><name>Scene</name></member>
+    <member refid="class_scene_1a3b8cec2e32546713915f8c6303c951f1" kind="function"><name>~Scene</name></member>
+    <member refid="class_scene_1a343137f60488d3034225942fa610692d" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="struct_event_1_1_static_delegate" kind="struct"><name>Event::StaticDelegate</name>
+    <member refid="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" kind="variable"><name>func</name></member>
+    <member refid="struct_event_1_1_static_delegate_1ae3164aabd02193cc7b78659c2cf404d1" kind="function"><name>StaticDelegate</name></member>
+    <member refid="struct_event_1_1_static_delegate_1a81c1b8d44a43aa2afcc5750c5abb9b10" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_system" kind="class"><name>System</name>
+    <member refid="class_system_1a2fc0f34023977cab9b628aa9f734d88c" kind="function"><name>~System</name></member>
+  </compound>
+  <compound refid="class_system_manager" kind="class"><name>SystemManager</name>
+    <member refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" kind="variable"><name>systems</name></member>
+    <member refid="class_system_manager_1a2d33389ddfd81097d3eb86129d2c993d" kind="function"><name>SystemManager</name></member>
+    <member refid="class_system_manager_1adfdbb4ab16f173f092bd10b13e994842" kind="function"><name>Get</name></member>
+  </compound>
+  <compound refid="struct_transform" kind="struct"><name>Transform</name>
+    <member refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" kind="variable"><name>position</name></member>
+    <member refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" kind="variable"><name>scale</name></member>
+    <member refid="struct_transform_1a235262a09827add902533ff64e50b6b2" kind="variable"><name>rotation</name></member>
+    <member refid="struct_transform_1aa08ca4266efabc768973cdeea51945ab" kind="function"><name>Transform</name></member>
+    <member refid="struct_transform_1a8eb8d9c5237353a09bae82fd50ddda59" kind="function"><name>operator const D3DXMATRIX &amp;</name></member>
+  </compound>
+  <compound refid="class_window" kind="class"><name>Window</name>
+    <member refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" kind="variable"><name>handle</name></member>
+    <member refid="class_window_1ae0309d305aec1685c90593c0c436bd60" kind="variable"><name>windowClass</name></member>
+    <member refid="class_window_1ae55bb664a06a5650f58e5f32cdebaa9d" kind="variable"><name>SizeChanged</name></member>
+    <member refid="class_window_1a687ab67895229a57f4e6cd960b6a9980" kind="function"><name>WndProc</name></member>
+    <member refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" kind="function"><name>Window</name></member>
+    <member refid="class_window_1a245d821e6016fa1f6970ccbbedd635f6" kind="function"><name>~Window</name></member>
+    <member refid="class_window_1a1c8e6d6cf07921ebcc220d0db8db0151" kind="function"><name>GetHandle</name></member>
+    <member refid="class_window_1a41fc57b5a30702c44bfa9a2651d58a68" kind="function"><name>GetClientSize</name></member>
+    <member refid="class_window_1a58915fca89baca53cb010a499b7b5845" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="namespacestd_1_1chrono__literals" kind="namespace"><name>std::chrono_literals</name>
+  </compound>
+  <compound refid="_application_8cpp" kind="file"><name>Application.cpp</name>
+    <member refid="_application_8cpp_1a22f0f0a8d30a1e1036435f6d6466f467" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="_application_8h" kind="file"><name>Application.h</name>
+  </compound>
+  <compound refid="_box_mesh_8cpp" kind="file"><name>BoxMesh.cpp</name>
+  </compound>
+  <compound refid="_box_mesh_8h" kind="file"><name>BoxMesh.h</name>
+  </compound>
+  <compound refid="_citadel_8cpp" kind="file"><name>Citadel.cpp</name>
+  </compound>
+  <compound refid="_citadel_8h" kind="file"><name>Citadel.h</name>
+  </compound>
+  <compound refid="_component_8h" kind="file"><name>Component.h</name>
+  </compound>
+  <compound refid="_entity_8h" kind="file"><name>Entity.h</name>
+    <member refid="_entity_8h_1aa51f8f8360ef0ad2f47be638c5af547b" kind="variable"><name>MAX_COMPONENTS</name></member>
+  </compound>
+  <compound refid="_entity_manager_8h" kind="file"><name>EntityManager.h</name>
+  </compound>
+  <compound refid="_entry_point_8cpp" kind="file"><name>EntryPoint.cpp</name>
+    <member refid="_entry_point_8cpp_1aacaf19ac846b4fc77cc338c5a60907dd" kind="function"><name>WinMain</name></member>
+  </compound>
+  <compound refid="_event_8h" kind="file"><name>Event.h</name>
+  </compound>
+  <compound refid="_game_8cpp" kind="file"><name>Game.cpp</name>
+    <member refid="_game_8cpp_1a2b68559d692760680c326428841254d1" kind="define"><name>MAX_LOADSTRING</name></member>
+    <member refid="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" kind="variable"><name>hInst</name></member>
+    <member refid="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" kind="variable"><name>szTitle</name></member>
+    <member refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" kind="variable"><name>szWindowClass</name></member>
+    <member refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" kind="function"><name>MyRegisterClass</name></member>
+    <member refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" kind="function"><name>InitInstance</name></member>
+    <member refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" kind="function"><name>WndProc</name></member>
+    <member refid="_game_8cpp_1a5873af2ee357a48c39cdd824f51c1c9c" kind="function"><name>About</name></member>
+    <member refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" kind="function"><name>wWinMain</name></member>
+  </compound>
+  <compound refid="_game_8h" kind="file"><name>Game.h</name>
+  </compound>
+  <compound refid="header_8h" kind="file"><name>header.h</name>
+    <member refid="header_8h_1ac7bef5d85e3dcd73eef56ad39ffc84a9" kind="define"><name>WIN32_LEAN_AND_MEAN</name></member>
+  </compound>
+  <compound refid="_helpers_8h" kind="file"><name>Helpers.h</name>
+    <member refid="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" kind="function"><name>debug</name></member>
+  </compound>
+  <compound refid="_renderer_8cpp" kind="file"><name>Renderer.cpp</name>
+  </compound>
+  <compound refid="_renderer_8h" kind="file"><name>Renderer.h</name>
+  </compound>
+  <compound refid="_resource_8h" kind="file"><name>Resource.h</name>
+    <member refid="_resource_8h_1a636c9aea2a8d16b73e43df39b3e0e7bd" kind="define"><name>IDS_APP_TITLE</name></member>
+    <member refid="_resource_8h_1a9772c84d39896ad00b9aeb34b15d324d" kind="define"><name>IDR_MAINFRAME</name></member>
+    <member refid="_resource_8h_1aa974c4cf2a84d50c7fac53504aa934e9" kind="define"><name>IDD_GAME_DIALOG</name></member>
+    <member refid="_resource_8h_1a77a06326b569136edbb6c766bc98c33c" kind="define"><name>IDD_ABOUTBOX</name></member>
+    <member refid="_resource_8h_1a589e0105bc3e8681893dbf51210ceeec" kind="define"><name>IDM_ABOUT</name></member>
+    <member refid="_resource_8h_1a79aeed168a959b22b32169e25f8c1f4d" kind="define"><name>IDM_EXIT</name></member>
+    <member refid="_resource_8h_1abf4da31825fb2f3e2d1645b4c38e3f44" kind="define"><name>IDI_GAME</name></member>
+    <member refid="_resource_8h_1a861a8cb71616b4615a5823bcf4bff6e3" kind="define"><name>IDI_SMALL</name></member>
+    <member refid="_resource_8h_1a2bba3be7fb1e66473d88b6a3624ab0a9" kind="define"><name>IDC_GAME</name></member>
+    <member refid="_resource_8h_1abb326bd165140b31acf04b893ef655ca" kind="define"><name>IDC_MYICON</name></member>
+    <member refid="_resource_8h_1ac93033490bc8943cfc82ec3b40e5cd74" kind="define"><name>IDC_STATIC</name></member>
+  </compound>
+  <compound refid="_scene_8cpp" kind="file"><name>Scene.cpp</name>
+  </compound>
+  <compound refid="_scene_8h" kind="file"><name>Scene.h</name>
+  </compound>
+  <compound refid="_system_8h" kind="file"><name>System.h</name>
+  </compound>
+  <compound refid="_system_manager_8h" kind="file"><name>SystemManager.h</name>
+    <member refid="_system_manager_8h_1a1f6a66c2cd455ab2585331fee56d29c6" kind="variable"><name>SYSTEM_COUNT</name></member>
+  </compound>
+  <compound refid="targetver_8h" kind="file"><name>targetver.h</name>
+  </compound>
+  <compound refid="_transform_8h" kind="file"><name>Transform.h</name>
+  </compound>
+  <compound refid="_vertex_8h" kind="file"><name>Vertex.h</name>
+  </compound>
+  <compound refid="_window_8cpp" kind="file"><name>Window.cpp</name>
+  </compound>
+  <compound refid="_window_8h" kind="file"><name>Window.h</name>
+  </compound>
+  <compound refid="dir_31059516c74acec96613626ef7aefcf7" kind="dir"><name>C:/Users/Admin</name>
+  </compound>
+  <compound refid="dir_c698344618dee657b8da3c969d508535" kind="dir"><name>C:/Users/Admin/source/repos/Yaropolk/Game</name>
+  </compound>
+  <compound refid="dir_2d907e3df8f1f129c968a4bbe0d6f0ed" kind="dir"><name>C:/Users/Admin/source/repos</name>
+  </compound>
+  <compound refid="dir_1e35749b3777f4627c9712b80a6fc010" kind="dir"><name>C:/Users/Admin/source</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+  <compound refid="dir_735a9c0b663a66d394f3d1fac56a7d70" kind="dir"><name>C:/Users/Admin/source/repos/Yaropolk</name>
+  </compound>
+</doxygenindex>

@@ -1,37 +1,30 @@
 #pragma once
 
+#include <memory>
 #include <string>
+#include "Event.h"
+
 
 class Entity;
-using ComponentID = size_t;
 
-struct Component {
-	ComponentID id;
-	Entity* object;
+class Component {
+	friend Entity;
 
+	Entity* entity{ nullptr };
+	bool enabled{ false };
+
+	/*void Initialize(Entity *entity) {
+		this->entity = entity;
+		enabled = true;
+
+		Created(this, entity);
+	}*/
 public:
-	Component(ComponentID id)
-		: id{ id } {}
-};
+	Event<const Component*, const Entity*> Created;
 
-namespace ecs {
-	inline ComponentID GetUniqueComponentID() {
-		static ComponentID id{ (ComponentID)0 };
-		return id++;
-	}
-	template <typename T>
-	inline ComponentID GetComponentID() {
-		static ComponentID id = GetUniqueComponentID();
-		return id;
-	}
-}
 
-template <typename T>
-struct BaseComponent : Component
-{
-	BaseComponent()
-		: Component(ecs::GetComponentID<T>())
-	{
+	virtual ~Component() {}
 
-	}
+	void SetEnabled(bool value) { enabled = value; }
+	bool GetEnabled() const { return enabled; }
 };

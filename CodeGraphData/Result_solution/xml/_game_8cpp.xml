@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_game_8cpp" kind="file">
+    <compoundname>Game.cpp</compoundname>
+    <includes refid="header_8h" local="yes">header.h</includes>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <incdepgraph>
+      <node id="144">
+        <label>targetver.h</label>
+        <link refid="targetver_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>windows.h</label>
+      </node>
+      <node id="147">
+        <label>stdlib.h</label>
+      </node>
+      <node id="145">
+        <label>SDKDDKVer.h</label>
+      </node>
+      <node id="143">
+        <label>header.h</label>
+        <link refid="header_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>malloc.h</label>
+      </node>
+      <node id="149">
+        <label>memory.h</label>
+      </node>
+      <node id="150">
+        <label>tchar.h</label>
+      </node>
+      <node id="151">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp</label>
+        <link refid="Game.cpp"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>resource.h</label>
+        <link refid="_resource_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_game_8cpp_1a2b68559d692760680c326428841254d1" prot="public" static="no">
+        <name>MAX_LOADSTRING</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="7" column="9" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" compoundref="_game_8cpp" startline="20" endline="56">wWinMain</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" prot="public" static="no" mutable="no">
+        <type>HINSTANCE</type>
+        <definition>HINSTANCE hInst</definition>
+        <argsstring></argsstring>
+        <name>hInst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" compoundref="_game_8cpp" startline="96" endline="112">InitInstance</referencedby>
+        <referencedby refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" compoundref="_game_8cpp" startline="124" endline="160">WndProc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" prot="public" static="no" mutable="no">
+        <type>WCHAR</type>
+        <definition>WCHAR szTitle[MAX_LOADSTRING]</definition>
+        <argsstring>[MAX_LOADSTRING]</argsstring>
+        <name>szTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" compoundref="_game_8cpp" startline="96" endline="112">InitInstance</referencedby>
+        <referencedby refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" compoundref="_game_8cpp" startline="20" endline="56">wWinMain</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" prot="public" static="no" mutable="no">
+        <type>WCHAR</type>
+        <definition>WCHAR szWindowClass[MAX_LOADSTRING]</definition>
+        <argsstring>[MAX_LOADSTRING]</argsstring>
+        <name>szWindowClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" compoundref="_game_8cpp" startline="96" endline="112">InitInstance</referencedby>
+        <referencedby refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" compoundref="_game_8cpp" startline="65" endline="84">MyRegisterClass</referencedby>
+        <referencedby refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" compoundref="_game_8cpp" startline="20" endline="56">wWinMain</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ATOM</type>
+        <definition>ATOM MyRegisterClass</definition>
+        <argsstring>(HINSTANCE hInstance)</argsstring>
+        <name>MyRegisterClass</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="15" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="65" bodyend="84"/>
+        <references refid="_resource_8h_1a2bba3be7fb1e66473d88b6a3624ab0a9" compoundref="_resource_8h" startline="14">IDC_GAME</references>
+        <references refid="_resource_8h_1abf4da31825fb2f3e2d1645b4c38e3f44" compoundref="_resource_8h" startline="12">IDI_GAME</references>
+        <references refid="_resource_8h_1a861a8cb71616b4615a5823bcf4bff6e3" compoundref="_resource_8h" startline="13">IDI_SMALL</references>
+        <references refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" compoundref="_game_8cpp" startline="12">szWindowClass</references>
+        <references refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" compoundref="_game_8cpp" startline="124" endline="160">WndProc</references>
+        <referencedby refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" compoundref="_game_8cpp" startline="20" endline="56">wWinMain</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL InitInstance</definition>
+        <argsstring>(HINSTANCE, int)</argsstring>
+        <name>InitInstance</name>
+        <param>
+          <type>HINSTANCE</type>
+          <defname>hInstance</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nCmdShow</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="16" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="96" bodyend="112"/>
+        <references refid="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" compoundref="_game_8cpp" startline="10">hInst</references>
+        <references refid="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" compoundref="_game_8cpp" startline="11">szTitle</references>
+        <references refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" compoundref="_game_8cpp" startline="12">szWindowClass</references>
+        <referencedby refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" compoundref="_game_8cpp" startline="20" endline="56">wWinMain</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>LRESULT CALLBACK WndProc</definition>
+        <argsstring>(HWND, UINT, WPARAM, LPARAM)</argsstring>
+        <name>WndProc</name>
+        <param>
+          <type>HWND</type>
+          <defname>hWnd</defname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <defname>wParam</defname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <defname>lParam</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="17" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="124" bodyend="160"/>
+        <references refid="_game_8cpp_1a5873af2ee357a48c39cdd824f51c1c9c" compoundref="_game_8cpp" startline="163" endline="180">About</references>
+        <references refid="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" compoundref="_game_8cpp" startline="10">hInst</references>
+        <references refid="_resource_8h_1a77a06326b569136edbb6c766bc98c33c" compoundref="_resource_8h" startline="9">IDD_ABOUTBOX</references>
+        <references refid="_resource_8h_1a589e0105bc3e8681893dbf51210ceeec" compoundref="_resource_8h" startline="10">IDM_ABOUT</references>
+        <references refid="_resource_8h_1a79aeed168a959b22b32169e25f8c1f4d" compoundref="_resource_8h" startline="11">IDM_EXIT</references>
+        <referencedby refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" compoundref="_game_8cpp" startline="65" endline="84">MyRegisterClass</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_game_8cpp_1a5873af2ee357a48c39cdd824f51c1c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INT_PTR CALLBACK</type>
+        <definition>INT_PTR CALLBACK About</definition>
+        <argsstring>(HWND, UINT, WPARAM, LPARAM)</argsstring>
+        <name>About</name>
+        <param>
+          <type>HWND</type>
+          <defname>hDlg</defname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <defname>wParam</defname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <defname>lParam</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="18" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="163" bodyend="180"/>
+        <referencedby refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" compoundref="_game_8cpp" startline="124" endline="160">WndProc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int APIENTRY</type>
+        <definition>int APIENTRY wWinMain</definition>
+        <argsstring>(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow)</argsstring>
+        <name>wWinMain</name>
+        <param>
+          <type>_In_ HINSTANCE</type>
+          <declname>hInstance</declname>
+        </param>
+        <param>
+          <type>_In_opt_ HINSTANCE</type>
+          <declname>hPrevInstance</declname>
+        </param>
+        <param>
+          <type>_In_ LPWSTR</type>
+          <declname>lpCmdLine</declname>
+        </param>
+        <param>
+          <type>_In_ int</type>
+          <declname>nCmdShow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" line="20" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp" bodystart="20" bodyend="56"/>
+        <references refid="_resource_8h_1a2bba3be7fb1e66473d88b6a3624ab0a9" compoundref="_resource_8h" startline="14">IDC_GAME</references>
+        <references refid="_resource_8h_1a636c9aea2a8d16b73e43df39b3e0e7bd" compoundref="_resource_8h" startline="5">IDS_APP_TITLE</references>
+        <references refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" compoundref="_game_8cpp" startline="96" endline="112">InitInstance</references>
+        <references refid="_game_8cpp_1a2b68559d692760680c326428841254d1" compoundref="_game_8cpp" startline="7">MAX_LOADSTRING</references>
+        <references refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" compoundref="_game_8cpp" startline="65" endline="84">MyRegisterClass</references>
+        <references refid="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" compoundref="_game_8cpp" startline="11">szTitle</references>
+        <references refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" compoundref="_game_8cpp" startline="12">szWindowClass</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Game.cpp<sp/>:<sp/>Определяет<sp/>точку<sp/>входа<sp/>для<sp/>приложения.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="header_8h" kindref="compound">header.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_game_8cpp_1a2b68559d692760680c326428841254d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_LOADSTRING<sp/>100</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Глобальные<sp/>переменные:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" refkind="member"><highlight class="normal">HINSTANCE<sp/><ref refid="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" kindref="member">hInst</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>текущий<sp/>экземпляр</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" refkind="member"><highlight class="normal">WCHAR<sp/><ref refid="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" kindref="member">szTitle</ref>[<ref refid="_game_8cpp_1a2b68559d692760680c326428841254d1" kindref="member">MAX_LOADSTRING</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Текст<sp/>строки<sp/>заголовка</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" refkind="member"><highlight class="normal">WCHAR<sp/><ref refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" kindref="member">szWindowClass</ref>[<ref refid="_game_8cpp_1a2b68559d692760680c326428841254d1" kindref="member">MAX_LOADSTRING</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>имя<sp/>класса<sp/>главного<sp/>окна</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Отправить<sp/>объявления<sp/>функций,<sp/>включенных<sp/>в<sp/>этот<sp/>модуль<sp/>кода:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">ATOM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" kindref="member">MyRegisterClass</ref>(HINSTANCE<sp/>hInstance);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" kindref="member">InitInstance</ref>(HINSTANCE,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">LRESULT<sp/>CALLBACK<sp/><sp/><sp/><sp/><ref refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" kindref="member">WndProc</ref>(HWND,<sp/>UINT,<sp/>WPARAM,<sp/>LPARAM);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">INT_PTR<sp/>CALLBACK<sp/><sp/><sp/><sp/><ref refid="_game_8cpp_1a5873af2ee357a48c39cdd824f51c1c9c" kindref="member">About</ref>(HWND,<sp/>UINT,<sp/>WPARAM,<sp/>LPARAM);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>APIENTRY<sp/><ref refid="_game_8cpp_1a1e683c5a19c00d05cd803e46b805e339" kindref="member">wWinMain</ref>(_In_<sp/>HINSTANCE<sp/>hInstance,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_opt_<sp/>HINSTANCE<sp/>hPrevInstance,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>LPWSTR<sp/><sp/><sp/><sp/>lpCmdLine,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nCmdShow)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>UNREFERENCED_PARAMETER(hPrevInstance);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>UNREFERENCED_PARAMETER(lpCmdLine);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Разместите<sp/>код<sp/>здесь.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Инициализация<sp/>глобальных<sp/>строк</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LoadStringW(hInstance,<sp/><ref refid="_resource_8h_1a636c9aea2a8d16b73e43df39b3e0e7bd" kindref="member">IDS_APP_TITLE</ref>,<sp/><ref refid="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" kindref="member">szTitle</ref>,<sp/><ref refid="_game_8cpp_1a2b68559d692760680c326428841254d1" kindref="member">MAX_LOADSTRING</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>LoadStringW(hInstance,<sp/><ref refid="_resource_8h_1a2bba3be7fb1e66473d88b6a3624ab0a9" kindref="member">IDC_GAME</ref>,<sp/><ref refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" kindref="member">szWindowClass</ref>,<sp/><ref refid="_game_8cpp_1a2b68559d692760680c326428841254d1" kindref="member">MAX_LOADSTRING</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" kindref="member">MyRegisterClass</ref>(hInstance);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Выполнить<sp/>инициализацию<sp/>приложения:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" kindref="member">InitInstance</ref><sp/>(hInstance,<sp/>nCmdShow))</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>HACCEL<sp/>hAccelTable<sp/>=<sp/>LoadAccelerators(hInstance,<sp/>MAKEINTRESOURCE(<ref refid="_resource_8h_1a2bba3be7fb1e66473d88b6a3624ab0a9" kindref="member">IDC_GAME</ref>));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>MSG<sp/>msg;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Цикл<sp/>основного<sp/>сообщения:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(GetMessage(&amp;msg,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0,<sp/>0))</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!TranslateAccelerator(msg.hwnd,<sp/>hAccelTable,<sp/>&amp;msg))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TranslateMessage(&amp;msg);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DispatchMessage(&amp;msg);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>msg.wParam;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ФУНКЦИЯ:<sp/>MyRegisterClass()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ЦЕЛЬ:<sp/>Регистрирует<sp/>класс<sp/>окна.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" refkind="member"><highlight class="normal">ATOM<sp/><ref refid="_game_8cpp_1aa0d0c9beb94350f8eac8fc4026a65375" kindref="member">MyRegisterClass</ref>(HINSTANCE<sp/>hInstance)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>WNDCLASSEXW<sp/>wcex;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.cbSize<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(WNDCLASSEX);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.style<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>CS_HREDRAW<sp/>|<sp/>CS_VREDRAW;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.lpfnWndProc<sp/><sp/><sp/><sp/>=<sp/><ref refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" kindref="member">WndProc</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.cbClsExtra<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.cbWndExtra<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.hInstance<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>hInstance;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.hIcon<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LoadIcon(hInstance,<sp/>MAKEINTRESOURCE(<ref refid="_resource_8h_1abf4da31825fb2f3e2d1645b4c38e3f44" kindref="member">IDI_GAME</ref>));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.hCursor<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LoadCursor(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>IDC_ARROW);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.hbrBackground<sp/><sp/>=<sp/>(HBRUSH)(COLOR_WINDOW+1);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.lpszMenuName<sp/><sp/><sp/>=<sp/>MAKEINTRESOURCEW(<ref refid="_resource_8h_1a2bba3be7fb1e66473d88b6a3624ab0a9" kindref="member">IDC_GAME</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.lpszClassName<sp/><sp/>=<sp/><ref refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" kindref="member">szWindowClass</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>wcex.hIconSm<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LoadIcon(wcex.hInstance,<sp/>MAKEINTRESOURCE(<ref refid="_resource_8h_1a861a8cb71616b4615a5823bcf4bff6e3" kindref="member">IDI_SMALL</ref>));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RegisterClassExW(&amp;wcex);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ФУНКЦИЯ:<sp/>InitInstance(HINSTANCE,<sp/>int)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ЦЕЛЬ:<sp/>Сохраняет<sp/>маркер<sp/>экземпляра<sp/>и<sp/>создает<sp/>главное<sp/>окно</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>КОММЕНТАРИИ:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>В<sp/>этой<sp/>функции<sp/>маркер<sp/>экземпляра<sp/>сохраняется<sp/>в<sp/>глобальной<sp/>переменной,<sp/>а<sp/>также</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>создается<sp/>и<sp/>выводится<sp/>главное<sp/>окно<sp/>программы.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" refkind="member"><highlight class="normal">BOOL<sp/><ref refid="_game_8cpp_1a5f77d4e3e5569ff9d236463fd80ebe28" kindref="member">InitInstance</ref>(HINSTANCE<sp/>hInstance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nCmdShow)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><ref refid="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" kindref="member">hInst</ref><sp/>=<sp/>hInstance;<sp/></highlight><highlight class="comment">//<sp/>Сохранить<sp/>маркер<sp/>экземпляра<sp/>в<sp/>глобальной<sp/>переменной</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/>HWND<sp/>hWnd<sp/>=<sp/>CreateWindowW(<ref refid="_game_8cpp_1ac849efb3cbdf5831b7046d4d7214a704" kindref="member">szWindowClass</ref>,<sp/><ref refid="_game_8cpp_1adee9884b69dfd657d7bca6a047f122cb" kindref="member">szTitle</ref>,<sp/>WS_OVERLAPPEDWINDOW,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CW_USEDEFAULT,<sp/>0,<sp/>CW_USEDEFAULT,<sp/>0,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>hInstance,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hWnd)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/>ShowWindow(hWnd,<sp/>nCmdShow);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/>UpdateWindow(hWnd);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ФУНКЦИЯ:<sp/>WndProc(HWND,<sp/>UINT,<sp/>WPARAM,<sp/>LPARAM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ЦЕЛЬ:<sp/>Обрабатывает<sp/>сообщения<sp/>в<sp/>главном<sp/>окне.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>WM_COMMAND<sp/><sp/>-<sp/>обработать<sp/>меню<sp/>приложения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>WM_PAINT<sp/><sp/><sp/><sp/>-<sp/>Отрисовка<sp/>главного<sp/>окна</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>WM_DESTROY<sp/><sp/>-<sp/>отправить<sp/>сообщение<sp/>о<sp/>выходе<sp/>и<sp/>вернуться</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" refkind="member"><highlight class="normal">LRESULT<sp/>CALLBACK<sp/><ref refid="_game_8cpp_1a9135ea2a0d6fce68ba3b858226a31a4f" kindref="member">WndProc</ref>(HWND<sp/>hWnd,<sp/>UINT<sp/>message,<sp/>WPARAM<sp/>wParam,<sp/>LPARAM<sp/>lParam)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(message)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_COMMAND:</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wmId<sp/>=<sp/>LOWORD(wParam);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Разобрать<sp/>выбор<sp/>в<sp/>меню:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(wmId)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_resource_8h_1a589e0105bc3e8681893dbf51210ceeec" kindref="member">IDM_ABOUT</ref>:</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DialogBox(<ref refid="_game_8cpp_1a44f41244c97693b2fbd5244bcb1e86ec" kindref="member">hInst</ref>,<sp/>MAKEINTRESOURCE(<ref refid="_resource_8h_1a77a06326b569136edbb6c766bc98c33c" kindref="member">IDD_ABOUTBOX</ref>),<sp/>hWnd,<sp/><ref refid="_game_8cpp_1a5873af2ee357a48c39cdd824f51c1c9c" kindref="member">About</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_resource_8h_1a79aeed168a959b22b32169e25f8c1f4d" kindref="member">IDM_EXIT</ref>:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DestroyWindow(hWnd);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DefWindowProc(hWnd,<sp/>message,<sp/>wParam,<sp/>lParam);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_PAINT:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PAINTSTRUCT<sp/>ps;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HDC<sp/>hdc<sp/>=<sp/>BeginPaint(hWnd,<sp/>&amp;ps);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Добавьте<sp/>сюда<sp/>любой<sp/>код<sp/>прорисовки,<sp/>использующий<sp/>HDC...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndPaint(hWnd,<sp/>&amp;ps);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_DESTROY:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PostQuitMessage(0);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DefWindowProc(hWnd,<sp/>message,<sp/>wParam,<sp/>lParam);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Обработчик<sp/>сообщений<sp/>для<sp/>окна<sp/>&quot;О<sp/>программе&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="_game_8cpp_1a5873af2ee357a48c39cdd824f51c1c9c" refkind="member"><highlight class="normal">INT_PTR<sp/>CALLBACK<sp/><ref refid="_game_8cpp_1a5873af2ee357a48c39cdd824f51c1c9c" kindref="member">About</ref>(HWND<sp/>hDlg,<sp/>UINT<sp/>message,<sp/>WPARAM<sp/>wParam,<sp/>LPARAM<sp/>lParam)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>UNREFERENCED_PARAMETER(lParam);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(message)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_INITDIALOG:</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(INT_PTR)TRUE;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_COMMAND:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LOWORD(wParam)<sp/>==<sp/>IDOK<sp/>||<sp/>LOWORD(wParam)<sp/>==<sp/>IDCANCEL)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndDialog(hDlg,<sp/>LOWORD(wParam));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(INT_PTR)TRUE;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(INT_PTR)FALSE;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_yaropolk" kind="namespace">
+    <compoundname>Yaropolk</compoundname>
+    <innerclass refid="class_yaropolk_1_1_component" prot="package">Yaropolk::Component</innerclass>
+    <innerclass refid="class_yaropolk_1_1_component_manager" prot="public">Yaropolk::ComponentManager</innerclass>
+    <innerclass refid="class_yaropolk_1_1_form1" prot="public">Yaropolk::Form1</innerclass>
+    <innerclass refid="class_yaropolk_1_1_game_object" prot="public">Yaropolk::GameObject</innerclass>
+    <innerclass refid="interface_yaropolk_1_1_i_drawable" prot="public">Yaropolk::IDrawable</innerclass>
+    <innerclass refid="class_yaropolk_1_1_program" prot="public">Yaropolk::Program</innerclass>
+    <innerclass refid="class_yaropolk_1_1_renderer" prot="public">Yaropolk::Renderer</innerclass>
+    <innerclass refid="class_yaropolk_1_1_require_component_attribute" prot="package">Yaropolk::RequireComponentAttribute</innerclass>
+    <innerclass refid="class_yaropolk_1_1_scene" prot="public">Yaropolk::Scene</innerclass>
+    <innerclass refid="class_yaropolk_1_1_system_manager" prot="public">Yaropolk::SystemManager</innerclass>
+    <innerclass refid="class_yaropolk_1_1_terrain" prot="public">Yaropolk::Terrain</innerclass>
+    <innerclass refid="class_yaropolk_1_1_terrain_manager" prot="public">Yaropolk::TerrainManager</innerclass>
+    <innerclass refid="class_yaropolk_1_1_terrain_mesh" prot="public">Yaropolk::TerrainMesh</innerclass>
+    <innerclass refid="class_yaropolk_1_1_terrain_mesh_manager" prot="public">Yaropolk::TerrainMeshManager</innerclass>
+    <innerclass refid="struct_yaropolk_1_1_vertex" prot="public">Yaropolk::Vertex</innerclass>
+    <innernamespace refid="namespace_yaropolk_1_1_properties">Yaropolk::Properties</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Component.cs" line="2" column="1"/>
+  </compounddef>
+</doxygen>

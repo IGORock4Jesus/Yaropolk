@@ -7,7 +7,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace GameTests
 {
-	TEST_CLASS(EntitManagerTests)
+	TEST_CLASS(EntityManagerTests)
 	{
 	public:
 

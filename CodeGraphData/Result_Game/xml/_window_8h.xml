@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_window_8h" kind="file">
+    <compoundname>Window.h</compoundname>
+    <includes local="no">Windows.h</includes>
+    <includes refid="_event_8h" local="yes">Event.h</includes>
+    <includedby refid="_application_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</includedby>
+    <includedby refid="_renderer_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h</includedby>
+    <includedby refid="_window_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp</includedby>
+    <incdepgraph>
+      <node id="280">
+        <label>list</label>
+      </node>
+      <node id="278">
+        <label>Windows.h</label>
+      </node>
+      <node id="277">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Window.h</label>
+        <link refid="Window.h"/>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>mutex</label>
+      </node>
+      <node id="281">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="287">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h</label>
+        <link refid="_renderer_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp</label>
+        <link refid="_renderer_8cpp"/>
+      </node>
+      <node id="285">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</label>
+        <link refid="_application_8cpp"/>
+      </node>
+      <node id="283">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Window.h</label>
+        <link refid="Window.h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp</label>
+        <link refid="_entry_point_8cpp"/>
+      </node>
+      <node id="289">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="291">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp</label>
+        <link refid="_window_8cpp"/>
+      </node>
+      <node id="284">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_window" prot="public">Window</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_event_8h" kindref="compound">Event.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_window" kindref="compound">Window</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_window_1ae0309d305aec1685c90593c0c436bd60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LPCSTR<sp/><ref refid="class_window_1ae0309d305aec1685c90593c0c436bd60" kindref="member">windowClass</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;YAROPOLK<sp/>WINDOW&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>LRESULT<sp/>CALLBACK<sp/><ref refid="class_window_1a687ab67895229a57f4e6cd960b6a9980" kindref="member">WndProc</ref>(HWND<sp/>h,<sp/>UINT<sp/>m,<sp/>WPARAM<sp/>w,<sp/>LPARAM<sp/>l);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="class_window_1ae55bb664a06a5650f58e5f32cdebaa9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_event" kindref="compound">Event&lt;const SIZE&amp;&gt;</ref><sp/><ref refid="class_window_1ae55bb664a06a5650f58e5f32cdebaa9d" kindref="member">SizeChanged</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" kindref="member">Window</ref>(HINSTANCE<sp/>hinstance);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_window_1a245d821e6016fa1f6970ccbbedd635f6" kindref="member">~Window</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_window_1a1c8e6d6cf07921ebcc220d0db8db0151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="class_window_1a1c8e6d6cf07921ebcc220d0db8db0151" kindref="member">GetHandle</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" kindref="member">handle</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="21" refid="class_window_1a41fc57b5a30702c44bfa9a2651d58a68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SIZE<sp/><ref refid="class_window_1a41fc57b5a30702c44bfa9a2651d58a68" kindref="member">GetClientSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RECT<sp/>r;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetClientRect(<ref refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" kindref="member">handle</ref>,<sp/>&amp;r);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>r.right<sp/>-<sp/>r.left,r.bottom<sp/>-<sp/>r.top<sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_window_1a58915fca89baca53cb010a499b7b5845" kindref="member">Update</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.h"/>
+  </compounddef>
+</doxygen>

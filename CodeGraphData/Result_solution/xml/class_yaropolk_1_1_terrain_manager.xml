@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_terrain_manager" kind="class" prot="public">
+    <compoundname>Yaropolk::TerrainManager</compoundname>
+    <basecompoundref refid="class_yaropolk_1_1_component_manager" prot="public" virt="non-virtual">Yaropolk.ComponentManager</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_manager_1a7c0cacd7bc30d5c600ea0c92ee473e96" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_yaropolk_1_1_terrain" kindref="compound">Terrain</ref> &gt;</type>
+        <definition>List&lt;Terrain&gt; Yaropolk.TerrainManager.terrains</definition>
+        <argsstring></argsstring>
+        <name>terrains</name>
+        <initializer>= new List&lt;<ref refid="class_yaropolk_1_1_terrain" kindref="compound">Terrain</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="31" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_manager_1af41f924dd4e42d08c2f8bb0bb26e8eaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_yaropolk_1_1_terrain" kindref="compound">Terrain</ref></type>
+        <definition>Terrain Yaropolk.TerrainManager.Create</definition>
+        <argsstring>(GameObject gameObject, int width, int height, string filename)</argsstring>
+        <name>Create</name>
+        <param>
+          <type><ref refid="class_yaropolk_1_1_game_object" kindref="compound">GameObject</ref></type>
+          <declname>gameObject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="33" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="33" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="109">
+        <label>Yaropolk.TerrainManager</label>
+        <link refid="class_yaropolk_1_1_terrain_manager"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>ComponentManager</label>
+        <link refid="class_yaropolk_1_1_component_manager"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="111">
+        <label>Yaropolk.TerrainManager</label>
+        <link refid="class_yaropolk_1_1_terrain_manager"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>ComponentManager</label>
+        <link refid="class_yaropolk_1_1_component_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="30" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="29" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_terrain_manager_1af41f924dd4e42d08c2f8bb0bb26e8eaf" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainManager</scope><name>Create</name></member>
+      <member refid="class_yaropolk_1_1_terrain_manager_1a7c0cacd7bc30d5c600ea0c92ee473e96" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainManager</scope><name>terrains</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

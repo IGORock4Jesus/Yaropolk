@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_helpers_8h" kind="file">
+    <compoundname>Helpers.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">Windows.h</includes>
+    <includedby refid="_application_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</includedby>
+    <includedby refid="_renderer_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp</includedby>
+    <incdepgraph>
+      <node id="165">
+        <label>Windows.h</label>
+      </node>
+      <node id="164">
+        <label>string</label>
+      </node>
+      <node id="163">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Helpers.h</label>
+        <link refid="Helpers.h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="168">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp</label>
+        <link refid="_renderer_8cpp"/>
+      </node>
+      <node id="167">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</label>
+        <link refid="_application_8cpp"/>
+      </node>
+      <node id="166">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Helpers.h</label>
+        <link refid="Helpers.h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void debug</definition>
+        <argsstring>(std::string s)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Helpers.h" line="7" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Helpers.h" bodystart="7" bodyend="9"/>
+        <referencedby refid="_application_8cpp_1a22f0f0a8d30a1e1036435f6d6466f467" compoundref="_application_8cpp" startline="11" endline="13">test</referencedby>
+        <referencedby refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" compoundref="_renderer_8cpp" startline="43" endline="50">Renderer::Window_SizeChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_helpers_8h_1a09c816343cae97afcef797bc10a75b11" kindref="member">debug</ref>(std::string<sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>OutputDebugString((s<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">).c_str());</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Helpers.h"/>
+  </compounddef>
+</doxygen>

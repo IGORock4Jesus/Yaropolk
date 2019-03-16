@@ -3,6 +3,7 @@
 #include <bitset>
 #include <array>
 #include <memory>
+#include <list>
 #include <d3d9.h>
 #include "Component.h"
 
@@ -10,8 +11,9 @@ constexpr size_t MAX_COMPONENTS = 32;
 
 class Entity final
 {
-	std::bitset<MAX_COMPONENTS> key;
-	std::array<Component*, MAX_COMPONENTS> components;
+	/*std::bitset<MAX_COMPONENTS> key;
+	std::array<Component*, MAX_COMPONENTS> components;*/
+	std::list<std::shared_ptr<Component>> components;
 	std::string name;
 	size_t id;
 
@@ -30,12 +32,14 @@ public:
 
 #pragma region ECS
 	void Clear() {
-		key.reset();
+		components.clear();
 	}
 	template <typename T>
-	void Add(T& t) {
+	void Add(T component) {
 		static_assert(std::is_base_of_v<Component, T>, "The T must be inheritance of the Component.");
 		
+		components.push_back(component);
+		component->Initialize(this);
 	}
 #pragma endregion
 

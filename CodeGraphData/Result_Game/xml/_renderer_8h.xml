@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_renderer_8h" kind="file">
+    <compoundname>Renderer.h</compoundname>
+    <includes local="no">d3d9.h</includes>
+    <includes local="no">memory</includes>
+    <includes refid="_event_8h" local="yes">Event.h</includes>
+    <includes refid="_window_8h" local="yes">Window.h</includes>
+    <includedby refid="_application_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</includedby>
+    <includedby refid="_scene_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h</includedby>
+    <includedby refid="_renderer_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp</includedby>
+    <incdepgraph>
+      <node id="186">
+        <label>list</label>
+      </node>
+      <node id="182">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h</label>
+        <link refid="Renderer.h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>d3d9.h</label>
+      </node>
+      <node id="189">
+        <label>Windows.h</label>
+      </node>
+      <node id="188">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>mutex</label>
+      </node>
+      <node id="184">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="190">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h</label>
+        <link refid="Renderer.h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.cpp</label>
+        <link refid="_renderer_8cpp"/>
+      </node>
+      <node id="192">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</label>
+        <link refid="_application_8cpp"/>
+      </node>
+      <node id="193">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp</label>
+        <link refid="_entry_point_8cpp"/>
+      </node>
+      <node id="195">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="191">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_renderer" prot="public">Renderer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d9.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_event_8h" kindref="compound">Event.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_window_8h" kindref="compound">Window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_renderer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_renderer" kindref="compound">Renderer</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LPDIRECT3D9<sp/><ref refid="class_renderer_1a30292b4482b4d9c3af7cf8c922931687" kindref="member">direct</ref>{<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="13" refid="class_renderer_1ab3370d466852648654bd04961cc24151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LPDIRECT3DDEVICE9<sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>{<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="14" refid="class_renderer_1aee8ecc5bbc05c9296cbba4631230cd42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3DPRESENT_PARAMETERS<sp/><ref refid="class_renderer_1aee8ecc5bbc05c9296cbba4631230cd42" kindref="member">pp</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*bool<sp/>enabled{<sp/>false<sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>std::thread<sp/>thread;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>StartRendering();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_renderer_1a49b9a1ba8a866ae3b3aec8791245f679" kindref="member">Window_SizeChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SIZE&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_renderer_1a0c640b0ab6dd790e36b878b4c38a4da5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_event" kindref="compound">Event&lt;LPDIRECT3DDEVICE9&gt;</ref><sp/><ref refid="class_renderer_1a0c640b0ab6dd790e36b878b4c38a4da5" kindref="member">Drawing</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_renderer_1a58aa858f0e14b029b3d99fc39c8c7e9f" kindref="member">Renderer</ref>(std::shared_ptr&lt;Window&gt;<sp/>window);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_renderer_1afeee408862d5bd6255a6882d47e6d5cd" kindref="member">~Renderer</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_renderer_1aef80820578ba26114aaa873f92b1239d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LPDIRECT3DDEVICE9<sp/><ref refid="class_renderer_1aef80820578ba26114aaa873f92b1239d" kindref="member">GetDevice</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_renderer_1ab3370d466852648654bd04961cc24151" kindref="member">device</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_renderer_1a392a108111eb53af1369b2e4352e70f8" kindref="member">Rendering</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Renderer.h"/>
+  </compounddef>
+</doxygen>

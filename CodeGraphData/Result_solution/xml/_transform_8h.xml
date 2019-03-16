@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_transform_8h" kind="file">
+    <compoundname>Transform.h</compoundname>
+    <includes local="no">d3dx9.h</includes>
+    <includes refid="_component_8h" local="yes">Component.h</includes>
+    <incdepgraph>
+      <node id="278">
+        <label>d3dx9.h</label>
+      </node>
+      <node id="280">
+        <label>string</label>
+      </node>
+      <node id="277">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h</label>
+        <link refid="Transform.h"/>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_transform" prot="public">Transform</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3dx9.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_component_8h" kindref="compound">Component.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="struct_transform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_transform" kindref="compound">Transform</ref><sp/>:<sp/><ref refid="struct_component" kindref="compound">Component</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3DXVECTOR3<sp/><ref refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" kindref="member">position</ref>{<sp/>0.0f,<sp/>0.0f,<sp/>0.0f<sp/>};</highlight></codeline>
+<codeline lineno="10" refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3DXVECTOR3<sp/><ref refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" kindref="member">scale</ref>{<sp/>1.0f,<sp/>1.0f,<sp/>1.0f<sp/>};</highlight></codeline>
+<codeline lineno="11" refid="struct_transform_1a235262a09827add902533ff64e50b6b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3DXQUATERNION<sp/><ref refid="struct_transform_1a235262a09827add902533ff64e50b6b2" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="struct_transform_1aa08ca4266efabc768973cdeea51945ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_transform_1aa08ca4266efabc768973cdeea51945ab" kindref="member">Transform</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3DXQuaternionIdentity(&amp;<ref refid="struct_transform_1a235262a09827add902533ff64e50b6b2" kindref="member">rotation</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="struct_transform_1a8eb8d9c5237353a09bae82fd50ddda59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>D3DXMATRIX<sp/>&amp;()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3DXMATRIX<sp/>t,<sp/>r,<sp/>s;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3DXMatrixTranslation(&amp;t,<sp/><ref refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" kindref="member">position</ref>.x,<sp/><ref refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" kindref="member">position</ref>.y,<sp/><ref refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" kindref="member">position</ref>.z);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3DXMatrixScaling(&amp;s,<sp/><ref refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" kindref="member">scale</ref>.x,<sp/><ref refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" kindref="member">scale</ref>.y,<sp/><ref refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" kindref="member">scale</ref>.z);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3DXMatrixRotationQuaternion(&amp;r,<sp/>&amp;<ref refid="struct_transform_1a235262a09827add902533ff64e50b6b2" kindref="member">rotation</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s<sp/>*<sp/>r<sp/>*<sp/>t;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h"/>
+  </compounddef>
+</doxygen>

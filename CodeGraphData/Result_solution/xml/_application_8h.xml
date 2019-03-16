@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_application_8h" kind="file">
+    <compoundname>Application.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes refid="_window_8h" local="yes">Window.h</includes>
+    <includes refid="_renderer_8h" local="yes">Renderer.h</includes>
+    <includes refid="_scene_8h" local="yes">Scene.h</includes>
+    <includes refid="_system_manager_8h" local="yes">SystemManager.h</includes>
+    <includedby refid="_application_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</includedby>
+    <includedby refid="_entry_point_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>list</label>
+      </node>
+      <node id="29">
+        <label>Renderer.h</label>
+        <link refid="_renderer_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>d3d9.h</label>
+      </node>
+      <node id="25">
+        <label>Windows.h</label>
+      </node>
+      <node id="36">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>System.h</label>
+        <link refid="_system_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>exception</label>
+      </node>
+      <node id="32">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>bitset</label>
+      </node>
+      <node id="38">
+        <label>vector</label>
+      </node>
+      <node id="34">
+        <label>array</label>
+      </node>
+      <node id="26">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</label>
+        <link refid="Application.h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>mutex</label>
+      </node>
+      <node id="35">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>SystemManager.h</label>
+        <link refid="_system_manager_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="42">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</label>
+        <link refid="_application_8cpp"/>
+      </node>
+      <node id="43">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp</label>
+        <link refid="_entry_point_8cpp"/>
+      </node>
+      <node id="41">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</label>
+        <link refid="Application.h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_application" prot="public">Application</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_window_8h" kindref="compound">Window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_renderer_8h" kindref="compound">Renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_scene_8h" kindref="compound">Scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_system_manager_8h" kindref="compound">SystemManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_application" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="class_application_1a5c32c7a5ff830265658c9d375a1349b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HINSTANCE<sp/><ref refid="class_application_1a5c32c7a5ff830265658c9d375a1349b7" kindref="member">hinstance</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Window&gt;<sp/><ref refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" kindref="member">window</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Renderer&gt;<sp/><ref refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" kindref="member">renderer</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_application_1a367176d499386eeb4b126edcb1ab163e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Scene&gt;<sp/><ref refid="class_application_1a367176d499386eeb4b126edcb1ab163e" kindref="member">scene</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_application_1a3726b7d01bd468f74cb3471200fb3631" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;SystemManager&gt;<sp/><ref refid="class_application_1a3726b7d01bd468f74cb3471200fb3631" kindref="member">systemManager</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_application_1ac6bf1d332f0c1e4b2262325b52bb4db9" kindref="member">Application</ref>(HINSTANCE<sp/><ref refid="class_application_1a5c32c7a5ff830265658c9d375a1349b7" kindref="member">hinstance</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_application_1a748bca84fefb9c12661cfaa2f623748d" kindref="member">~Application</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" kindref="member">Run</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h"/>
+  </compounddef>
+</doxygen>

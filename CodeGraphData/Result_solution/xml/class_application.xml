@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_application" kind="class" prot="public">
+    <compoundname>Application</compoundname>
+    <includes refid="_application_8h" local="no">Application.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_application_1a5c32c7a5ff830265658c9d375a1349b7" prot="private" static="no" mutable="no">
+        <type>HINSTANCE</type>
+        <definition>HINSTANCE Application::hinstance</definition>
+        <argsstring></argsstring>
+        <name>hinstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1a57870aab70ae3b39e62f3c9ed6054325" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="class_window" kindref="compound">Window</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Window&gt; Application::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" compoundref="_application_8cpp" startline="33" endline="47">Run</referencedby>
+        <referencedby refid="class_application_1a748bca84fefb9c12661cfaa2f623748d" compoundref="_application_8cpp" startline="27" endline="31">~Application</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1ab5fede6da1a96772840f6d0486e0754b" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="class_renderer" kindref="compound">Renderer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Renderer&gt; Application::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="14" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" compoundref="_application_8cpp" startline="33" endline="47">Run</referencedby>
+        <referencedby refid="class_application_1a748bca84fefb9c12661cfaa2f623748d" compoundref="_application_8cpp" startline="27" endline="31">~Application</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1a367176d499386eeb4b126edcb1ab163e" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="class_scene" kindref="compound">Scene</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Scene&gt; Application::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="15" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" compoundref="_application_8cpp" startline="33" endline="47">Run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1a3726b7d01bd468f74cb3471200fb3631" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="class_system_manager" kindref="compound">SystemManager</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;SystemManager&gt; Application::systemManager</definition>
+        <argsstring></argsstring>
+        <name>systemManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="16" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1ac6bf1d332f0c1e4b2262325b52bb4db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::Application</definition>
+        <argsstring>(HINSTANCE hinstance)</argsstring>
+        <name>Application</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hinstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="19" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp" bodystart="15" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1a748bca84fefb9c12661cfaa2f623748d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Application::~Application</definition>
+        <argsstring>()</argsstring>
+        <name>~Application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="20" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp" bodystart="27" bodyend="31"/>
+        <references refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" compoundref="_application_8h" startline="14">renderer</references>
+        <references refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" compoundref="_application_8h" startline="13">window</references>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1a02799e64b246a6b6b8fa58477882a4be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Application::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="22" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp" bodystart="33" bodyend="47"/>
+        <references refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" compoundref="_application_8h" startline="14">renderer</references>
+        <references refid="class_application_1a367176d499386eeb4b126edcb1ab163e" compoundref="_application_8h" startline="15">scene</references>
+        <references refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" compoundref="_application_8h" startline="13">window</references>
+        <referencedby refid="_entry_point_8cpp_1aacaf19ac846b4fc77cc338c5a60907dd" compoundref="_entry_point_8cpp" startline="5" endline="9">WinMain</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Application.h" bodystart="10" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_application_1ac6bf1d332f0c1e4b2262325b52bb4db9" prot="public" virt="non-virtual"><scope>Application</scope><name>Application</name></member>
+      <member refid="class_application_1a5c32c7a5ff830265658c9d375a1349b7" prot="private" virt="non-virtual"><scope>Application</scope><name>hinstance</name></member>
+      <member refid="class_application_1ab5fede6da1a96772840f6d0486e0754b" prot="private" virt="non-virtual"><scope>Application</scope><name>renderer</name></member>
+      <member refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" prot="public" virt="non-virtual"><scope>Application</scope><name>Run</name></member>
+      <member refid="class_application_1a367176d499386eeb4b126edcb1ab163e" prot="private" virt="non-virtual"><scope>Application</scope><name>scene</name></member>
+      <member refid="class_application_1a3726b7d01bd468f74cb3471200fb3631" prot="private" virt="non-virtual"><scope>Application</scope><name>systemManager</name></member>
+      <member refid="class_application_1a57870aab70ae3b39e62f3c9ed6054325" prot="private" virt="non-virtual"><scope>Application</scope><name>window</name></member>
+      <member refid="class_application_1a748bca84fefb9c12661cfaa2f623748d" prot="public" virt="virtual"><scope>Application</scope><name>~Application</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

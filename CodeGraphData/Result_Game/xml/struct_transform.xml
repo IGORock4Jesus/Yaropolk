@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_transform" kind="struct" prot="public">
+    <compoundname>Transform</compoundname>
+    <basecompoundref refid="struct_component" prot="public" virt="non-virtual">Component</basecompoundref>
+    <includes refid="_transform_8h" local="no">Transform.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" prot="public" static="no" mutable="no">
+        <type>D3DXVECTOR3</type>
+        <definition>D3DXVECTOR3 Transform::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <initializer>{ 0.0f, 0.0f, 0.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" line="9" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="struct_transform_1a8eb8d9c5237353a09bae82fd50ddda59" compoundref="_transform_8h" startline="18" endline="24">operator const D3DXMATRIX &amp;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" prot="public" static="no" mutable="no">
+        <type>D3DXVECTOR3</type>
+        <definition>D3DXVECTOR3 Transform::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <initializer>{ 1.0f, 1.0f, 1.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="struct_transform_1a8eb8d9c5237353a09bae82fd50ddda59" compoundref="_transform_8h" startline="18" endline="24">operator const D3DXMATRIX &amp;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_transform_1a235262a09827add902533ff64e50b6b2" prot="public" static="no" mutable="no">
+        <type>D3DXQUATERNION</type>
+        <definition>D3DXQUATERNION Transform::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="struct_transform_1a8eb8d9c5237353a09bae82fd50ddda59" compoundref="_transform_8h" startline="18" endline="24">operator const D3DXMATRIX &amp;</referencedby>
+        <referencedby refid="struct_transform_1aa08ca4266efabc768973cdeea51945ab" compoundref="_transform_8h" startline="13" endline="16">Transform</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_transform_1aa08ca4266efabc768973cdeea51945ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Transform::Transform</definition>
+        <argsstring>()</argsstring>
+        <name>Transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" bodystart="13" bodyend="16"/>
+        <references refid="struct_transform_1a235262a09827add902533ff64e50b6b2" compoundref="_transform_8h" startline="11">rotation</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_transform_1a8eb8d9c5237353a09bae82fd50ddda59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Transform::operator const D3DXMATRIX &amp;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator const D3DXMATRIX &amp;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" line="18" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" bodystart="18" bodyend="24"/>
+        <references refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" compoundref="_transform_8h" startline="9">position</references>
+        <references refid="struct_transform_1a235262a09827add902533ff64e50b6b2" compoundref="_transform_8h" startline="11">rotation</references>
+        <references refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" compoundref="_transform_8h" startline="10">scale</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>Component</label>
+        <link refid="struct_component"/>
+      </node>
+      <node id="46">
+        <label>Transform</label>
+        <link refid="struct_transform"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="49">
+        <label>Component</label>
+        <link refid="struct_component"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>object</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>Transform</label>
+        <link refid="struct_transform"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" line="8" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Transform.h" bodystart="7" bodyend="25"/>
+    <listofallmembers>
+      <member refid="struct_component_1a3ff413493cfa8df9cd576811bc00c70f" prot="public" virt="non-virtual"><scope>Transform</scope><name>object</name></member>
+      <member refid="struct_transform_1a8eb8d9c5237353a09bae82fd50ddda59" prot="public" virt="non-virtual"><scope>Transform</scope><name>operator const D3DXMATRIX &amp;</name></member>
+      <member refid="struct_transform_1aca8889b0c20e00834d3b6b0aae44cae1" prot="public" virt="non-virtual"><scope>Transform</scope><name>position</name></member>
+      <member refid="struct_transform_1a235262a09827add902533ff64e50b6b2" prot="public" virt="non-virtual"><scope>Transform</scope><name>rotation</name></member>
+      <member refid="struct_transform_1a378935a5fc4057293f3f4e638a6f01b0" prot="public" virt="non-virtual"><scope>Transform</scope><name>scale</name></member>
+      <member refid="struct_transform_1aa08ca4266efabc768973cdeea51945ab" prot="public" virt="non-virtual"><scope>Transform</scope><name>Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

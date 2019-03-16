@@ -1,6 +1,19 @@
 #include "Application.h"
 #include <string>
-#include "System.h"
+#include "Helpers.h"
+
+#pragma region Managers
+#include "PrimitiveManager.h"
+#include "LightManager.h"
+
+#pragma endregion
+
+#pragma region Systems
+#include "RenderSystem.h"
+
+#pragma endregion
+
+
 
 
 static void test(const SIZE& size) {
@@ -16,6 +29,15 @@ Application::Application(HINSTANCE hinstance)
 	renderer = std::make_shared<Renderer>(window);
 
 	scene = std::make_shared<Scene>(renderer);
+
+	ecs = std::make_shared<ECS>(
+		std::vector<std::shared_ptr<ComponentManager>> {
+			std::make_shared<PrimitiveManager>(),
+			std::make_shared<LightManager>()
+		},
+		std::vector<std::shared_ptr<System>> {
+			std::make_shared<RenderSystem>(renderer)
+		});
 }
 
 

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_c698344618dee657b8da3c969d508535" kind="dir">
+    <compoundname>C:/Users/Admin/source/repos/Yaropolk/Game</compoundname>
+    <innerfile refid="_application_8cpp">Application.cpp</innerfile>
+    <innerfile refid="_application_8h">Application.h</innerfile>
+    <innerfile refid="_box_mesh_8cpp">BoxMesh.cpp</innerfile>
+    <innerfile refid="_box_mesh_8h">BoxMesh.h</innerfile>
+    <innerfile refid="_citadel_8cpp">Citadel.cpp</innerfile>
+    <innerfile refid="_citadel_8h">Citadel.h</innerfile>
+    <innerfile refid="_component_8h">Component.h</innerfile>
+    <innerfile refid="_entity_8h">Entity.h</innerfile>
+    <innerfile refid="_entity_manager_8h">EntityManager.h</innerfile>
+    <innerfile refid="_entry_point_8cpp">EntryPoint.cpp</innerfile>
+    <innerfile refid="_event_8h">Event.h</innerfile>
+    <innerfile refid="_game_8cpp">Game.cpp</innerfile>
+    <innerfile refid="_game_8h">Game.h</innerfile>
+    <innerfile refid="header_8h">header.h</innerfile>
+    <innerfile refid="_helpers_8h">Helpers.h</innerfile>
+    <innerfile refid="_renderer_8cpp">Renderer.cpp</innerfile>
+    <innerfile refid="_renderer_8h">Renderer.h</innerfile>
+    <innerfile refid="_resource_8h">Resource.h</innerfile>
+    <innerfile refid="_scene_8cpp">Scene.cpp</innerfile>
+    <innerfile refid="_scene_8h">Scene.h</innerfile>
+    <innerfile refid="_system_8h">System.h</innerfile>
+    <innerfile refid="_system_manager_8h">SystemManager.h</innerfile>
+    <innerfile refid="targetver_8h">targetver.h</innerfile>
+    <innerfile refid="_transform_8h">Transform.h</innerfile>
+    <innerfile refid="_vertex_8h">Vertex.h</innerfile>
+    <innerfile refid="_window_8cpp">Window.cpp</innerfile>
+    <innerfile refid="_window_8h">Window.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/"/>
+  </compounddef>
+</doxygen>

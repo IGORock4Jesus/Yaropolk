@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_entry_point_8cpp" kind="file">
+    <compoundname>EntryPoint.cpp</compoundname>
+    <includes refid="_application_8h" local="yes">Application.h</includes>
+    <incdepgraph>
+      <node id="113">
+        <label>list</label>
+      </node>
+      <node id="115">
+        <label>Renderer.h</label>
+        <link refid="_renderer_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>d3d9.h</label>
+      </node>
+      <node id="111">
+        <label>Windows.h</label>
+      </node>
+      <node id="122">
+        <label>string</label>
+      </node>
+      <node id="126">
+        <label>System.h</label>
+        <link refid="_system_8h"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>exception</label>
+      </node>
+      <node id="118">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>bitset</label>
+      </node>
+      <node id="124">
+        <label>vector</label>
+      </node>
+      <node id="107">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp</label>
+        <link refid="EntryPoint.cpp"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>array</label>
+      </node>
+      <node id="112">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>mutex</label>
+      </node>
+      <node id="121">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>SystemManager.h</label>
+        <link refid="_system_manager_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_entry_point_8cpp_1aacaf19ac846b4fc77cc338c5a60907dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int WINAPI</type>
+        <definition>int WINAPI WinMain</definition>
+        <argsstring>(HINSTANCE hinstance, HINSTANCE, LPSTR, int)</argsstring>
+        <name>WinMain</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hinstance</declname>
+        </param>
+        <param>
+          <type>HINSTANCE</type>
+        </param>
+        <param>
+          <type>LPSTR</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp" line="5" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp" bodystart="5" bodyend="9"/>
+        <references refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" compoundref="_application_8cpp" startline="33" endline="47">Application::Run</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_application_8h" kindref="compound">Application.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_entry_point_8cpp_1aacaf19ac846b4fc77cc338c5a60907dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>WINAPI<sp/><ref refid="_entry_point_8cpp_1aacaf19ac846b4fc77cc338c5a60907dd" kindref="member">WinMain</ref>(HINSTANCE<sp/>hinstance,<sp/>HINSTANCE,<sp/>LPSTR,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_application" kindref="compound">Application</ref><sp/>app{<sp/>hinstance<sp/>};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>app.<ref refid="class_application_1a02799e64b246a6b6b8fa58477882a4be" kindref="member">Run</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp"/>
+  </compounddef>
+</doxygen>

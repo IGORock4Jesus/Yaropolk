@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_event" kind="class" prot="public">
+    <compoundname>Event</compoundname>
+    <includes refid="_event_8h" local="no">Event.h</includes>
+    <innerclass refid="struct_event_1_1_class_delegate" prot="private">Event::ClassDelegate</innerclass>
+    <innerclass refid="struct_event_1_1_delegate" prot="private">Event::Delegate</innerclass>
+    <innerclass refid="struct_event_1_1_static_delegate" prot="private">Event::StaticDelegate</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>TArgs</declname>
+        <defname>TArgs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_event_1a2abf13b5be49315e9e362af02029f058" prot="private" static="no">
+        <name>Type</name>
+        <enumvalue id="class_event_1a2abf13b5be49315e9e362af02029f058a9bd81329febf6efe22788e03ddeaf0af" prot="public">
+          <name>Class</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_event_1a2abf13b5be49315e9e362af02029f058a84a8921b25f505d0d2077aeb5db4bc16" prot="public">
+          <name>Static</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="11" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_event_1a1308756c856608e53f278477f533b11f" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::shared_ptr&lt; <ref refid="struct_event_1_1_delegate" kindref="compound">Delegate</ref> &gt; &gt;</type>
+        <definition>std::list&lt;std::shared_ptr&lt;Delegate&gt; &gt; Event&lt; TArgs &gt;::delegates</definition>
+        <argsstring></argsstring>
+        <name>delegates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="56" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_event_1afa2b3ae4c8069e46995d3ff3e2cd7f95" compoundref="_event_8h" startline="61" endline="71">Event&lt; const SIZE &amp; &gt;::Add</referencedby>
+        <referencedby refid="class_event_1ad364177983ccded67925beacea26757a" compoundref="_event_8h" startline="102" endline="109">Event&lt; const SIZE &amp; &gt;::operator()</referencedby>
+        <referencedby refid="class_event_1a300e57cfd82b58bf5bc12ace80332609" compoundref="_event_8h" startline="83" endline="90">Event&lt; const SIZE &amp; &gt;::Remove</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_event_1af032add04cd263310b8f4fdc7917e905" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex Event&lt; TArgs &gt;::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="57" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_event_1afa2b3ae4c8069e46995d3ff3e2cd7f95" compoundref="_event_8h" startline="61" endline="71">Event&lt; const SIZE &amp; &gt;::Add</referencedby>
+        <referencedby refid="class_event_1ad364177983ccded67925beacea26757a" compoundref="_event_8h" startline="102" endline="109">Event&lt; const SIZE &amp; &gt;::operator()</referencedby>
+        <referencedby refid="class_event_1a300e57cfd82b58bf5bc12ace80332609" compoundref="_event_8h" startline="83" endline="90">Event&lt; const SIZE &amp; &gt;::Remove</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_event_1afa2b3ae4c8069e46995d3ff3e2cd7f95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename TMethod</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Event&lt; TArgs &gt;::Add</definition>
+        <argsstring>(TClass *object, TMethod method)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>TClass *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>TMethod</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="61" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="61" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_event_1a46b924f493c3e3c9623af5cb18eab45e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TFunc</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Event&lt; TArgs &gt;::Add</definition>
+        <argsstring>(TFunc func)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>TFunc</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="74" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_event_1a300e57cfd82b58bf5bc12ace80332609" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename TMethod</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Event&lt; TArgs &gt;::Remove</definition>
+        <argsstring>(TClass *object, TMethod method)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>TClass *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>TMethod</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="83" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="83" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_event_1a8ebd42a3e8dc3460b396e85bf167fe4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TFunc</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Event&lt; TArgs &gt;::Remove</definition>
+        <argsstring>(TFunc func)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>TFunc</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="93" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="93" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_event_1ad364177983ccded67925beacea26757a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Event&lt; TArgs &gt;::operator()</definition>
+        <argsstring>(TArgs...args)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>TArgs...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="102" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="102" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="9" bodyend="110"/>
+    <listofallmembers>
+      <member refid="class_event_1afa2b3ae4c8069e46995d3ff3e2cd7f95" prot="public" virt="non-virtual"><scope>Event</scope><name>Add</name></member>
+      <member refid="class_event_1a46b924f493c3e3c9623af5cb18eab45e" prot="public" virt="non-virtual"><scope>Event</scope><name>Add</name></member>
+      <member refid="class_event_1a1308756c856608e53f278477f533b11f" prot="private" virt="non-virtual"><scope>Event</scope><name>delegates</name></member>
+      <member refid="class_event_1af032add04cd263310b8f4fdc7917e905" prot="private" virt="non-virtual"><scope>Event</scope><name>mutex</name></member>
+      <member refid="class_event_1ad364177983ccded67925beacea26757a" prot="public" virt="non-virtual"><scope>Event</scope><name>operator()</name></member>
+      <member refid="class_event_1a300e57cfd82b58bf5bc12ace80332609" prot="public" virt="non-virtual"><scope>Event</scope><name>Remove</name></member>
+      <member refid="class_event_1a8ebd42a3e8dc3460b396e85bf167fe4a" prot="public" virt="non-virtual"><scope>Event</scope><name>Remove</name></member>
+      <member refid="class_event_1a2abf13b5be49315e9e362af02029f058" prot="private" virt="non-virtual"><scope>Event</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

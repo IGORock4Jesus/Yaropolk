@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_terrain_mesh_manager" kind="class" prot="public">
+    <compoundname>Yaropolk::TerrainMeshManager</compoundname>
+    <basecompoundref refid="class_yaropolk_1_1_component_manager" prot="public" virt="non-virtual">Yaropolk.ComponentManager</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_mesh_manager_1ac8da7ab53f6c2fc7931d3b3bd0d339da" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_yaropolk_1_1_terrain_mesh" kindref="compound">TerrainMesh</ref> &gt;</type>
+        <definition>List&lt;TerrainMesh&gt; Yaropolk.TerrainMeshManager.terrainMeshes</definition>
+        <argsstring></argsstring>
+        <name>terrainMeshes</name>
+        <initializer>= new List&lt;<ref refid="class_yaropolk_1_1_terrain_mesh" kindref="compound">TerrainMesh</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="109" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_manager_1ac75d389c4a04c3c6b9fa3d2dd88a5370" compoundref="_terrain_mesh_8cs" startline="128" endline="134">Yaropolk.TerrainMeshManager.Renderer_Drawing</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_manager_1aebf46b88a0a78af8eb2edca3f9f0297c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Yaropolk.TerrainMeshManager.TerrainMeshManager</definition>
+        <argsstring>(Renderer renderer)</argsstring>
+        <name>TerrainMeshManager</name>
+        <param>
+          <type><ref refid="class_yaropolk_1_1_renderer" kindref="compound">Renderer</ref></type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="112" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="112" bodyend="115"/>
+        <references refid="class_yaropolk_1_1_terrain_mesh_manager_1ac75d389c4a04c3c6b9fa3d2dd88a5370" compoundref="_terrain_mesh_8cs" startline="128" endline="134">Yaropolk.TerrainMeshManager.Renderer_Drawing</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_manager_1a5b7f93f8087c42c2e91f8016d68ef69d" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_yaropolk_1_1_terrain_mesh" kindref="compound">TerrainMesh</ref></type>
+        <definition>TerrainMesh Yaropolk.TerrainMeshManager.Create</definition>
+        <argsstring>(GameObject gameObject, Device device)</argsstring>
+        <name>Create</name>
+        <param>
+          <type><ref refid="class_yaropolk_1_1_game_object" kindref="compound">GameObject</ref></type>
+          <declname>gameObject</declname>
+        </param>
+        <param>
+          <type>Device</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="117" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="117" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_manager_1ac75d389c4a04c3c6b9fa3d2dd88a5370" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yaropolk.TerrainMeshManager.Renderer_Drawing</definition>
+        <argsstring>(Device device)</argsstring>
+        <name>Renderer_Drawing</name>
+        <param>
+          <type>Device</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="128" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="128" bodyend="134"/>
+        <references refid="class_yaropolk_1_1_terrain_mesh_manager_1ac8da7ab53f6c2fc7931d3b3bd0d339da" compoundref="_terrain_mesh_8cs" startline="109">Yaropolk.TerrainMeshManager.terrainMeshes</references>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_manager_1aebf46b88a0a78af8eb2edca3f9f0297c" compoundref="_terrain_mesh_8cs" startline="112" endline="115">Yaropolk.TerrainMeshManager.TerrainMeshManager</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="123">
+        <label>ComponentManager</label>
+        <link refid="class_yaropolk_1_1_component_manager"/>
+      </node>
+      <node id="122">
+        <label>Yaropolk.TerrainMeshManager</label>
+        <link refid="class_yaropolk_1_1_terrain_mesh_manager"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="125">
+        <label>ComponentManager</label>
+        <link refid="class_yaropolk_1_1_component_manager"/>
+      </node>
+      <node id="124">
+        <label>Yaropolk.TerrainMeshManager</label>
+        <link refid="class_yaropolk_1_1_terrain_mesh_manager"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="108" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="107" bodyend="135"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_terrain_mesh_manager_1a5b7f93f8087c42c2e91f8016d68ef69d" prot="package" virt="non-virtual"><scope>Yaropolk::TerrainMeshManager</scope><name>Create</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_manager_1ac75d389c4a04c3c6b9fa3d2dd88a5370" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMeshManager</scope><name>Renderer_Drawing</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_manager_1ac8da7ab53f6c2fc7931d3b3bd0d339da" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMeshManager</scope><name>terrainMeshes</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_manager_1aebf46b88a0a78af8eb2edca3f9f0297c" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMeshManager</scope><name>TerrainMeshManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

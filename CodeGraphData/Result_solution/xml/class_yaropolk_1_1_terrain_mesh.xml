@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_terrain_mesh" kind="class" prot="public">
+    <compoundname>Yaropolk::TerrainMesh</compoundname>
+    <basecompoundref refid="class_yaropolk_1_1_component" prot="public" virt="non-virtual">Yaropolk.Component</basecompoundref>
+    <basecompoundref refid="interface_yaropolk_1_1_i_drawable" prot="public" virt="non-virtual">Yaropolk.IDrawable</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_mesh_1a162f413c65cc27fa23307dbc40450f84" prot="private" static="no" mutable="no">
+        <type><ref refid="class_yaropolk_1_1_terrain" kindref="compound">Terrain</ref></type>
+        <definition>Terrain Yaropolk.TerrainMesh.terrain</definition>
+        <argsstring></argsstring>
+        <name>terrain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="15" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1afa424195ca6b33c7bc14e8adf036152c" compoundref="_terrain_mesh_8cs" startline="89" endline="96">Yaropolk.TerrainMesh.Draw</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1aea071dc5c57edc40dd1fda30e1188512" compoundref="_terrain_mesh_8cs" startline="31" endline="38">Yaropolk.TerrainMesh.OnInitialize</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_mesh_1a9a1a5a1a631ec43055b5cd760655407c" prot="private" static="no" mutable="no">
+        <type>VertexBuffer</type>
+        <definition>VertexBuffer Yaropolk.TerrainMesh.vertexBuffer</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="16" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a60ba3b5d7a8c1e0ba9cca1f4132a2f3a" compoundref="_terrain_mesh_8cs" startline="98" endline="104">Yaropolk.TerrainMesh.Dispose</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1afa424195ca6b33c7bc14e8adf036152c" compoundref="_terrain_mesh_8cs" startline="89" endline="96">Yaropolk.TerrainMesh.Draw</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_mesh_1a6d32c4498d2186ada215d46ff8eee5a1" prot="private" static="no" mutable="no">
+        <type>IndexBuffer</type>
+        <definition>IndexBuffer Yaropolk.TerrainMesh.indexBuffer</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="17" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a60ba3b5d7a8c1e0ba9cca1f4132a2f3a" compoundref="_terrain_mesh_8cs" startline="98" endline="104">Yaropolk.TerrainMesh.Dispose</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1afa424195ca6b33c7bc14e8adf036152c" compoundref="_terrain_mesh_8cs" startline="89" endline="96">Yaropolk.TerrainMesh.Draw</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_mesh_1a4e4c3570b68b0897e01074aaa24060f7" prot="private" static="no" mutable="no">
+        <type>Device</type>
+        <definition>Device Yaropolk.TerrainMesh.device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="18" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1ac20baddd54a0d6a84fe12ae3c318077d" compoundref="_terrain_mesh_8cs" startline="26" endline="29">Yaropolk.TerrainMesh.TerrainMesh</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_mesh_1a834bb72cfce76c5cf277de9856ca5abd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Yaropolk.TerrainMesh.ready</definition>
+        <argsstring></argsstring>
+        <name>ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="19" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1afa424195ca6b33c7bc14e8adf036152c" compoundref="_terrain_mesh_8cs" startline="89" endline="96">Yaropolk.TerrainMesh.Draw</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_yaropolk_1_1_terrain_mesh_1a4ecf5366698bb7f3b36b589a6c6552e2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Yaropolk.TerrainMesh.Visible</definition>
+        <argsstring></argsstring>
+        <name>Visible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="21" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_yaropolk_1_1_terrain_mesh_1a00209ab6370b050df994bdde7520f583" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float Yaropolk.TerrainMesh.CellSize</definition>
+        <argsstring></argsstring>
+        <name>CellSize</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="22" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_yaropolk_1_1_terrain_mesh_1abd26eea684d6e0121f43d1c70cf7cafc" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float Yaropolk.TerrainMesh.HeightScale</definition>
+        <argsstring></argsstring>
+        <name>HeightScale</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="23" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_1ac20baddd54a0d6a84fe12ae3c318077d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Yaropolk.TerrainMesh.TerrainMesh</definition>
+        <argsstring>(Device device)</argsstring>
+        <name>TerrainMesh</name>
+        <param>
+          <type>Device</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="26" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="26" bodyend="29"/>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a4e4c3570b68b0897e01074aaa24060f7" compoundref="_terrain_mesh_8cs" startline="18">Yaropolk.TerrainMesh.device</references>
+      </memberdef>
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_1afa424195ca6b33c7bc14e8adf036152c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yaropolk.TerrainMesh.Draw</definition>
+        <argsstring>(Device device)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="interface_yaropolk_1_1_i_drawable_1a49813b3206396aa742fa814aa10cd5c6">Draw</reimplements>
+        <param>
+          <type>Device</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="89" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="89" bodyend="96"/>
+        <references refid="class_yaropolk_1_1_terrain_1ac568c439989157d57ad238cb9eb599b0" compoundref="_terrain_8cs" startline="20">Yaropolk.Terrain.Height</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a6d32c4498d2186ada215d46ff8eee5a1" compoundref="_terrain_mesh_8cs" startline="17">Yaropolk.TerrainMesh.indexBuffer</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a834bb72cfce76c5cf277de9856ca5abd" compoundref="_terrain_mesh_8cs" startline="19">Yaropolk.TerrainMesh.ready</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a162f413c65cc27fa23307dbc40450f84" compoundref="_terrain_mesh_8cs" startline="15">Yaropolk.TerrainMesh.terrain</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a9a1a5a1a631ec43055b5cd760655407c" compoundref="_terrain_mesh_8cs" startline="16">Yaropolk.TerrainMesh.vertexBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_1a60ba3b5d7a8c1e0ba9cca1f4132a2f3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yaropolk.TerrainMesh.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="98" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="98" bodyend="104"/>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a6d32c4498d2186ada215d46ff8eee5a1" compoundref="_terrain_mesh_8cs" startline="17">Yaropolk.TerrainMesh.indexBuffer</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a9a1a5a1a631ec43055b5cd760655407c" compoundref="_terrain_mesh_8cs" startline="16">Yaropolk.TerrainMesh.vertexBuffer</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_1aea071dc5c57edc40dd1fda30e1188512" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Yaropolk.TerrainMesh.OnInitialize</definition>
+        <argsstring>()</argsstring>
+        <name>OnInitialize</name>
+        <reimplements refid="class_yaropolk_1_1_component_1a70ae8747300acdfddf170b62e9803475">OnInitialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="31" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="31" bodyend="38"/>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a162f413c65cc27fa23307dbc40450f84" compoundref="_terrain_mesh_8cs" startline="15">Yaropolk.TerrainMesh.terrain</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yaropolk.TerrainMesh.UpdateMesh</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="40" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="40" bodyend="87"/>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a00209ab6370b050df994bdde7520f583" compoundref="_terrain_mesh_8cs" startline="22">Yaropolk.TerrainMesh.CellSize</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a4e4c3570b68b0897e01074aaa24060f7" compoundref="_terrain_mesh_8cs" startline="18">Yaropolk.TerrainMesh.device</references>
+        <references refid="class_yaropolk_1_1_terrain_1ac568c439989157d57ad238cb9eb599b0" compoundref="_terrain_8cs" startline="20">Yaropolk.Terrain.Height</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1abd26eea684d6e0121f43d1c70cf7cafc" compoundref="_terrain_mesh_8cs" startline="23">Yaropolk.TerrainMesh.HeightScale</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a6d32c4498d2186ada215d46ff8eee5a1" compoundref="_terrain_mesh_8cs" startline="17">Yaropolk.TerrainMesh.indexBuffer</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a834bb72cfce76c5cf277de9856ca5abd" compoundref="_terrain_mesh_8cs" startline="19">Yaropolk.TerrainMesh.ready</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a162f413c65cc27fa23307dbc40450f84" compoundref="_terrain_mesh_8cs" startline="15">Yaropolk.TerrainMesh.terrain</references>
+        <references refid="class_yaropolk_1_1_terrain_mesh_1a9a1a5a1a631ec43055b5cd760655407c" compoundref="_terrain_mesh_8cs" startline="16">Yaropolk.TerrainMesh.vertexBuffer</references>
+        <references refid="class_yaropolk_1_1_terrain_1ac2151d05d21bc2ca74f11ce4563b38ce" compoundref="_terrain_8cs" startline="21">Yaropolk.Terrain.Width</references>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1aea071dc5c57edc40dd1fda30e1188512" compoundref="_terrain_mesh_8cs" startline="31" endline="38">Yaropolk.TerrainMesh.OnInitialize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="114">
+        <label>Component</label>
+        <link refid="class_yaropolk_1_1_component"/>
+      </node>
+      <node id="116">
+        <label>IDisposable</label>
+      </node>
+      <node id="115">
+        <label>IDrawable</label>
+        <link refid="interface_yaropolk_1_1_i_drawable"/>
+      </node>
+      <node id="113">
+        <label>Yaropolk.TerrainMesh</label>
+        <link refid="class_yaropolk_1_1_terrain_mesh"/>
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="118">
+        <label>Component</label>
+        <link refid="class_yaropolk_1_1_component"/>
+      </node>
+      <node id="120">
+        <label>IDisposable</label>
+      </node>
+      <node id="121">
+        <label>Yaropolk.Terrain</label>
+        <link refid="class_yaropolk_1_1_terrain"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>IDrawable</label>
+        <link refid="interface_yaropolk_1_1_i_drawable"/>
+      </node>
+      <node id="117">
+        <label>Yaropolk.TerrainMesh</label>
+        <link refid="class_yaropolk_1_1_terrain_mesh"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+        <childnode refid="121" relation="usage">
+          <edgelabel>terrain</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" line="14" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/TerrainMesh.cs" bodystart="13" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a00209ab6370b050df994bdde7520f583" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>CellSize</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a4e4c3570b68b0897e01074aaa24060f7" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>device</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a60ba3b5d7a8c1e0ba9cca1f4132a2f3a" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>Dispose</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1afa424195ca6b33c7bc14e8adf036152c" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>Draw</name></member>
+      <member refid="class_yaropolk_1_1_component_1a666bfc61146704d9d37409d72e73626e" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>GameObject</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1abd26eea684d6e0121f43d1c70cf7cafc" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>HeightScale</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a6d32c4498d2186ada215d46ff8eee5a1" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>indexBuffer</name></member>
+      <member refid="class_yaropolk_1_1_component_1afd3bd050ebc55898cbbdc81f1243377a" prot="package" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>Initialize</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1aea071dc5c57edc40dd1fda30e1188512" prot="protected" virt="virtual"><scope>Yaropolk::TerrainMesh</scope><name>OnInitialize</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a834bb72cfce76c5cf277de9856ca5abd" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>ready</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a162f413c65cc27fa23307dbc40450f84" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>terrain</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1ac20baddd54a0d6a84fe12ae3c318077d" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>TerrainMesh</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>UpdateMesh</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a9a1a5a1a631ec43055b5cd760655407c" prot="private" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>vertexBuffer</name></member>
+      <member refid="class_yaropolk_1_1_terrain_mesh_1a4ecf5366698bb7f3b36b589a6c6552e2" prot="public" virt="non-virtual"><scope>Yaropolk::TerrainMesh</scope><name>Visible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

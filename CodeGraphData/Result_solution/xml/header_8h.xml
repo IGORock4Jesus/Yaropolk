@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="header_8h" kind="file">
+    <compoundname>header.h</compoundname>
+    <includes refid="targetver_8h" local="yes">targetver.h</includes>
+    <includes local="no">windows.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">malloc.h</includes>
+    <includes local="no">memory.h</includes>
+    <includes local="no">tchar.h</includes>
+    <includedby refid="_game_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp</includedby>
+    <incdepgraph>
+      <node id="159">
+        <label>targetver.h</label>
+        <link refid="targetver_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>windows.h</label>
+      </node>
+      <node id="162">
+        <label>stdlib.h</label>
+      </node>
+      <node id="160">
+        <label>SDKDDKVer.h</label>
+      </node>
+      <node id="158">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/header.h</label>
+        <link refid="header.h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>malloc.h</label>
+      </node>
+      <node id="164">
+        <label>memory.h</label>
+      </node>
+      <node id="165">
+        <label>tchar.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="166">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/header.h</label>
+        <link refid="header.h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="header_8h_1ac7bef5d85e3dcd73eef56ad39ffc84a9" prot="public" static="no">
+        <name>WIN32_LEAN_AND_MEAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/header.h" line="9" column="9" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/header.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>header.h:<sp/>включаемый<sp/>файл<sp/>для<sp/>стандартных<sp/>системных<sp/>включаемых<sp/>файлов</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>или<sp/>включаемые<sp/>файлы<sp/>для<sp/>конкретного<sp/>проекта</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="targetver_8h" kindref="compound">targetver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="header_8h_1ac7bef5d85e3dcd73eef56ad39ffc84a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIN32_LEAN_AND_MEAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Исключите<sp/>редко<sp/>используемые<sp/>компоненты<sp/>из<sp/>заголовков<sp/>Windows</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/>Файлы<sp/>заголовков<sp/>Windows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Файлы<sp/>заголовков<sp/>среды<sp/>выполнения<sp/>C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;malloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tchar.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>установите<sp/>здесь<sp/>ссылки<sp/>на<sp/>дополнительные<sp/>заголовки,<sp/>требующиеся<sp/>для<sp/>программы</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/header.h"/>
+  </compounddef>
+</doxygen>

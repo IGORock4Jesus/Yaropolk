@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_component" kind="struct" prot="public">
+    <compoundname>Component</compoundname>
+    <derivedcompoundref refid="class_citadel" prot="public" virt="non-virtual">Citadel</derivedcompoundref>
+    <derivedcompoundref refid="struct_transform" prot="public" virt="non-virtual">Transform</derivedcompoundref>
+    <includes refid="_component_8h" local="no">Component.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_component_1a3ff413493cfa8df9cd576811bc00c70f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_entity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity* Component::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Component.h" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Component.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>Component</label>
+        <link refid="struct_component"/>
+      </node>
+      <node id="15">
+        <label>Transform</label>
+        <link refid="struct_transform"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Citadel</label>
+        <link refid="class_citadel"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>Component</label>
+        <link refid="struct_component"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>object</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Component.h" line="8" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Component.h" bodystart="8" bodyend="15"/>
+    <listofallmembers>
+      <member refid="struct_component_1a3ff413493cfa8df9cd576811bc00c70f" prot="public" virt="non-virtual"><scope>Component</scope><name>object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

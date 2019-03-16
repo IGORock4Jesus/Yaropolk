@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_event_1_1_static_delegate" kind="struct" prot="private">
+    <compoundname>Event::StaticDelegate</compoundname>
+    <basecompoundref refid="struct_event_1_1_delegate" prot="public" virt="non-virtual">Event&lt; TArgs &gt;::Delegate</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename TFunc</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" prot="public" static="no" mutable="no">
+        <type>TFunc</type>
+        <definition>TFunc Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="43" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="struct_event_1_1_static_delegate_1a81c1b8d44a43aa2afcc5750c5abb9b10" compoundref="_event_8h" startline="50" endline="53">Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;::Process</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_event_1_1_static_delegate_1ae3164aabd02193cc7b78659c2cf404d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;::StaticDelegate</definition>
+        <argsstring>(TFunc func)</argsstring>
+        <name>StaticDelegate</name>
+        <param>
+          <type>TFunc</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="45" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_event_1_1_static_delegate_1a81c1b8d44a43aa2afcc5750c5abb9b10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;::Process</definition>
+        <argsstring>(TArgs...args) override</argsstring>
+        <name>Process</name>
+        <reimplements refid="struct_event_1_1_delegate_1af8ae2c15318a71e99a84efcf8af7492c">Process</reimplements>
+        <param>
+          <type>TArgs...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="50" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="50" bodyend="53"/>
+        <references refid="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" compoundref="_event_8h" startline="43">Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;::func</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="94">
+        <label>Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;</label>
+        <link refid="struct_event_1_1_static_delegate"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>Event&lt; TArgs &gt;::Delegate</label>
+        <link refid="struct_event_1_1_delegate"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="96">
+        <label>Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;</label>
+        <link refid="struct_event_1_1_static_delegate"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>Event&lt; TArgs &gt;::Delegate</label>
+        <link refid="struct_event_1_1_delegate"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="42" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="41" bodyend="54"/>
+    <listofallmembers>
+      <member refid="struct_event_1_1_static_delegate_1acf5f464cbd94e0e1de160398f312f369" prot="public" virt="non-virtual"><scope>Event::StaticDelegate</scope><name>func</name></member>
+      <member refid="struct_event_1_1_static_delegate_1a81c1b8d44a43aa2afcc5750c5abb9b10" prot="public" virt="virtual"><scope>Event::StaticDelegate</scope><name>Process</name></member>
+      <member refid="struct_event_1_1_static_delegate_1ae3164aabd02193cc7b78659c2cf404d1" prot="public" virt="non-virtual"><scope>Event::StaticDelegate</scope><name>StaticDelegate</name></member>
+      <member refid="struct_event_1_1_delegate_1af7cde847142d45f1394783cd1c373ff1" prot="public" virt="non-virtual"><scope>Event::StaticDelegate</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

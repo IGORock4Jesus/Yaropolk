@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_game_object" kind="class" prot="public">
+    <compoundname>Yaropolk::GameObject</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_game_object_1af5395a74bdf2022eafe42f561f2b7534" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Yaropolk.GameObject.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_game_object_1af83b910b0a1c0ff760d9e931c9a4981c" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_yaropolk_1_1_component" kindref="compound">Component</ref> &gt;</type>
+        <definition>readonly List&lt;Component&gt; Yaropolk.GameObject.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= new List&lt;<ref refid="class_yaropolk_1_1_component" kindref="compound">Component</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_game_object_1a4a7bab4a05f1a4d6e185d57f34f25898" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Yaropolk.GameObject.GetComponent&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>GetComponent&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" line="14" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_yaropolk_1_1_game_object_1a6d3b327de8bddf7b401b35938b7da0ae" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yaropolk.GameObject.AddComponent&lt; T &gt;</definition>
+        <argsstring>(T component)</argsstring>
+        <name>AddComponent&lt; T &gt;</name>
+        <param>
+          <type>T</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" line="19" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" bodystart="19" bodyend="26"/>
+        <references refid="class_yaropolk_1_1_game_object_1a05e8f20a9aae5d78ad360a77f2dc402c" compoundref="_game_object_8cs" startline="28" endline="31">Yaropolk.GameObject.HasComponent&lt; T &gt;</references>
+      </memberdef>
+      <memberdef kind="function" id="class_yaropolk_1_1_game_object_1a05e8f20a9aae5d78ad360a77f2dc402c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yaropolk.GameObject.HasComponent&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>HasComponent&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" line="28" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" bodystart="28" bodyend="31"/>
+        <referencedby refid="class_yaropolk_1_1_game_object_1a6d3b327de8bddf7b401b35938b7da0ae" compoundref="_game_object_8cs" startline="19" endline="26">Yaropolk.GameObject.AddComponent&lt; T &gt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/GameObject.cs" bodystart="9" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_game_object_1a6d3b327de8bddf7b401b35938b7da0ae" prot="package" virt="non-virtual"><scope>Yaropolk::GameObject</scope><name>AddComponent&lt; T &gt;</name></member>
+      <member refid="class_yaropolk_1_1_game_object_1af83b910b0a1c0ff760d9e931c9a4981c" prot="private" virt="non-virtual"><scope>Yaropolk::GameObject</scope><name>components</name></member>
+      <member refid="class_yaropolk_1_1_game_object_1a4a7bab4a05f1a4d6e185d57f34f25898" prot="package" virt="non-virtual"><scope>Yaropolk::GameObject</scope><name>GetComponent&lt; T &gt;</name></member>
+      <member refid="class_yaropolk_1_1_game_object_1a05e8f20a9aae5d78ad360a77f2dc402c" prot="package" virt="non-virtual"><scope>Yaropolk::GameObject</scope><name>HasComponent&lt; T &gt;</name></member>
+      <member refid="class_yaropolk_1_1_game_object_1af5395a74bdf2022eafe42f561f2b7534" prot="public" virt="non-virtual"><scope>Yaropolk::GameObject</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

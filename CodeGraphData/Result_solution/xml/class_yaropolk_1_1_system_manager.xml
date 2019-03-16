@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_system_manager" kind="class" prot="public">
+    <compoundname>Yaropolk::SystemManager</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_system_manager_1acbc2600a095d6bd04a33fca7ee483711" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_yaropolk_1_1_component_manager" kindref="compound">ComponentManager</ref> &gt;</type>
+        <definition>readonly List&lt;ComponentManager&gt; Yaropolk.SystemManager.managers</definition>
+        <argsstring></argsstring>
+        <name>managers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_system_manager_1a06df6203e029a03675e20fefc811e790" compoundref="_system_manager_8cs" startline="13" endline="20">Yaropolk.SystemManager.SystemManager</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_system_manager_1a06df6203e029a03675e20fefc811e790" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Yaropolk.SystemManager.SystemManager</definition>
+        <argsstring>(Renderer renderer)</argsstring>
+        <name>SystemManager</name>
+        <param>
+          <type><ref refid="class_yaropolk_1_1_renderer" kindref="compound">Renderer</ref></type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" bodystart="13" bodyend="20"/>
+        <references refid="class_yaropolk_1_1_system_manager_1acbc2600a095d6bd04a33fca7ee483711" compoundref="_system_manager_8cs" startline="11">Yaropolk.SystemManager.managers</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_system_manager_1af79dd190c4af36a92bce332aea6e47ae" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Yaropolk.SystemManager.GetManager&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>GetManager&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" line="22" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/SystemManager.cs" bodystart="9" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_system_manager_1af79dd190c4af36a92bce332aea6e47ae" prot="package" virt="non-virtual"><scope>Yaropolk::SystemManager</scope><name>GetManager&lt; T &gt;</name></member>
+      <member refid="class_yaropolk_1_1_system_manager_1acbc2600a095d6bd04a33fca7ee483711" prot="private" virt="non-virtual"><scope>Yaropolk::SystemManager</scope><name>managers</name></member>
+      <member refid="class_yaropolk_1_1_system_manager_1a06df6203e029a03675e20fefc811e790" prot="public" virt="non-virtual"><scope>Yaropolk::SystemManager</scope><name>SystemManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

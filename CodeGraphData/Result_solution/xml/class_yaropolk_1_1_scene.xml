@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_scene" kind="class" prot="public">
+    <compoundname>Yaropolk::Scene</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_scene_1ade4742f74a98d2a95d346ebd56b7ec03" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_yaropolk_1_1_game_object" kindref="compound">GameObject</ref> &gt;</type>
+        <definition>readonly List&lt;GameObject&gt; Yaropolk.Scene.gameObjects</definition>
+        <argsstring></argsstring>
+        <name>gameObjects</name>
+        <initializer>= new List&lt;<ref refid="class_yaropolk_1_1_game_object" kindref="compound">GameObject</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Scene.cs" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Scene.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_scene_1ae68f36077e641bbd00eef3e5b8a26b5a" compoundref="_scene_8cs" startline="13" endline="18">Yaropolk.Scene.AddObject</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_scene_1ae68f36077e641bbd00eef3e5b8a26b5a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yaropolk.Scene.AddObject</definition>
+        <argsstring>(GameObject gameObject)</argsstring>
+        <name>AddObject</name>
+        <param>
+          <type><ref refid="class_yaropolk_1_1_game_object" kindref="compound">GameObject</ref></type>
+          <declname>gameObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Scene.cs" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Scene.cs" bodystart="13" bodyend="18"/>
+        <references refid="class_yaropolk_1_1_scene_1ade4742f74a98d2a95d346ebd56b7ec03" compoundref="_scene_8cs" startline="11">Yaropolk.Scene.gameObjects</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Scene.cs" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Scene.cs" bodystart="9" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_scene_1ae68f36077e641bbd00eef3e5b8a26b5a" prot="package" virt="non-virtual"><scope>Yaropolk::Scene</scope><name>AddObject</name></member>
+      <member refid="class_yaropolk_1_1_scene_1ade4742f74a98d2a95d346ebd56b7ec03" prot="private" virt="non-virtual"><scope>Yaropolk::Scene</scope><name>gameObjects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

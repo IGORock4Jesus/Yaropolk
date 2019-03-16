@@ -1,6 +1,7 @@
-#include "Renderer.h"
 #include <chrono>
-#include "System.h"
+#include <d3dx9.h>
+#include "Helpers.h"
+#include "Renderer.h"
 
 
 using namespace std::chrono_literals;
@@ -15,7 +16,8 @@ Renderer::Renderer(std::shared_ptr<Window> window)
 	direct = Direct3DCreate9(D3D_SDK_VERSION);
 	direct->CreateDevice(0, D3DDEVTYPE_HAL, window->GetHandle(), D3DCREATE_HARDWARE_VERTEXPROCESSING | D3DCREATE_MULTITHREADED, &pp, &device);
 
-	device->SetRenderState(D3DRS_LIGHTING, FALSE);
+	//device->SetRenderState(D3DRS_LIGHTING, FALSE);
+	//device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
 
 	window->SizeChanged.Add(this, &Renderer::Window_SizeChanged);
 
@@ -62,6 +64,10 @@ void Renderer::Rendering()
 {
 	device->Clear(0, nullptr, D3DCLEAR_STENCIL | D3DCLEAR_ZBUFFER | D3DCLEAR_TARGET, 0xff222222, 1.0f, 0);
 	device->BeginScene();
+
+	D3DXMATRIX m;
+	device->SetTransform(D3DTS_VIEW, D3DXMatrixLookAtLH(&m, &D3DXVECTOR3(3, 3, -3), &D3DXVECTOR3(0.0f, 0.0f, 0.0f), &D3DXVECTOR3(0.0f, 1.0f, 0.0f)));
+	device->SetTransform(D3DTS_PROJECTION, D3DXMatrixPerspectiveFovLH(&m, D3DX_PI*0.25f, 1.3f, 0.1f, 10000.0f));
 
 	Drawing(device);
 

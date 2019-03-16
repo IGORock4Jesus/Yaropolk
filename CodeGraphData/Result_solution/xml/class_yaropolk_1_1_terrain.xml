@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_terrain" kind="class" prot="public">
+    <compoundname>Yaropolk::Terrain</compoundname>
+    <basecompoundref refid="class_yaropolk_1_1_component" prot="public" virt="non-virtual">Yaropolk.Component</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_yaropolk_1_1_terrain_1ae9e5212aebd39ce49ac933f434563b6b" prot="private" static="no" mutable="no">
+        <type>float[,]</type>
+        <definition>float [,] Yaropolk.Terrain.heightMap</definition>
+        <argsstring></argsstring>
+        <name>heightMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_1a1c016990ca9930e3605fac8d3eb0d0a4" compoundref="_terrain_8cs" startline="13" endline="18">Yaropolk.Terrain.Terrain</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_yaropolk_1_1_terrain_1ac568c439989157d57ad238cb9eb599b0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Yaropolk.Terrain.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="20" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1afa424195ca6b33c7bc14e8adf036152c" compoundref="_terrain_mesh_8cs" startline="89" endline="96">Yaropolk.TerrainMesh.Draw</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_1a1c016990ca9930e3605fac8d3eb0d0a4" compoundref="_terrain_8cs" startline="13" endline="18">Yaropolk.Terrain.Terrain</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_yaropolk_1_1_terrain_1ac2151d05d21bc2ca74f11ce4563b38ce" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Yaropolk.Terrain.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="21" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_yaropolk_1_1_terrain_1a1c016990ca9930e3605fac8d3eb0d0a4" compoundref="_terrain_8cs" startline="13" endline="18">Yaropolk.Terrain.Terrain</referencedby>
+        <referencedby refid="class_yaropolk_1_1_terrain_mesh_1a767e0f8d2323692f8c21f5b4641214a4" compoundref="_terrain_mesh_8cs" startline="40" endline="87">Yaropolk.TerrainMesh.UpdateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_yaropolk_1_1_terrain_1a59ae85685c6ab6431107dcb4b0feb5f0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Yaropolk.Terrain.this[int x, int y]</definition>
+        <argsstring></argsstring>
+        <name>this[int x, int y]</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="23" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_yaropolk_1_1_terrain_1a1c016990ca9930e3605fac8d3eb0d0a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Yaropolk.Terrain.Terrain</definition>
+        <argsstring>(int width, int height, string filename)</argsstring>
+        <name>Terrain</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="13" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="13" bodyend="18"/>
+        <references refid="class_yaropolk_1_1_terrain_1ac568c439989157d57ad238cb9eb599b0" compoundref="_terrain_8cs" startline="20">Yaropolk.Terrain.Height</references>
+        <references refid="class_yaropolk_1_1_terrain_1ae9e5212aebd39ce49ac933f434563b6b" compoundref="_terrain_8cs" startline="11">Yaropolk.Terrain.heightMap</references>
+        <references refid="class_yaropolk_1_1_terrain_1ac2151d05d21bc2ca74f11ce4563b38ce" compoundref="_terrain_8cs" startline="21">Yaropolk.Terrain.Width</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="106">
+        <label>Component</label>
+        <link refid="class_yaropolk_1_1_component"/>
+      </node>
+      <node id="105">
+        <label>Yaropolk.Terrain</label>
+        <link refid="class_yaropolk_1_1_terrain"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="108">
+        <label>Component</label>
+        <link refid="class_yaropolk_1_1_component"/>
+      </node>
+      <node id="107">
+        <label>Yaropolk.Terrain</label>
+        <link refid="class_yaropolk_1_1_terrain"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Terrain.cs" bodystart="9" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_yaropolk_1_1_component_1a666bfc61146704d9d37409d72e73626e" prot="public" virt="non-virtual"><scope>Yaropolk::Terrain</scope><name>GameObject</name></member>
+      <member refid="class_yaropolk_1_1_terrain_1ac568c439989157d57ad238cb9eb599b0" prot="public" virt="non-virtual"><scope>Yaropolk::Terrain</scope><name>Height</name></member>
+      <member refid="class_yaropolk_1_1_terrain_1ae9e5212aebd39ce49ac933f434563b6b" prot="private" virt="non-virtual"><scope>Yaropolk::Terrain</scope><name>heightMap</name></member>
+      <member refid="class_yaropolk_1_1_component_1afd3bd050ebc55898cbbdc81f1243377a" prot="package" virt="non-virtual"><scope>Yaropolk::Terrain</scope><name>Initialize</name></member>
+      <member refid="class_yaropolk_1_1_component_1a70ae8747300acdfddf170b62e9803475" prot="protected" virt="virtual"><scope>Yaropolk::Terrain</scope><name>OnInitialize</name></member>
+      <member refid="class_yaropolk_1_1_terrain_1a1c016990ca9930e3605fac8d3eb0d0a4" prot="public" virt="non-virtual"><scope>Yaropolk::Terrain</scope><name>Terrain</name></member>
+      <member refid="class_yaropolk_1_1_terrain_1a59ae85685c6ab6431107dcb4b0feb5f0" prot="public" virt="non-virtual"><scope>Yaropolk::Terrain</scope><name>this[int x, int y]</name></member>
+      <member refid="class_yaropolk_1_1_terrain_1ac2151d05d21bc2ca74f11ce4563b38ce" prot="public" virt="non-virtual"><scope>Yaropolk::Terrain</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

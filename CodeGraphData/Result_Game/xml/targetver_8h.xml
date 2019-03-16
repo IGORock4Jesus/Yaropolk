@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="targetver_8h" kind="file">
+    <compoundname>targetver.h</compoundname>
+    <includes local="no">SDKDDKVer.h</includes>
+    <includedby refid="header_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/header.h</includedby>
+    <incdepgraph>
+      <node id="257">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/targetver.h</label>
+        <link refid="targetver.h"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>SDKDDKVer.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="259">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/targetver.h</label>
+        <link refid="targetver.h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/header.h</label>
+        <link refid="header_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Включение<sp/>SDKDDKVer.h<sp/>обеспечивает<sp/>определение<sp/>самой<sp/>последней<sp/>доступной<sp/>платформы<sp/>Windows.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Если<sp/>требуется<sp/>выполнить<sp/>сборку<sp/>приложения<sp/>для<sp/>предыдущей<sp/>версии<sp/>Windows,<sp/>включите<sp/>WinSDKVer.h<sp/>и</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>задайте<sp/>для<sp/>макроса<sp/>_WIN32_WINNT<sp/>значение<sp/>поддерживаемой<sp/>платформы<sp/>перед<sp/>включением<sp/>SDKDDKVer.h.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SDKDDKVer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/targetver.h"/>
+  </compounddef>
+</doxygen>

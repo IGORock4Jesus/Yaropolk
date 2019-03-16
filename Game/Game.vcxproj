@@ -20,12 +20,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
-    <ClInclude Include="BoxMesh.h" />
     <ClInclude Include="Citadel.h" />
     <ClInclude Include="Component.h" />
+    <ClInclude Include="ComponentManager.h" />
+    <ClInclude Include="ECS.h" />
     <ClInclude Include="EntityManager.h" />
     <ClInclude Include="Event.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="IRenderable.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="LightManager.h" />
+    <ClInclude Include="Primitive.h" />
+    <ClInclude Include="PrimitiveManager.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RenderSystem.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Helpers.h" />
     <ClInclude Include="System.h" />
@@ -37,11 +45,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
-    <ClCompile Include="BoxMesh.cpp" />
     <ClCompile Include="Citadel.cpp" />
+    <ClCompile Include="ECS.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Primitive.cpp" />
+    <ClCompile Include="PrimitiveManager.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RenderSystem.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Vertex.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -140,12 +154,16 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dinput8.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

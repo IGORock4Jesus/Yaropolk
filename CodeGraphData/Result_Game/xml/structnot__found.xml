@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structnot__found" kind="struct" prot="public">
+    <compoundname>not_found</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes refid="_system_manager_8h" local="no">SystemManager.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnot__found_1a8d8f0331dd122caead1f1e4066253f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>not_found::not_found</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>not_found</name>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" line="12" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" bodystart="12" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>not_found</label>
+        <link refid="structnot__found"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>not_found</label>
+        <link refid="structnot__found"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" line="11" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structnot__found_1a8d8f0331dd122caead1f1e4066253f62" prot="public" virt="non-virtual"><scope>not_found</scope><name>not_found</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

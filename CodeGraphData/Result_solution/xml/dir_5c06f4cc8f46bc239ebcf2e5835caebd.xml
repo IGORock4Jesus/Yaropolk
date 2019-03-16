@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_5c06f4cc8f46bc239ebcf2e5835caebd" kind="dir">
+    <compoundname>C:/Users/Admin/source/repos/Yaropolk/Yaropolk</compoundname>
+    <innerdir refid="dir_531585a6fe539daad834ac544a5cb283">C:/Users/Admin/source/repos/Yaropolk/Yaropolk/Properties</innerdir>
+    <innerfile refid="_component_8cs">Component.cs</innerfile>
+    <innerfile refid="_component_manager_8cs">ComponentManager.cs</innerfile>
+    <innerfile refid="_form1_8cs">Form1.cs</innerfile>
+    <innerfile refid="_form1_8_designer_8cs">Form1.Designer.cs</innerfile>
+    <innerfile refid="_game_object_8cs">GameObject.cs</innerfile>
+    <innerfile refid="_i_drawable_8cs">IDrawable.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_renderer_8cs">Renderer.cs</innerfile>
+    <innerfile refid="_require_component_attribute_8cs">RequireComponentAttribute.cs</innerfile>
+    <innerfile refid="_scene_8cs">Scene.cs</innerfile>
+    <innerfile refid="_system_manager_8cs">SystemManager.cs</innerfile>
+    <innerfile refid="_terrain_8cs">Terrain.cs</innerfile>
+    <innerfile refid="_terrain_mesh_8cs">TerrainMesh.cs</innerfile>
+    <innerfile refid="_vertex_8cs">Vertex.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/"/>
+  </compounddef>
+</doxygen>

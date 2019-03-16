@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_window_8cpp" kind="file">
+    <compoundname>Window.cpp</compoundname>
+    <includes refid="_window_8h" local="yes">Window.h</includes>
+    <incdepgraph>
+      <node id="288">
+        <label>list</label>
+      </node>
+      <node id="286">
+        <label>Windows.h</label>
+      </node>
+      <node id="285">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp</label>
+        <link refid="Window.cpp"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>mutex</label>
+      </node>
+      <node id="289">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_window_8h" kindref="compound">Window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_window_1a687ab67895229a57f4e6cd960b6a9980" refkind="member"><highlight class="normal">LRESULT<sp/><ref refid="class_window_1a687ab67895229a57f4e6cd960b6a9980" kindref="member">Window::WndProc</ref>(HWND<sp/>h,<sp/>UINT<sp/>m,<sp/>WPARAM<sp/>w,<sp/>LPARAM<sp/>l)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(m)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_NCCREATE:<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>create<sp/>=<sp/>(CREATESTRUCT*)l;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::SetWindowLongPtr(h,<sp/>GWLP_USERDATA,<sp/>(LONG_PTR)create-&gt;lpCreateParams);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_NCDESTROY:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::SetWindowLongPtr(h,<sp/>GWLP_USERDATA,<sp/>(LONG_PTR)</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_DESTROY:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PostQuitMessage(0);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_SIZE:<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>_this<sp/>=<sp/>(<ref refid="class_window" kindref="compound">Window</ref>*)::GetWindowLongPtr(h,<sp/>GWLP_USERDATA);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SIZE<sp/>size{<sp/>LOWORD(l),<sp/>HIWORD(l)<sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_this-&gt;SizeChanged(size);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DefWindowProc(h,<sp/>m,<sp/>w,<sp/>l);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" refkind="member"><highlight class="normal"><ref refid="class_window_1a80845916e0cddaad5bb39af1f943a6f9" kindref="member">Window::Window</ref>(HINSTANCE<sp/>hinstance)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>WNDCLASS<sp/>wc{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>wc.hCursor<sp/>=<sp/>LoadCursor(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>IDC_ARROW);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>wc.hInstance<sp/>=<sp/>hinstance;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>wc.lpfnWndProc<sp/>=<sp/><ref refid="class_window_1a687ab67895229a57f4e6cd960b6a9980" kindref="member">WndProc</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>wc.lpszClassName<sp/>=<sp/><ref refid="class_window_1ae0309d305aec1685c90593c0c436bd60" kindref="member">windowClass</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>wc.style<sp/>=<sp/>CS_HREDRAW<sp/>|<sp/>CS_VREDRAW<sp/>|<sp/>CS_OWNDC;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>RegisterClass(&amp;wc);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" kindref="member">handle</ref><sp/>=<sp/>CreateWindow(<ref refid="class_window_1ae0309d305aec1685c90593c0c436bd60" kindref="member">windowClass</ref>,<sp/><ref refid="class_window_1ae0309d305aec1685c90593c0c436bd60" kindref="member">windowClass</ref>,<sp/>WS_OVERLAPPEDWINDOW,<sp/>0,<sp/>0,<sp/>800,<sp/>600,<sp/>HWND_DESKTOP,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>hinstance,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>ShowWindow(<ref refid="class_window_1a07bb2df4bb4fcc302bdb3b5c8e63619e" kindref="member">handle</ref>,<sp/>SW_NORMAL);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_window_1a245d821e6016fa1f6970ccbbedd635f6" refkind="member"><highlight class="normal"><ref refid="class_window_1a245d821e6016fa1f6970ccbbedd635f6" kindref="member">Window::~Window</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_window_1a58915fca89baca53cb010a499b7b5845" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_window_1a58915fca89baca53cb010a499b7b5845" kindref="member">Window::Update</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>MSG<sp/>msg;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(PeekMessage(&amp;msg,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0,<sp/>0,<sp/>PM_REMOVE))</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TranslateMessage(&amp;msg);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DispatchMessage(&amp;msg);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>msg.message<sp/>!=<sp/>WM_QUIT;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Window.cpp"/>
+  </compounddef>
+</doxygen>

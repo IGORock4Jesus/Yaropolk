@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_735a9c0b663a66d394f3d1fac56a7d70" kind="dir">
+    <compoundname>C:/Users/Admin/source/repos/Yaropolk</compoundname>
+    <innerdir refid="dir_c698344618dee657b8da3c969d508535">C:/Users/Admin/source/repos/Yaropolk/Game</innerdir>
+    <innerdir refid="dir_1b10e5310928695b6a7aa49cba26d7f4">C:/Users/Admin/source/repos/Yaropolk/GameTests</innerdir>
+    <innerdir refid="dir_5c06f4cc8f46bc239ebcf2e5835caebd">C:/Users/Admin/source/repos/Yaropolk/Yaropolk</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/"/>
+  </compounddef>
+</doxygen>

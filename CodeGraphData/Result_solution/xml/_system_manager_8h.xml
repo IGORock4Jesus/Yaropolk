@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_system_manager_8h" kind="file">
+    <compoundname>SystemManager.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">bitset</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">Windows.h</includes>
+    <includes refid="_system_8h" local="yes">System.h</includes>
+    <includedby refid="_application_8h" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</includedby>
+    <includedby refid="_system_manager_tests_8cpp" local="no">C:/Users/Admin/source/repos/Yaropolk/GameTests/SystemManagerTests.cpp</includedby>
+    <incdepgraph>
+      <node id="255">
+        <label>Windows.h</label>
+      </node>
+      <node id="258">
+        <label>string</label>
+      </node>
+      <node id="256">
+        <label>System.h</label>
+        <link refid="_system_8h"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>exception</label>
+      </node>
+      <node id="252">
+        <label>bitset</label>
+      </node>
+      <node id="253">
+        <label>vector</label>
+      </node>
+      <node id="257">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h</label>
+        <link refid="SystemManager.h"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="261">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.cpp</label>
+        <link refid="_application_8cpp"/>
+      </node>
+      <node id="263">
+        <label>C:/Users/Admin/source/repos/Yaropolk/GameTests/SystemManagerTests.cpp</label>
+        <link refid="_system_manager_tests_8cpp"/>
+      </node>
+      <node id="262">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/EntryPoint.cpp</label>
+        <link refid="_entry_point_8cpp"/>
+      </node>
+      <node id="260">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h</label>
+        <link refid="SystemManager.h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnot__found" prot="public">not_found</innerclass>
+    <innerclass refid="class_system_manager" prot="public">SystemManager</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_system_manager_8h_1a1f6a66c2cd455ab2585331fee56d29c6" prot="public" static="no" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t SYSTEM_COUNT</definition>
+        <argsstring></argsstring>
+        <name>SYSTEM_COUNT</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bitset&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_system_8h" kindref="compound">System.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_system_manager_8h_1a1f6a66c2cd455ab2585331fee56d29c6" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="_system_manager_8h_1a1f6a66c2cd455ab2585331fee56d29c6" kindref="member">SYSTEM_COUNT</ref><sp/>=<sp/>32;</highlight></codeline>
+<codeline lineno="11" refid="structnot__found" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnot__found" kindref="compound">not_found</ref><sp/>:<sp/>std::exception<sp/>{</highlight></codeline>
+<codeline lineno="12" refid="structnot__found_1a8d8f0331dd122caead1f1e4066253f62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnot__found_1a8d8f0331dd122caead1f1e4066253f62" kindref="member">not_found</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>std::exception(message)<sp/>{}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_system_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_system_manager" kindref="compound">SystemManager</ref><sp/>final<sp/>{</highlight></codeline>
+<codeline lineno="17" refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::shared_ptr&lt;System&gt;&gt;<sp/><ref refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" kindref="member">systems</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::bitset&lt;SYSTEM_COUNT&gt;<sp/>key;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="class_system_manager_1a2d33389ddfd81097d3eb86129d2c993d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_system_manager_1a2d33389ddfd81097d3eb86129d2c993d" kindref="member">SystemManager</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::shared_ptr&lt;System&gt;&gt;&amp;<sp/><ref refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" kindref="member">systems</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<ref refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" kindref="member">systems</ref>{<sp/>std::move(<ref refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" kindref="member">systems</ref>)<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>s<sp/>:<sp/><ref refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" kindref="member">systems</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!s)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::exception(</highlight><highlight class="stringliteral">&quot;System<sp/>cannot<sp/>to<sp/>be<sp/>nullptr.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="30" refid="class_system_manager_1adfdbb4ab16f173f092bd10b13e994842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;T&gt;<sp/><ref refid="class_system_manager_1adfdbb4ab16f173f092bd10b13e994842" kindref="member">Get</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_assert(std::is_base_of_v&lt;System,<sp/>T&gt;,<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>T<sp/>must<sp/>be<sp/>inheritance<sp/>of<sp/>the<sp/>System.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;&amp;<sp/>s<sp/>:<sp/>systems)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*s)<sp/>==<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(T))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::dynamic_pointer_cast&lt;T&gt;(s);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="structnot__found" kindref="compound">not_found</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>T<sp/>system<sp/>is<sp/>not<sp/>found<sp/>in<sp/>this<sp/>manager.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h"/>
+  </compounddef>
+</doxygen>

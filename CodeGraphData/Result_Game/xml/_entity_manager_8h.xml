@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_entity_manager_8h" kind="file">
+    <compoundname>EntityManager.h</compoundname>
+    <includes local="no">bitset</includes>
+    <includes refid="_entity_8h" local="yes">Entity.h</includes>
+    <incdepgraph>
+      <node id="97">
+        <label>list</label>
+      </node>
+      <node id="98">
+        <label>d3d9.h</label>
+      </node>
+      <node id="100">
+        <label>string</label>
+      </node>
+      <node id="94">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h</label>
+        <link refid="EntityManager.h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>bitset</label>
+      </node>
+      <node id="95">
+        <label>array</label>
+      </node>
+      <node id="99">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_entity_manager" prot="public">EntityManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bitset&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_entity_8h" kindref="compound">Entity.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="7" refid="class_entity_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_entity_manager" kindref="compound">EntityManager</ref><sp/>final<sp/>{</highlight></codeline>
+<codeline lineno="8" refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_entity" kindref="compound">Entity</ref><sp/><ref refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" kindref="member">entities</ref>[N];</highlight></codeline>
+<codeline lineno="9" refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::bitset&lt;N&gt;<sp/><ref refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="class_entity_manager_1ac260a0dc8d1d8e47bdf98cbc423d077f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_entity_manager_1ac260a0dc8d1d8e47bdf98cbc423d077f" kindref="member">EntityManager</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" kindref="member">entities</ref>[i].<ref refid="class_entity_1a087828d77ebc950ee1e822c34e264740" kindref="member">SetId</ref>(i);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19" refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_entity" kindref="compound">Entity</ref>&amp;<sp/><ref refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" kindref="member">Create</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" kindref="member">key</ref>.all())</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;There<sp/>is<sp/>not<sp/>enough<sp/>space<sp/>for<sp/>new<sp/>Entity.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" kindref="member">key</ref>.test(i))<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" kindref="member">key</ref>.set(i);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" kindref="member">entities</ref>[i].<ref refid="class_entity_1afb63a7e5efbd67598dc1596ca40485a3" kindref="member">Clear</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_entity_manager_1abdf45892655ab19e871249ce5249724b" kindref="member">entities</ref>[i];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;There<sp/>is<sp/>not<sp/>enough<sp/>space<sp/>for<sp/>new<sp/>Entity.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32" refid="class_entity_manager_1a731eae0581ef68bad2af6f154e5be1a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_entity_manager_1a731eae0581ef68bad2af6f154e5be1a1" kindref="member">Kill</ref>(<ref refid="class_entity" kindref="compound">Entity</ref>&amp;<sp/>entity)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entity_manager_1a7fc6faf7cf5293e06d5019335a3640ea" kindref="member">key</ref>.reset(entity.<ref refid="class_entity_1a23e9f8d8a5ea4e38fa3708e06ad63eb2" kindref="member">GetId</ref>());</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/EntityManager.h"/>
+  </compounddef>
+</doxygen>

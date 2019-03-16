@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_event_1_1_delegate" kind="struct" prot="private" abstract="yes">
+    <compoundname>Event::Delegate</compoundname>
+    <derivedcompoundref refid="struct_event_1_1_class_delegate" prot="public" virt="non-virtual">Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_event_1_1_static_delegate" prot="public" virt="non-virtual">Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_event_1_1_delegate_1af7cde847142d45f1394783cd1c373ff1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_event_1a2abf13b5be49315e9e362af02029f058" kindref="member">Type</ref></type>
+        <definition>Type Event&lt; TArgs &gt;::Delegate::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="19" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_event_1_1_delegate_1af8ae2c15318a71e99a84efcf8af7492c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Event&lt; TArgs &gt;::Delegate::Process</definition>
+        <argsstring>(TArgs...args)=0</argsstring>
+        <name>Process</name>
+        <reimplementedby refid="struct_event_1_1_class_delegate_1ab099a373ed0a1c2c5da88fbfe14b215a">Process</reimplementedby>
+        <reimplementedby refid="struct_event_1_1_static_delegate_1a81c1b8d44a43aa2afcc5750c5abb9b10">Process</reimplementedby>
+        <param>
+          <type>TArgs...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="20" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>Event&lt; TArgs &gt;::StaticDelegate&lt; TFunc &gt;</label>
+        <link refid="struct_event_1_1_static_delegate"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Event&lt; TArgs &gt;::ClassDelegate&lt; TClass, TMethod &gt;</label>
+        <link refid="struct_event_1_1_class_delegate"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Event&lt; TArgs &gt;::Delegate</label>
+        <link refid="struct_event_1_1_delegate"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" line="18" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/Event.h" bodystart="17" bodyend="21"/>
+    <listofallmembers>
+      <member refid="struct_event_1_1_delegate_1af8ae2c15318a71e99a84efcf8af7492c" prot="public" virt="pure-virtual"><scope>Event::Delegate</scope><name>Process</name></member>
+      <member refid="struct_event_1_1_delegate_1af7cde847142d45f1394783cd1c373ff1" prot="public" virt="non-virtual"><scope>Event::Delegate</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

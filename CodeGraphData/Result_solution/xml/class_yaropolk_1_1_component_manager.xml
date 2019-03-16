@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaropolk_1_1_component_manager" kind="class" prot="public">
+    <compoundname>Yaropolk::ComponentManager</compoundname>
+    <derivedcompoundref refid="class_yaropolk_1_1_terrain_manager" prot="public" virt="non-virtual">Yaropolk.TerrainManager</derivedcompoundref>
+    <derivedcompoundref refid="class_yaropolk_1_1_terrain_mesh_manager" prot="public" virt="non-virtual">Yaropolk.TerrainMeshManager</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>Yaropolk.TerrainManager</label>
+        <link refid="class_yaropolk_1_1_terrain_manager"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Yaropolk.ComponentManager</label>
+        <link refid="class_yaropolk_1_1_component_manager"/>
+      </node>
+      <node id="30">
+        <label>Yaropolk.TerrainMeshManager</label>
+        <link refid="class_yaropolk_1_1_terrain_mesh_manager"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/ComponentManager.cs" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Yaropolk/ComponentManager.cs" bodystart="9" bodyend="11"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

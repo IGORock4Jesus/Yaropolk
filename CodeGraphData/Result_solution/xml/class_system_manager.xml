@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_system_manager" kind="class" prot="public" final="yes">
+    <compoundname>SystemManager</compoundname>
+    <includes refid="_system_manager_8h" local="no">SystemManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="class_system" kindref="compound">System</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;System&gt; &gt; SystemManager::systems</definition>
+        <argsstring></argsstring>
+        <name>systems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" line="17" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_system_manager_1a2d33389ddfd81097d3eb86129d2c993d" compoundref="_system_manager_8h" startline="21" endline="28">SystemManager</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_system_manager_1a2d33389ddfd81097d3eb86129d2c993d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SystemManager::SystemManager</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; System &gt;&gt; &amp;systems)</argsstring>
+        <name>SystemManager</name>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; <ref refid="class_system" kindref="compound">System</ref> &gt;&gt; &amp;</type>
+          <declname>systems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" line="21" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" bodystart="21" bodyend="28"/>
+        <references refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" compoundref="_system_manager_8h" startline="17">systems</references>
+      </memberdef>
+      <memberdef kind="function" id="class_system_manager_1adfdbb4ab16f173f092bd10b13e994842" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>std::shared_ptr&lt;T&gt; SystemManager::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" line="30" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" bodystart="30" bodyend="37"/>
+        <referencedby refid="namespace_game_tests_1a66c31cd7fbed53b451d325e254b01913" compoundref="_system_manager_tests_8cpp" startline="8" endline="32">GameTests::TEST_CLASS</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="102">
+        <label>std::vector&lt; std::shared_ptr&lt; System &gt; &gt;</label>
+      </node>
+      <node id="101">
+        <label>SystemManager</label>
+        <link refid="class_system_manager"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>systems</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" line="16" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/Game/SystemManager.h" bodystart="16" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_system_manager_1adfdbb4ab16f173f092bd10b13e994842" prot="public" virt="non-virtual"><scope>SystemManager</scope><name>Get</name></member>
+      <member refid="class_system_manager_1a2d33389ddfd81097d3eb86129d2c993d" prot="public" virt="non-virtual"><scope>SystemManager</scope><name>SystemManager</name></member>
+      <member refid="class_system_manager_1a01252185a09a9add15fc3cab9dac39a9" prot="private" virt="non-virtual"><scope>SystemManager</scope><name>systems</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

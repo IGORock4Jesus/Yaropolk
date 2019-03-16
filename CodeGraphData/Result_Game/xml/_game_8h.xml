@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_game_8h" kind="file">
+    <compoundname>Game.h</compoundname>
+    <includes refid="_resource_8h" local="yes">resource.h</includes>
+    <includedby refid="_game_8cpp" local="yes">C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp</includedby>
+    <incdepgraph>
+      <node id="149">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>resource.h</label>
+        <link refid="_resource_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="151">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>C:/Users/Admin/source/repos/Yaropolk/Game/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_resource_8h" kindref="compound">resource.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/Game/Game.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_game_tests" kind="namespace">
+    <compoundname>GameTests</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_game_tests_1ad038dc4306de58d110a39be9afe5468c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameTests::TEST_CLASS</definition>
+        <argsstring>(ECSTests)</argsstring>
+        <name>TEST_CLASS</name>
+        <param>
+          <type>ECSTests</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/GameTests/EcsTests.cpp" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/GameTests/EcsTests.cpp" bodystart="10" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_tests_1ad9dd3234cbaabeb45cc572a9bcb7e2e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameTests::TEST_CLASS</definition>
+        <argsstring>(EntityManagerTests)</argsstring>
+        <name>TEST_CLASS</name>
+        <param>
+          <type>EntityManagerTests</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/GameTests/EntityManagerTests.cpp" line="10" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/GameTests/EntityManagerTests.cpp" bodystart="10" bodyend="41"/>
+        <references refid="class_entity_manager_1a01e8f2ed1318a0c89cbb8c9765b1bf5d" compoundref="_entity_manager_8h" startline="19" endline="31">EntityManager&lt; N &gt;::Create</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_tests_1a66c31cd7fbed53b451d325e254b01913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameTests::TEST_CLASS</definition>
+        <argsstring>(SystemManagerTests)</argsstring>
+        <name>TEST_CLASS</name>
+        <param>
+          <type>SystemManagerTests</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Admin/source/repos/Yaropolk/GameTests/SystemManagerTests.cpp" line="8" column="1" bodyfile="C:/Users/Admin/source/repos/Yaropolk/GameTests/SystemManagerTests.cpp" bodystart="8" bodyend="32"/>
+        <references refid="class_system_manager_1adfdbb4ab16f173f092bd10b13e994842" compoundref="_system_manager_8h" startline="30" endline="37">SystemManager::Get</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Admin/source/repos/Yaropolk/GameTests/EcsTests.cpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>
