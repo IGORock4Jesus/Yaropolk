@@ -10,4 +10,7 @@
 
 class LightManager : public BaseComponentManager<Light>
 {
+	void Render(LPDIRECT3DDEVICE9 device);
+
+public:
 };

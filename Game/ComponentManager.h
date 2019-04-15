@@ -15,6 +15,7 @@ class BaseComponentManager : public ComponentManager {
 public:
 	std::shared_ptr<T> Create(const Entity& entity) {
 		auto c = std::make_shared<T>(entity);
+		//c->Initialize();
 		components.push_back(c);
 		return c;
 	}

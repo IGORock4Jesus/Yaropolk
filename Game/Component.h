@@ -10,7 +10,7 @@ class Entity;
 class Component {
 	friend Entity;
 
-	Entity* entity{ nullptr };
+	const Entity& entity;
 	bool enabled{ false };
 
 	/*void Initialize(Entity *entity) {
@@ -22,7 +22,11 @@ class Component {
 public:
 	Event<const Component*, const Entity*> Created;
 
-
+	Component(const Entity& entity)
+		: entity{ entity }
+	{
+		
+	}
 	virtual ~Component() {}
 
 	void SetEnabled(bool value) { enabled = value; }

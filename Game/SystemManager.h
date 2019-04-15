@@ -21,7 +21,7 @@ public:
 	SystemManager(const std::vector<std::shared_ptr<System>>& systems)
 		:systems{ std::move(systems) }
 	{
-		for (auto && s : systems) {
+		for (auto && s : this->systems) {
 			if (!s)
 				throw std::exception("System cannot to be nullptr.");
 		}

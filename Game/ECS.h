@@ -9,11 +9,12 @@
 
 constexpr size_t MAX_ENTITIES = 100;
 
+// Движок систем компонентов сущностей
 class ECS
 {
-	std::vector<std::shared_ptr<ComponentManager>> componentManagers;
-	std::shared_ptr<SystemManager> systemManager;
-	std::shared_ptr<EntityManager<MAX_ENTITIES>> entityManager;
+	std::shared_ptr<ComponentManager> componentManager; // менеджер компонентов
+	std::shared_ptr<SystemManager> systemManager; // менеджер систем
+	std::shared_ptr<EntityManager<MAX_ENTITIES>> entityManager; // менеджер сущностей
 
 
 public:

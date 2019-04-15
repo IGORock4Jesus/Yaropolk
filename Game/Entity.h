@@ -7,7 +7,7 @@
 #include <d3d9.h>
 #include "Component.h"
 
-constexpr size_t MAX_COMPONENTS = 32;
+//constexpr size_t MAX_COMPONENTS = 32;
 
 class Entity final
 {
