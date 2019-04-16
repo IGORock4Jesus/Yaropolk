@@ -14,16 +14,19 @@ EntityManager::~EntityManager()
 
 size_t EntityManager::GetSize() const
 {
-	return size_t();
+	return entities.size();
 }
 
-size_t EntityManager::Add()
+std::shared_ptr<Entity> EntityManager::Add()
 {
-	return size_t();
+	auto p = std::make_shared<Entity>();
+	entities.push_back(p);
+	return p;
 }
 
-void EntityManager::Remove(size_t id)
+void EntityManager::Remove(std::shared_ptr<Entity> entity)
 {
+	entities.remove(entity);
 }
 
 }

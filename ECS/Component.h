@@ -1,21 +1,24 @@
 #pragma once
 
 #include <typeinfo>
+#include "ECS_API.h"
 
 namespace Yaropolk::ECS {
 
-struct Component {
-	virtual ~Component()
-	{
+using ComponentID = size_t;
 
-	}
+struct ECS_API IComponent
+{
+	virtual ~IComponent() {}
 };
 
 template <typename T>
-struct BaseComponent : Component {
-	constexpr inline static size_t GetID() {
-		return typeid(T).hash_code();
-	}
+struct Component : IComponent {
+	static const ComponentID ID;
+
 };
+
+template <typename T>
+const ComponentID Component<T>::ID = typeid(T).hash_code();
 
 }

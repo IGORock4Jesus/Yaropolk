@@ -1,7 +1,8 @@
 #pragma once
 
 #include <memory>
-#include <vector>
+#include <list>
+//#include <bitset>
 
 #include "ECS_API.h"
 #include "Entity.h"
@@ -10,22 +11,26 @@ namespace Yaropolk::ECS {
 
 //using EntityID = size_t;
 
+// Менеджер сущностей.
 class ECS_API EntityManager
 {
-	std::vector<Entity> entities;
+	// сущности
+	std::list<std::shared_ptr<Entity>> entities;
 
 public:
+	// Конструктор
 	EntityManager();
+	// Деструктор
 	~EntityManager();
 
 	// возвращает колиество используемых объектов
 	size_t GetSize() const;
 
-	// добавляет сущность и возвращает его ид
-	size_t Add();
+	// добавляет сущность и возвращает его
+	std::shared_ptr<Entity> Add();
 
-	// удаляет сущность по ид
-	void Remove(size_t id);
+	// удаляет сущность по
+	void Remove(std::shared_ptr<Entity> entity);
 };
 
 }

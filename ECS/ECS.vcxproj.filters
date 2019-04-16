@@ -6,9 +6,14 @@
     <ClInclude Include="ECS_API.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="ComponentManager.h" />
+    <ClInclude Include="SystemManager.h" />
+    <ClInclude Include="System.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="ComponentManager.cpp" />
+    <ClCompile Include="SystemManager.cpp" />
   </ItemGroup>
 </Project>
