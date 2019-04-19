@@ -3,6 +3,7 @@
 #include <memory>
 #include <vector>
 #include <map>
+#include <algorithm>
 
 #include "ECS_API.h"
 #include "System.h"
@@ -12,10 +13,10 @@ namespace Yaropolk::ECS {
 class ECS_API SystemManager
 {
 
-	std::vector<std::shared_ptr<ISystem>> systems; // системы		
+	std::map<std::shared_ptr<ISystem>, std::vector<std::shared_ptr<ISystem>>> systems; // системы		
 	std::vector<std::shared_ptr<ISystem>> orderedSystems;// отсортированные системы
 
-	std::map<SystemID, std::map<SystemID, bool>> dependencies; // зависимости систем
+	//std::map<SystemID, std::map<SystemID, bool>> dependencies; // зависимости систем
 
 
 	void UpdateOrder();
@@ -28,8 +29,17 @@ public:
 	template <typename T, typename ...TArgs>
 	std::shared_ptr<T> Add(TArgs&& ... args) {
 		auto s = std::make_shared<T>(std::forward<TArgs>(args)...);
-		systems.push_back(s);
+		systems[s] = {};
 		return s;
+	}
+
+	template <typename T>
+	std::shared_ptr<T> Get() const {
+		auto t = std::find_if(orderedSystems.begin(), orderedSystems.end(), [](auto && s) { return s->ID == T::ID; });
+		if (t == orderedSystems.end())
+			return nullptr;
+		else
+			return *t;
 	}
 
 	// Подсчитывает количество систем.
@@ -40,13 +50,20 @@ public:
 		static_assert(std::is_base_of_v<ISystem, T>, "T должен быть унаследован от ISystem интерфейса.");
 		static_assert(std::is_base_of_v<ISystem, D>, "D должен быть унаследован от ISystem интерфейса.");
 
-		dependencies[T::ID][D::ID] = true;
+		systems[target].push_back(dependency);
 	}
 
-	/*template <typename T, typename D, typename...DS>
-	void AddDependency()*/
+	bool Initialize();
 
-	void Initialize();
+	template <typename T>
+	size_t GetIndex() const {
+		for (size_t i = 0; i < orderedSystems.size(); i++)
+		{
+			if (orderedSystems[i]->GetID() == T::ID)
+				return i;
+		}
+		return -1;
+	}
 };
 
 }

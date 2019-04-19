@@ -21,10 +21,6 @@
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="Citadel.h" />
-    <ClInclude Include="Component.h" />
-    <ClInclude Include="ComponentManager.h" />
-    <ClInclude Include="ECS.h" />
-    <ClInclude Include="EntityManager.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="IRenderable.h" />
@@ -36,17 +32,13 @@
     <ClInclude Include="RenderSystem.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Helpers.h" />
-    <ClInclude Include="System.h" />
-    <ClInclude Include="SystemManager.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Window.h" />
-    <ClInclude Include="Entity.h" />
     <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Citadel.cpp" />
-    <ClCompile Include="ECS.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Light.cpp" />

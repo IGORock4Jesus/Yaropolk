@@ -15,6 +15,10 @@ public:
 		float x, y;
 		Position(float x, float y) : x{ x }, y{ y }{}
 	};
+	struct Gravity : Component<Gravity>
+	{
+		float power;
+	};
 
 	// Проверка при добавлении.
 	TEST_METHOD(AddOne)
@@ -91,6 +95,27 @@ public:
 		position = componentManager.Get<Position>(entity);
 
 		Assert::IsNull(position.get(), L"Компонент не был удален.");
+	}
+
+	// Получение по типу
+	TEST_METHOD(GetByType) {
+		EntityManager entityManager;
+		ComponentManager componentManager;
+
+		auto entity = entityManager.Add();
+
+		auto expectedX = 10.0f;
+		auto expectedY = 4.8f;
+
+		auto position = componentManager.Add<Position>(entity, expectedX, expectedY);
+
+		auto gravity = componentManager.Add<Gravity>(entity);
+
+		position = componentManager.Get<Position>(entity);
+		gravity = componentManager.Get<Gravity>(entity);
+
+		Assert::IsNotNull(position.get(), L"Компонент Position не получен от менеджера.");
+		Assert::IsNotNull(gravity.get(), L"Компонент Gravity не получен от менеджера.");
 	}
 };
 

@@ -2,7 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="Vertex.h" />
-    <ClInclude Include="Component.h" />
     <ClInclude Include="Citadel.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="Application.h" />
@@ -10,18 +9,12 @@
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Transform.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="EntityManager.h" />
     <ClInclude Include="Helpers.h" />
-    <ClInclude Include="System.h" />
-    <ClInclude Include="SystemManager.h" />
     <ClInclude Include="IRenderable.h" />
     <ClInclude Include="PrimitiveManager.h" />
     <ClInclude Include="Primitive.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Light.h" />
-    <ClInclude Include="ComponentManager.h" />
-    <ClInclude Include="ECS.h" />
     <ClInclude Include="LightManager.h" />
     <ClInclude Include="RenderSystem.h" />
   </ItemGroup>
@@ -37,7 +30,6 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Primitive.cpp" />
-    <ClCompile Include="ECS.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
   </ItemGroup>
 </Project>

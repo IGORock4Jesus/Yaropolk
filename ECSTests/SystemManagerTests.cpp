@@ -11,11 +11,21 @@ TEST_CLASS(SystemManagerTests)
 public:
 	struct SystemA : System<SystemA>
 	{
-
+		bool Initialize(SystemManager* manager) override {
+			return true;
+		}
 	};
 	struct SystemB : System<SystemB>
 	{
-
+		bool Initialize(SystemManager* manager) override {
+			return true;
+		}
+	};
+	struct SystemC : System<SystemC>
+	{
+		bool Initialize(SystemManager* manager) override {
+			return true;
+		}
 	};
 
 	TEST_METHOD(AddSystem) {
@@ -26,14 +36,36 @@ public:
 		Assert::AreEqual(SystemA::ID, a->ID, L"ИД системы неверен.");
 	}
 
-	TEST_METHOD(CheckOrdering) {
+	TEST_METHOD(Initializing) {
 		SystemManager manager;
+		auto c = manager.Add<SystemC>();
 		auto b = manager.Add<SystemB>();
 		auto a = manager.Add<SystemA>();
 
 		manager.AddDependency(b, a);
 
-		Assert::Fail(L"Данный тест не имеет проверки.");
+		manager.AddDependency(c, a);
+		manager.AddDependency(c, b);
+
+		Assert::IsTrue(manager.Initialize(), L"Менеджер систем не инициализирован.");
+	}
+
+	TEST_METHOD(Ordering) {
+		SystemManager manager;
+		auto c = manager.Add<SystemC>();
+		auto b = manager.Add<SystemB>();
+		auto a = manager.Add<SystemA>();
+
+		manager.AddDependency(b, a);
+
+		manager.AddDependency(c, a);
+		manager.AddDependency(c, b);
+
+		manager.Initialize();
+
+		Assert::AreEqual(size_t(0), manager.GetIndex<SystemA>(), L"Система A имеет неверный индекс.");
+		Assert::AreEqual(size_t(1), manager.GetIndex<SystemB>(), L"Система B имеет неверный индекс.");
+		Assert::AreEqual(size_t(2), manager.GetIndex<SystemC>(), L"Система C имеет неверный индекс.");
 	}
 };
 }
