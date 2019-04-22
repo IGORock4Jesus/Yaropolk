@@ -2,7 +2,7 @@
 
 namespace Yaropolk::Graphics {
 
-Engine::Engine()
+Engine::Engine(std::shared_ptr<Subsystem::Window> window)
 {
 }
 
@@ -11,4 +11,11 @@ Engine::~Engine()
 {
 }
 
+void Engine::Start() {
+
+}
+
+void Engine::Stop() {
+
+}
 }

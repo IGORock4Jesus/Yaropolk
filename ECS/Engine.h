@@ -3,7 +3,7 @@
 #include <memory>
 #include <vector>
 
-#include "ECS_API.h"
+#include "EcsAPI.h"
 
 namespace Yaropolk::ECS {
 
@@ -26,6 +26,9 @@ public:
 	std::shared_ptr<ComponentManager> GetComponentManager() const { return componentManager; }
 	std::shared_ptr<EntityManager> GetEntityManager() const { return entityManager; }
 	std::shared_ptr<SystemManager> GetSystemManager() const { return systemManager; }
+
+	void Start();
+	void Stop();
 };
 
 }

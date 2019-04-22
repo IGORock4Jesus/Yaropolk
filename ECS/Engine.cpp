@@ -18,4 +18,12 @@ Engine::~Engine()
 {
 }
 
+void Engine::Start()
+{
+}
+
+void Engine::Stop()
+{
+}
+
 }
