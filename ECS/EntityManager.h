@@ -4,7 +4,7 @@
 #include <list>
 //#include <bitset>
 
-#include "ECS_API.h"
+#include "EcsAPI.h"
 #include "Entity.h"
 
 namespace Yaropolk::ECS {

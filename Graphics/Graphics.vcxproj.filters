@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="IRenderer.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="GraphicsAPI.h" />
+    <ClInclude Include="Direct3D9Renderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Direct3D9Renderer.cpp" />
+  </ItemGroup>
+</Project>

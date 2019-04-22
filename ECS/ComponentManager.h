@@ -3,7 +3,7 @@
 #include <map>
 #include <memory>
 
-#include "ECS_API.h"
+#include "EcsAPI.h"
 #include "Component.h"
 
 

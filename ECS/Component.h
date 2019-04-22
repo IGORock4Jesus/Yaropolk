@@ -1,7 +1,7 @@
 #pragma once
 
 #include <typeinfo>
-#include "ECS_API.h"
+#include "EcsAPI.h"
 
 namespace Yaropolk::ECS {
 

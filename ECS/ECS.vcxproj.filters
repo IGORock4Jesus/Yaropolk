@@ -3,12 +3,12 @@
   <ItemGroup>
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Component.h" />
-    <ClInclude Include="ECS_API.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityManager.h" />
     <ClInclude Include="ComponentManager.h" />
     <ClInclude Include="SystemManager.h" />
     <ClInclude Include="System.h" />
+    <ClInclude Include="EcsAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp" />

@@ -5,7 +5,7 @@
 #include <map>
 #include <algorithm>
 
-#include "ECS_API.h"
+#include "EcsAPI.h"
 #include "System.h"
 
 namespace Yaropolk::ECS {
