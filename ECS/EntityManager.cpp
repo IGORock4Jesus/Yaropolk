@@ -29,4 +29,13 @@ void EntityManager::Remove(std::shared_ptr<Entity> entity)
 	entities.remove(entity);
 }
 
+std::shared_ptr<Entity> EntityManager::Find(std::string name)
+{
+	for (auto&& e : entities) {
+		if (e->name == name)
+			return e;
+	}
+	return nullptr;
+}
+
 }

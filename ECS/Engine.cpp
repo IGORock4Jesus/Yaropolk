@@ -18,12 +18,17 @@ Engine::~Engine()
 {
 }
 
-void Engine::Start()
+bool Engine::Start()
 {
+	if (!systemManager->Initialize())
+		return false;
+
+	return systemManager->Start();
 }
 
 void Engine::Stop()
 {
+	systemManager->Stop();
 }
 
 }

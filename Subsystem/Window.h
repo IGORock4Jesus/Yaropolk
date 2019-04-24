@@ -2,6 +2,8 @@
 
 #include <Windows.h>
 
+#include <Trivial/Event.h>
+
 #include "SubsystemAPI.h"
 
 
@@ -16,6 +18,8 @@ class SUBSYSTEM_API Window
 	virtual LRESULT Processor(HWND h, UINT m, WPARAM w, LPARAM l);
 
 public:
+	Trivial::Event<int> KeyDown, KeyUp;
+
 	Window(HINSTANCE hinstance, int width, int height);
 	~Window();
 

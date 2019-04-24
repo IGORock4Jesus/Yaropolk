@@ -28,7 +28,18 @@ LRESULT Window::WndProcStatic(HWND h, UINT m, WPARAM w, LPARAM l)
 }
 LRESULT Window::Processor(HWND h, UINT m, WPARAM w, LPARAM l)
 {
-	return DefWindowProc(h, m, w, l);
+	switch (m)
+	{
+	case WM_KEYDOWN:
+		KeyDown(w);
+		return 0;
+	case WM_KEYUP:
+		KeyUp(w);
+		return 0;
+	default:
+		return DefWindowProc(h, m, w, l);
+	}
+
 }
 Window::Window(HINSTANCE hinstance, int width, int height)
 {

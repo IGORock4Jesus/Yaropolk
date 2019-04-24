@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include <Component.h>
+#include <ECS/Component.h>
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;

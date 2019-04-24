@@ -39,4 +39,18 @@ std::shared_ptr<IComponent> ComponentManager::Get(std::shared_ptr<Entity> entity
 		return nullptr;
 }
 
+std::vector<std::shared_ptr<IComponent>> ComponentManager::GetList(ComponentID componentID)
+{
+	std::vector<std::shared_ptr<IComponent>> result;
+
+	for (auto&& e : components) {
+		auto c = Get(e.first, componentID);
+		if (c) {
+			result.push_back(c);
+		}
+	}
+
+	return std::move(result);
+}
+
 }

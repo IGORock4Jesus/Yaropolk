@@ -72,10 +72,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -150,6 +152,11 @@
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="SystemManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Trivial\Trivial.vcxproj">
+      <Project>{4700a397-5b60-4251-853b-e6c4165e1765}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

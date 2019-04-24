@@ -31,6 +31,9 @@ public:
 
 	// удаляет сущность по
 	void Remove(std::shared_ptr<Entity> entity);
+
+	// поиск по имени
+	std::shared_ptr<Entity> Find(std::string name);
 };
 
 }

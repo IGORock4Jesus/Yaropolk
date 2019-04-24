@@ -2,8 +2,35 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="TetrisGame.cpp" />
+    <ClCompile Include="ViewerSystem.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockGeneratorSystem.cpp" />
+    <ClCompile Include="InputSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Описание.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{d22f4e17-3b70-4fce-9829-83ee51cccc1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameFieldView.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewerSystem.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreView.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="NextView.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockGeneratorSystem.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="InputSystem.h" />
   </ItemGroup>
 </Project>

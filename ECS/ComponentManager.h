@@ -1,5 +1,6 @@
 #pragma once
 
+#include <vector>
 #include <map>
 #include <memory>
 
@@ -45,6 +46,21 @@ public:
 		return std::dynamic_pointer_cast<T>(Get(entity, T::ID));
 	}
 	std::shared_ptr<IComponent> Get(std::shared_ptr<Entity> entity, ComponentID componentId);
+
+	template <typename T>
+	std::vector<std::shared_ptr<T>> GetList() {
+		std::vector<std::shared_ptr<T>> result;
+
+		for (auto&& e : components) {
+			auto c = Get<T>(e.first);
+			if (c) {
+				result.push_back(c);
+			}
+		}
+
+		return std::move(result);
+	}
+	std::vector<std::shared_ptr<IComponent>> GetList(ComponentID componentID);
 };
 
 }

@@ -27,7 +27,7 @@ public:
 	std::shared_ptr<EntityManager> GetEntityManager() const { return entityManager; }
 	std::shared_ptr<SystemManager> GetSystemManager() const { return systemManager; }
 
-	void Start();
+	bool Start();
 	void Stop();
 };
 

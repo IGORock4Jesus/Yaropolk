@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include <EntityManager.h>
-#include <ComponentManager.h>
+#include <ECS/EntityManager.h>
+#include <ECS/ComponentManager.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

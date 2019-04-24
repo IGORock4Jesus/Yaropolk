@@ -23,6 +23,10 @@ public:
 	virtual ~App();
 
 	void Run();
+
+	const std::shared_ptr<Subsystem::Window>& GetWindow() const { return window; }
+	const std::shared_ptr<Graphics::Engine>& GetGraphics() const { return graphics; }
+	const std::shared_ptr<ECS::Engine>& GetECS() const { return ecs; }
 };
 
 }

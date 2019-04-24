@@ -5,6 +5,7 @@
     <ClInclude Include="Engine.h" />
     <ClInclude Include="GraphicsAPI.h" />
     <ClInclude Include="Direct3D9Renderer.h" />
+    <ClInclude Include="IPainter.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp" />

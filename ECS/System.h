@@ -17,6 +17,7 @@ __interface ECS_API ISystem
 	//bool GetEnable();
 	bool Initialize(SystemManager* manager);
 	const SystemID GetID() const;
+	void Update(float elapsedTime);
 };
 
 template <typename T>

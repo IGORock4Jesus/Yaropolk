@@ -23,11 +23,12 @@ void App::Run()
 {
 	graphics->Start();
 
-	ecs->Start();
+	if (ecs->Start()) {
 
-	window->Run();
+		window->Run();
 
-	ecs->Stop();
+		ecs->Stop();
+	}
 
 	graphics->Stop();
 }
